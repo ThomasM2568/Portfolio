@@ -2,9 +2,9 @@
   "fr": {
     "name": "Thomas Mirbey",
     "title": "Ingénieur Réseaux & Sécurité",
-    "header_desc": "Passionné par la sécurité des réseaux, la connectivité IoT et l'automatisation des processus.",
+    "header_desc": "Passionné par la sécurité des réseaux, la connectivité IIoT et l'automatisation des processus.",
     "about_title": "À propos de moi",
-    "about_text": "Je suis un ingénieur réseaux et sécurité spécialisé dans les systèmes IoT, l'automatisation et les protocoles de sécurité. Je suis passionné par le développement d'infrastructures réseaux sécurisées et évolutives. Actuellement, je perfectionne mes compétences à travers des expériences concrètes en sécurité réseau et en IIoT (IoT Industriel).",
+    "about_text": "Passionné par les réseaux et la cybersécurité, je m’intéresse particulièrement à tout ce qui touche à l’automatisation. J’aime concevoir des infrastructures plus fiables, plus lisibles et surtout plus efficaces, en réduisant au maximum les tâches manuelles et les sources d’erreur. Cette approche, j’essaie de l’appliquer dans chacun de mes projets. En parallèle, je développe un intérêt marqué pour l’IoT, et plus particulièrement l’IIoT, où les enjeux de sécurité, de résilience et de performance sont critiques, notamment dans des contextes comme les systèmes industriels ou les smart grids.",
     "exp_title": "Parcours Professionnel",
     "experiences": [
       {
@@ -12,9 +12,9 @@
         "company": "Grand Besançon Métropole",
         "role": "Apprenti Ingénieur Réseaux & Sécurité",
         "date": "Sep 2025 - Présent",
-        "desc": "Gestion et sécurisation des infrastructures réseaux de la métropole.",
-        "details": "Missions principales : Administration des équipements réseaux (Switchs, Routeurs), gestion de la sécurité périmétrique, et optimisation des performances réseau pour les services publics.",
-        "logo": "company1-logo.png"
+        "desc": "Sécurisation des infrastructures réseaux de la métropole.",
+        "details": "Missions principales : Participation à la sécurisation d’infrastructures réseau critiques intégrant des systèmes IIoT (eau et assainissement), avec mise en œuvre d’actions de durcissement et de fiabilisation. Administration de firewalls Fortinet (FortiGate / FortiManager) et gestion des déploiements via templates et CLI. Exploitation d’audits de sécurité IoT et définition de remédiations en collaboration avec le RSSI. Automatisation de tâches réseau pour réduire les erreurs manuelles et améliorer la fiabilité. Contribution à la migration de l’IPAM (phpIPAM vers NetBox) afin de structurer et fiabiliser la gestion de l’adressage réseau.",
+        "logo": "img/gbm.png"
       },
       {
         "id": "exp2",
