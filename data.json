@@ -14,7 +14,7 @@
         "date": "Sep 2025 - Présent",
         "desc": "Sécurisation des infrastructures réseaux de la métropole.",
         "details": "Missions principales : Participation à la sécurisation d’infrastructures réseau critiques intégrant des systèmes IIoT (eau et assainissement), avec mise en œuvre d’actions de durcissement et de fiabilisation. Administration de firewalls Fortinet (FortiGate / FortiManager) et gestion des déploiements via templates et CLI. Exploitation d’audits de sécurité IoT et définition de remédiations en collaboration avec le RSSI. Automatisation de tâches réseau pour réduire les erreurs manuelles et améliorer la fiabilité. Contribution à la migration de l’IPAM (phpIPAM vers NetBox) afin de structurer et fiabiliser la gestion de l’adressage réseau.",
-        "logo": "img/gbm.png"
+        "logo": "./img/gbm.png"
       },
       {
         "id": "exp2",
