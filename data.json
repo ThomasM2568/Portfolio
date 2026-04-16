@@ -1,0 +1,226 @@
+{
+  "fr": {
+    "name": "Thomas Mirbey",
+    "title": "Ingénieur Réseaux & Sécurité",
+    "header_desc": "Passionné par la sécurité des réseaux, la connectivité IoT et l'automatisation des processus.",
+    "about_title": "À propos de moi",
+    "about_text": "Je suis un ingénieur réseaux et sécurité spécialisé dans les systèmes IoT, l'automatisation et les protocoles de sécurité. Je suis passionné par le développement d'infrastructures réseaux sécurisées et évolutives. Actuellement, je perfectionne mes compétences à travers des expériences concrètes en sécurité réseau et en IIoT (IoT Industriel).",
+    "exp_title": "Parcours Professionnel",
+    "experiences": [
+      {
+        "id": "exp1",
+        "company": "Grand Besançon Métropole",
+        "role": "Apprenti Ingénieur Réseaux & Sécurité",
+        "date": "Sep 2025 - Présent",
+        "desc": "Gestion et sécurisation des infrastructures réseaux de la métropole.",
+        "details": "Missions principales : Administration des équipements réseaux (Switchs, Routeurs), gestion de la sécurité périmétrique, et optimisation des performances réseau pour les services publics.",
+        "logo": "company1-logo.png"
+      },
+      {
+        "id": "exp2",
+        "company": "FORVIA",
+        "role": "Apprenti IIOT",
+        "date": "Sep 2024 - Fév 2025",
+        "desc": "Développement et automatisation des processus de connectivité IoT.",
+        "details": "Focus technique : Mise en œuvre de protocoles TCP/IP et OPC/UA pour la remontée de données industrielles. Utilisation de JavaScript et d'API REST pour l'automatisation des flux de données.",
+        "logo": "company2-logo.png"
+      },
+      {
+        "id": "exp3",
+        "company": "Stellantis",
+        "role": "Apprenti Sécurité Réseau et Automatisation",
+        "date": "Sep 2023 - Août 2024",
+        "desc": "Automatisation des tâches réseau et sécurité.",
+        "details": "Réalisations : Automatisation de la gestion IPAM et DNS. Configuration et administration de pare-feu Palo Alto et de reverse proxies. Développement de scripts pour améliorer l'efficacité opérationnelle.",
+        "logo": "company3-logo.png"
+      },
+      {
+        "id": "exp4",
+        "company": "Stellantis",
+        "role": "Stagiaire Sécurité Réseau et Automatisation",
+        "date": "Jan 2023 - Mar 2023",
+        "desc": "Support technique et assistance sur les projets d'automatisation.",
+        "details": "Apprentissage des bases de l'automatisation réseau et découverte des environnements de sécurité industrielle à grande échelle.",
+        "logo": "company3-logo.png"
+      }
+    ],
+    "edu_title": "Formation",
+    "education": [
+      {
+        "id": "edu1",
+        "title": "UFR STGI, Master en Systèmes Embarqués & IoT",
+        "date": "2024 - 2026",
+        "details": "Spécialisation dans la conception de systèmes connectés, la sécurité des objets communicants et les protocoles réseaux basse consommation."
+      },
+      {
+        "id": "edu2",
+        "title": "IUT Belfort-Montbéliard, BUT Réseaux et Télécommunications",
+        "date": "2021 - 2024",
+        "details": "Major de promotion. Formation approfondie en administration réseaux, cybersécurité et télécommunications."
+      },
+      {
+        "id": "edu3",
+        "title": "Lycée Armand Peugeot, Baccalauréat",
+        "date": "2019 - 2021",
+        "details": "Spécialités NSI (Numérique et Sciences Informatiques), Mathématiques et Physique."
+      }
+    ],
+    "cert_title": "Certifications",
+    "certifications": [
+      { "name": "Getting Started with Local Traffic Manager (LTM) – Nov 2024", "url": "https://www.f5.com/training", "badge": "ltm-badge.png" },
+      { "name": "Amazon API Gateway for Serverless Applications – Juil 2024", "url": "https://aws.amazon.com/training/", "badge": "aws-badge.png" },
+      { "name": "Introduction to Amazon API Gateway – Juil 2024", "url": "https://aws.amazon.com/training/", "badge": "aws-badge.png" },
+      { "name": "Cisco CCNA Routing & Switching – Sept 2022 (Expire Sept 2025)", "url": "https://www.cisco.com/c/en/us/training-events/training-certifications/certifications.html", "badge": "ccna-badge.png" }
+    ],
+    "proj_title": "Projets Clés",
+    "projects": [
+      {
+        "id": "ecom",
+        "title": "ECOM (Electric Consumption Optimization and Monitoring)",
+        "date": "Janv. 2024 – Janv. 2026",
+        "desc": "Optimisation et partage collaboratif d'énergie dans les micro-réseaux résidentiels.",
+        "details": "Projet de recherche sur 3 ans (BUT3 à Master 2). Direction technique d'une solution de partage intelligent d'électricité en circuit court.<br><br><b>Points clés :</b><ul><li>Design de Data Pipeline (HA & Load Balancing)</li><li>Unification MQTT / HTTP / Websocket</li><li>Core API Python/Flask (OAuth 2.0)</li><li>Algorithmique d'optimisation de l'autoconsommation</li><li>Sécurisation & Résilience du Smart Grid</li></ul>",
+        "icon": "bi-lightning-charge",
+        "link": "project.html?id=ecom",
+        "skills": ["IoT", "Python", "Flask", "MQTT", "OAuth 2.0", "HA", "Smart Grid", "Architecture"]
+      },
+      {
+        "id": "sae501",
+        "title": "SAÉ-501 : Conception d'une Solution Technique",
+        "date": "Déc 2023",
+        "desc": "Conception et déploiement d'une infrastructure réseau complète.",
+        "icon": "bi-diagram-3",
+        "link": "project.html?id=sae501",
+        "skills": ["Cisco", "HSRP", "VRRP", "Routage"]
+      },
+      {
+        "id": "sae502",
+        "title": "SAÉ-502 : Sécurité Réseau Hospitalier",
+        "date": "Oct 2023 - Nov 2023",
+        "desc": "Déploiement d'une infrastructure réseau sécurisée pour un hôpital.",
+        "icon": "bi-shield-lock",
+        "link": "project.html?id=sae502",
+        "skills": ["VLAN", "Firewall", "VPN", "RFID"]
+      }
+    ],
+    "contact_title": "Contact",
+    "see_details": "Voir détails",
+    "back_btn": "← Retour aux projets",
+    "theme_nebula": "Nébuleuse",
+    "theme_aurora": "Aurore",
+    "project_overview": "Présentation du projet",
+    "project_tech": "Détails Techniques & Compétences"
+  },
+  "en": {
+    "name": "Thomas Mirbey",
+    "title": "Network & Security Engineer",
+    "header_desc": "Passionate about network security, IoT connectivity, and process automation.",
+    "about_title": "About Me",
+    "about_text": "I am a network & security engineer with expertise in IoT systems, automation, and security protocols. I am passionate about developing secure and scalable network infrastructures and automating processes to increase efficiency. Currently, I am honing my skills through hands-on experience in both network security and IIoT (Industrial IoT).",
+    "exp_title": "Professional Background",
+    "experiences": [
+      {
+        "id": "exp1",
+        "company": "Grand Besançon Métropole",
+        "role": "Network & Security Apprentice Engineer",
+        "date": "Sep 2025 - Present",
+        "desc": "Management and securing of the metropolitan network infrastructures.",
+        "details": "Core missions: Administration of network equipment (Switches, Routers), perimeter security management, and network performance optimization for public services.",
+        "logo": "company1-logo.png"
+      },
+      {
+        "id": "exp2",
+        "company": "FORVIA",
+        "role": "IIOT Apprentice",
+        "date": "Sep 2024 - Feb 2025",
+        "desc": "Developed and automated IoT connectivity processes.",
+        "details": "Technical focus: Implementation of TCP/IP and OPC/UA protocols for industrial data collection. Used JavaScript and REST APIs for data flow automation.",
+        "logo": "company2-logo.png"
+      },
+      {
+        "id": "exp3",
+        "company": "Stellantis",
+        "role": "Network Security and Automation Apprentice",
+        "date": "Sep 2023 - Aug 2024",
+        "desc": "Automated network and security tasks.",
+        "details": "Achievements: Automated IPAM and DNS management. Configuration and administration of Palo Alto firewalls and reverse proxies. Developed scripts to improve operational efficiency.",
+        "logo": "company3-logo.png"
+      },
+      {
+        "id": "exp4",
+        "company": "Stellantis",
+        "role": "Network Security and Automation Trainee",
+        "date": "Jan 2023 - Mar 2023",
+        "desc": "Technical support and assistance on automation projects.",
+        "details": "Learning the basics of network automation and discovering large-scale industrial security environments.",
+        "logo": "company3-logo.png"
+      }
+    ],
+    "edu_title": "Training",
+    "education": [
+      {
+        "id": "edu1",
+        "title": "UFR STGI, Master in Embedded Systems & IoT",
+        "date": "2024 - 2026",
+        "details": "Specialization in connected systems design, security of communicating objects, and low-power network protocols."
+      },
+      {
+        "id": "edu2",
+        "title": "IUT Belfort-Montbéliard, Bachelor's in Networks and Telecommunications",
+        "date": "2021 - 2024",
+        "details": "Valedictorian. In-depth training in network administration, cybersecurity, and telecommunications."
+      },
+      {
+        "id": "edu3",
+        "title": "Lycée Armand Peugeot, Baccalaureate",
+        "date": "2019 - 2021",
+        "details": "Specialties in Digital Sciences, Mathematics, and Physics."
+      }
+    ],
+    "cert_title": "Certifications",
+    "certifications": [
+      { "name": "Getting Started with Local Traffic Manager (LTM) – Nov 2024", "url": "https://www.f5.com/training", "badge": "ltm-badge.png" },
+      { "name": "Amazon API Gateway for Serverless Applications – Jul 2024", "url": "https://aws.amazon.com/training/", "badge": "aws-badge.png" },
+      { "name": "Introduction to Amazon API Gateway – Jul 2024", "url": "https://aws.amazon.com/training/", "badge": "aws-badge.png" },
+      { "name": "Cisco CCNA Routing & Switching – Sept 2022 (Expires Sept 2025)", "url": "https://www.cisco.com/c/en/us/training-events/training-certifications/certifications.html", "badge": "ccna-badge.png" }
+    ],
+    "proj_title": "Key Projects",
+    "projects": [
+      {
+        "id": "ecom",
+        "title": "ECOM (Electric Consumption Optimization and Monitoring)",
+        "date": "Jan. 2024 – Jan. 2026",
+        "desc": "Optimization and Collaborative Energy Sharing in Residential Microgrids.",
+        "details": "3-year research project (BUT3 to Master 2). Technical direction of a smart electricity sharing solution in short circuits.<br><br><b>Key points:</b><ul><li>Data Pipeline Design (HA & Load Balancing)</li><li>MQTT / HTTP / Websocket Unification</li><li>Python/Flask Core API (OAuth 2.0)</li><li>Self-consumption optimization algorithms</li><li>Smart Grid Security & Resilience</li></ul>",
+        "icon": "bi-lightning-charge",
+        "link": "project.html?id=ecom",
+        "skills": ["IoT", "Python", "Flask", "MQTT", "OAuth 2.0", "HA", "Smart Grid", "Architecture"]
+      },
+      {
+        "id": "sae501",
+        "title": "SAÉ-501: Designing a Technical Solution",
+        "date": "Dec 2023",
+        "desc": "Designed and deployed a complete network infrastructure.",
+        "icon": "bi-diagram-3",
+        "link": "project.html?id=sae501",
+        "skills": ["Cisco", "HSRP", "VRRP", "Routing"]
+      },
+      {
+        "id": "sae502",
+        "title": "SAÉ-502: Hospital Network Security",
+        "date": "Oct 2023 - Nov 2023",
+        "desc": "Deployed a secure network infrastructure for a hospital.",
+        "icon": "bi-shield-lock",
+        "link": "project.html?id=sae502",
+        "skills": ["VLAN", "Firewall", "VPN", "RFID"]
+      }
+    ],
+    "contact_title": "Contact",
+    "see_details": "See details",
+    "back_btn": "← Back to Projects",
+    "theme_nebula": "Nebula",
+    "theme_aurora": "Aurora",
+    "project_overview": "Project Overview",
+    "project_tech": "Technical Details & Skills"
+  }
+}

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Thomas Mirbey - Network & Security Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio of Thomas Mirbey, Network & Security Engineer" />
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <style>
+    :root {
+      /* Theme Nebula (Default Dark) */
+      --bg-color: #0e1625;
+      --text-color: #eef2f7;
+      --text-muted: #a0aec0;
+      --section-bg: #111a2c;
+      --card-bg: #112045;
+      --accent-color: #1976d2;
+      --accent-hover: #1565c0;
+      --shadow-color: rgba(25, 118, 210, 0.5);
+      --contact-bg: #13244b;
+    }
+
+    body.theme-aurora {
+      /* Theme Aurora (Cream & Gold) */
+      --bg-color: #fdfbf7;
+      --text-color: #4a3f35;
+      --text-muted: #718096;
+      --section-bg: #f5f0e6;
+      --card-bg: #ffffff;
+      --accent-color: #c5a059;
+      --accent-hover: #a68546;
+      --shadow-color: rgba(197, 160, 89, 0.3);
+      --contact-bg: #ece4d0;
+    }
+
+    body {
+      background: var(--bg-color);
+      color: var(--text-color);
+      transition: background 0.3s, color 0.3s;
+    }
+    .text-muted {
+      color: var(--text-muted) !important;
+    }
+    .section-title {
+      border-bottom: 2px solid var(--accent-color);
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+    .company-logo {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      margin-right: 12px;
+    }
+    .project-card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: nowrap;
+      border: 1px solid transparent;
+    }
+    .theme-aurora .project-card {
+      border: 1px solid #e0d5c1;
+    }
+    .project-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 16px var(--shadow-color);
+      text-decoration: none;
+      color: inherit;
+    }
+    .project-icon {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+    .bg-section {
+      background: var(--section-bg);
+      border-radius: 16px;
+      padding: 2.5rem;
+      transition: background 0.3s;
+      border: 1px solid rgba(25, 118, 210, 0.05);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .theme-aurora .bg-section {
+      border-color: rgba(197, 160, 89, 0.1);
+    }
+    .theme-aurora .collapsible-item:hover {
+      background: rgba(197, 160, 89, 0.1);
+      border-color: var(--accent-color);
+    }
+    .theme-aurora .details-panel.active {
+      border-top-color: rgba(197, 160, 89, 0.3);
+    }
+    .theme-aurora .border-primary {
+      border-color: var(--accent-color) !important;
+    }
+    .theme-aurora .edu-card {
+      border-color: rgba(197, 160, 89, 0.1);
+    }
+    .theme-aurora .edu-icon {
+      background: rgba(197, 160, 89, 0.1);
+    }
+    a, a:visited {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .contact-section {
+      background: var(--contact-bg);
+      padding: 2rem;
+      border-radius: 16px;
+      margin-top: 2rem;
+      transition: background 0.3s;
+    }
+    ul {
+      padding-left: 1rem;
+    }
+    .cert-badge {
+      height: 40px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+    .see-details-link {
+      color: var(--accent-color);
+      font-weight: 600;
+    }
+    
+    /* About Me Modernization */
+    .about-content {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      position: relative;
+      padding-left: 20px;
+      border-left: 4px solid var(--accent-color);
+    }
+
+    /* Timeline Styles for Professional Background */
+    .timeline {
+      position: relative;
+      padding-left: 30px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--accent-color), transparent);
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 30px;
+    }
+    .timeline-dot {
+      position: absolute;
+      left: -36px;
+      top: 5px;
+      width: 14px;
+      height: 14px;
+      background: var(--accent-color);
+      border-radius: 50%;
+      border: 3px solid var(--bg-color);
+      box-shadow: 0 0 0 2px var(--accent-color);
+    }
+
+    /* Accordion Styles */
+    .collapsible-item {
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+      background: rgba(255, 255, 255, 0.02);
+    }
+    .theme-aurora .collapsible-item {
+      background: rgba(0, 0, 0, 0.02);
+    }
+    .collapsible-item:hover {
+      background: rgba(25, 118, 210, 0.1);
+      border-color: var(--accent-color);
+    }
+    .details-panel {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out, padding 0.3s ease;
+      background: rgba(0, 0, 0, 0.05);
+      border-radius: 0 0 8px 8px;
+      margin-top: -5px;
+    }
+    .details-panel.active {
+      max-height: 500px;
+      padding: 20px;
+      border-top: 1px solid var(--accent-color);
+      margin-bottom: 15px;
+      font-size: 0.95rem;
+      color: var(--text-color);
+      opacity: 0.9;
+    }
+    
+    /* Training Cards */
+    .edu-card {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      padding: 20px;
+      background: var(--card-bg);
+      border-radius: 15px;
+      margin-bottom: 15px;
+      border: 1px solid rgba(25, 118, 210, 0.1);
+      transition: all 0.3s ease;
+    }
+    .edu-card:hover {
+      border-color: var(--accent-color);
+      transform: translateX(5px);
+    }
+    .edu-icon {
+      font-size: 1.8rem;
+      color: var(--accent-color);
+      background: rgba(25, 118, 210, 0.1);
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      flex-shrink: 0;
+    }
+    .chevron {
+      display: inline-block;
+      transition: transform 0.3s;
+      margin-left: 10px;
+      color: var(--accent-color);
+    }
+    .active-chevron {
+      transform: rotate(180deg);
+    }
+    
+    /* Social Icons Styles */
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 15px;
+    }
+    .social-icon {
+      font-size: 1.5rem;
+      color: var(--accent-color);
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--accent-color);
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      text-decoration: none !important;
+    }
+    .social-icon:hover {
+      background-color: var(--accent-color);
+      color: var(--bg-color) !important;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px var(--shadow-color);
+    }
+
+    /* Modern Certifications Styles */
+    #cert-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 15px;
+      padding-left: 0;
+      list-style: none;
+    }
+    .cert-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(25, 118, 210, 0.1);
+      border-radius: 12px;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      transition: all 0.3s ease;
+      text-decoration: none !important;
+      height: 100%;
+    }
+    .theme-aurora .cert-card {
+      border-color: #e0d5c1;
+    }
+    .cert-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px var(--shadow-color);
+      border-color: var(--accent-color);
+    }
+    .cert-card i {
+      font-size: 1.2rem;
+      color: var(--accent-color);
+    }
+    .cert-info {
+      font-size: 0.9rem;
+      color: var(--text-color);
+      font-weight: 500;
+    }
+
+    /* Modern Contact Styles */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .contact-card {
+      background: var(--card-bg);
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+      text-decoration: none !important;
+      display: block;
+    }
+    .contact-card:hover {
+      transform: scale(1.03);
+      border-color: var(--accent-color);
+      box-shadow: 0 10px 25px var(--shadow-color);
+    }
+    .contact-card i {
+      font-size: 2rem;
+      color: var(--accent-color);
+      margin-bottom: 10px;
+      display: block;
+    }
+    .contact-card span {
+      display: block;
+      color: var(--text-color);
+      font-weight: 600;
+      word-break: break-all;
+    }
+    .contact-card label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--accent-color);
+      margin-bottom: 5px;
+      display: block;
+      cursor: pointer;
+    }
+
+    @media (max-width: 576px) {
+      .project-card {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .project-icon {
+        margin-bottom: 0.75rem;
+        margin-right: 0;
+      }
+      .company-logo {
+        margin-bottom: 0.5rem;
+      }
+      .mb-3.d-flex.align-items-center {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+    /* Controls Styles */
+    .controls-container {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      display: flex;
+      gap: 10px;
+    }
+    .control-btn {
+      background: var(--accent-color);
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      min-width: 60px;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .control-btn:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+    }
+
+    /* CLI Animation Styles */
+    .cli-container {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Courier New', Courier, monospace;
+      background: rgba(0, 0, 0, 0.2);
+      padding: 5px 15px;
+      border-radius: 5px;
+      border-left: 3px solid var(--accent-color);
+    }
+    .cli-prompt {
+      color: var(--accent-color);
+      margin-right: 10px;
+      font-weight: bold;
+    }
+    #name-animation {
+      min-height: 1.2em;
+      display: inline-block;
+    }
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      height: 1.2em;
+      background-color: var(--accent-color);
+      margin-left: 5px;
+      animation: blink 1s infinite;
+      vertical-align: middle;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+<body class="theme-nebula">
+  <div class="controls-container">
+    <button id="theme-toggle" class="control-btn">Aurore</button>
+    <button id="lang-toggle" class="control-btn">EN</button>
+  </div>
+
+  <div class="container py-5">
+    <header class="text-center mb-5">
+      <div class="cli-container mb-3">
+        <span class="cli-prompt">></span>
+        <h1 id="name-animation" class="mb-0"></h1>
+        <span class="cursor"></span>
+      </div>
+      <h1 data-i18n="name" class="d-none">Thomas Mirbey</h1>
+      <h3 data-i18n="title">Network & Security Engineer</h3>
+      <p data-i18n="header_desc">
+        Passionate about network security, IoT connectivity, and process automation.
+      </p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/thomas-mirbey" target="_blank" rel="noopener" class="social-icon" title="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://github.com/ThomasMirbey" target="_blank" rel="noopener" class="social-icon" title="GitHub">
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
+    </header>
+
+    <section class="bg-section mb-5">
+      <h2 class="section-title" data-i18n="about_title">About Me</h2>
+      <div class="about-content" data-i18n="about_text">
+        I am a network & security engineer with expertise in IoT systems, automation, and security protocols. 
+      </div>
+    </section>
+
+    <section class="bg-section mb-5">
+      <h2 class="section-title" data-i18n="exp_title">Professional Background</h2>
+      <div id="exp-container">
+        <!-- Dynamic content -->
+      </div>
+    </section>
+
+    <section class="bg-section mb-5">
+      <h2 class="section-title" data-i18n="edu_title">Training</h2>
+      <ul id="edu-container">
+        <!-- Dynamic content -->
+      </ul>
+    </section>
+
+    <section class="bg-section mb-5">
+      <h2 class="section-title" data-i18n="cert_title">Certifications</h2>
+      <ul id="cert-container">
+        <!-- Dynamic content -->
+      </ul>
+    </section>
+
+    <section class="bg-section mb-5">
+      <h2 class="section-title" data-i18n="proj_title">Key Projects</h2>
+      <div id="proj-container">
+        <!-- Dynamic content -->
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <h2 class="section-title" data-i18n="contact_title">Contact</h2>
+      <div id="contact-container">
+        <!-- Dynamic content -->
+      </div>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="i18n.js"></script>
+</body>
+</html>
