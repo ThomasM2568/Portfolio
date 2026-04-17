@@ -2,9 +2,9 @@
   "fr": {
     "name": "Thomas Mirbey",
     "title": "Ingénieur Réseaux & Sécurité",
-    "header_desc": "Passionné par la sécurité des réseaux, la connectivité IIoT et l'automatisation des processus.",
+    "header_desc": "Passionné par la sécurité des réseaux, la connectivité IoT et l'automatisation des processus.",
     "about_title": "À propos de moi",
-    "about_text": "Passionné par les réseaux et la cybersécurité, je m’intéresse particulièrement à tout ce qui touche à l’automatisation. J’aime concevoir des infrastructures plus fiables, plus lisibles et surtout plus efficaces, en réduisant au maximum les tâches manuelles et les sources d’erreur. Cette approche, j’essaie de l’appliquer dans chacun de mes projets. En parallèle, je développe un intérêt marqué pour l’IoT, et plus particulièrement l’IIoT, où les enjeux de sécurité, de résilience et de performance sont critiques, notamment dans des contextes comme les systèmes industriels ou les smart grids.",
+    "about_text": "Je suis un ingénieur réseaux et sécurité spécialisé dans les systèmes IoT, l'automatisation et les protocoles de sécurité. Je suis passionné par le développement d'infrastructures réseaux sécurisées et évolutives. Actuellement, je perfectionne mes compétences à travers des expériences concrètes en sécurité réseau et en IIoT (IoT Industriel).",
     "exp_title": "Parcours Professionnel",
     "experiences": [
       {
@@ -12,9 +12,15 @@
         "company": "Grand Besançon Métropole",
         "role": "Apprenti Ingénieur Réseaux & Sécurité",
         "date": "Sep 2025 - Présent",
-        "desc": "Sécurisation des infrastructures réseaux de la métropole.",
-        "details": "Missions principales : Participation à la sécurisation d’infrastructures réseau critiques intégrant des systèmes IIoT (eau et assainissement), avec mise en œuvre d’actions de durcissement et de fiabilisation. Administration de firewalls Fortinet (FortiGate / FortiManager) et gestion des déploiements via templates et CLI. Exploitation d’audits de sécurité IoT et définition de remédiations en collaboration avec le RSSI. Automatisation de tâches réseau pour réduire les erreurs manuelles et améliorer la fiabilité. Contribution à la migration de l’IPAM (phpIPAM vers NetBox) afin de structurer et fiabiliser la gestion de l’adressage réseau.",
-        "logo": "./img/gbm.png"
+        "desc": "Gestion et sécurisation des infrastructures réseaux de la métropole.",
+        "intro": "Missions principales : Administration des équipements réseaux (Switchs, Routeurs), gestion de la sécurité périmétrique, et optimisation des performances réseau pour les services publics.",
+        "skills": [
+          "Administration des équipements réseaux (Switchs, Routeurs)",
+          "Gestion de la sécurité périmétrique",
+          "Optimisation des performances réseau",
+          "Support des services publics"
+        ],
+        "logo": "company1-logo.png"
       },
       {
         "id": "exp2",
@@ -22,7 +28,13 @@
         "role": "Apprenti IIOT",
         "date": "Sep 2024 - Fév 2025",
         "desc": "Développement et automatisation des processus de connectivité IoT.",
-        "details": "Focus technique : Mise en œuvre de protocoles TCP/IP et OPC/UA pour la remontée de données industrielles. Utilisation de JavaScript et d'API REST pour l'automatisation des flux de données.",
+        "intro": "Focus technique : Mise en œuvre de protocoles TCP/IP et OPC/UA pour la remontée de données industrielles. Utilisation de JavaScript et d'API REST pour l'automatisation des flux de données.",
+        "skills": [
+          "Mise en œuvre de protocoles TCP/IP et OPC/UA",
+          "Remontée de données industrielles",
+          "Utilisation de JavaScript et d'API REST",
+          "Automatisation des flux de données"
+        ],
         "logo": "company2-logo.png"
       },
       {
@@ -31,7 +43,13 @@
         "role": "Apprenti Sécurité Réseau et Automatisation",
         "date": "Sep 2023 - Août 2024",
         "desc": "Automatisation des tâches réseau et sécurité.",
-        "details": "Réalisations : Automatisation de la gestion IPAM et DNS. Configuration et administration de pare-feu Palo Alto et de reverse proxies. Développement de scripts pour améliorer l'efficacité opérationnelle.",
+        "intro": "Réalisations : Automatisation de la gestion IPAM et DNS. Configuration et administration de pare-feu Palo Alto et de reverse proxies. Développement de scripts pour améliorer l'efficacité opérationnelle.",
+        "skills": [
+          "Automatisation de la gestion IPAM et DNS",
+          "Configuration de pare-feu Palo Alto",
+          "Administration de reverse proxies",
+          "Développement de scripts d'automatisation"
+        ],
         "logo": "company3-logo.png"
       },
       {
@@ -40,7 +58,13 @@
         "role": "Stagiaire Sécurité Réseau et Automatisation",
         "date": "Jan 2023 - Mar 2023",
         "desc": "Support technique et assistance sur les projets d'automatisation.",
-        "details": "Apprentissage des bases de l'automatisation réseau et découverte des environnements de sécurité industrielle à grande échelle.",
+        "intro": "Apprentissage des bases de l'automatisation réseau et découverte des environnements de sécurité industrielle à grande échelle.",
+        "skills": [
+          "Apprentissage des bases de l'automatisation réseau",
+          "Découverte des environnements de sécurité industrielle",
+          "Support technique sur les projets",
+          "Environnements à grande échelle"
+        ],
         "logo": "company3-logo.png"
       }
     ],
@@ -50,19 +74,36 @@
         "id": "edu1",
         "title": "UFR STGI, Master en Systèmes Embarqués & IoT",
         "date": "2024 - 2026",
-        "details": "Spécialisation dans la conception de systèmes connectés, la sécurité des objets communicants et les protocoles réseaux basse consommation."
+        "intro": "Spécialisation dans la conception de systèmes connectés, la sécurité des objets communicants et les protocoles réseaux basse consommation.",
+        "skills": [
+          "Conception de systèmes connectés",
+          "Sécurité des objets communicants",
+          "Protocoles réseaux basse consommation",
+          "Architecture IoT avancée"
+        ]
       },
       {
         "id": "edu2",
         "title": "IUT Belfort-Montbéliard, BUT Réseaux et Télécommunications",
         "date": "2021 - 2024",
-        "details": "Major de promotion. Formation approfondie en administration réseaux, cybersécurité et télécommunications."
+        "intro": "Major de promotion. Formation approfondie en administration réseaux, cybersécurité et télécommunications.",
+        "skills": [
+          "Administration réseaux",
+          "Cybersécurité",
+          "Télécommunications",
+          "Major de promotion"
+        ]
       },
       {
         "id": "edu3",
         "title": "Lycée Armand Peugeot, Baccalauréat",
         "date": "2019 - 2021",
-        "details": "Spécialités NSI (Numérique et Sciences Informatiques), Mathématiques et Physique."
+        "intro": "",
+        "skills": [
+          "Numérique et Sciences Informatiques (NSI)",
+          "Mathématiques",
+          "Physique"
+        ]
       }
     ],
     "cert_title": "Certifications",
@@ -79,10 +120,24 @@
         "title": "ECOM (Electric Consumption Optimization and Monitoring)",
         "date": "Janv. 2024 – Janv. 2026",
         "desc": "Optimisation et partage collaboratif d'énergie dans les micro-réseaux résidentiels.",
-        "details": "Projet de recherche sur 3 ans (BUT3 à Master 2). Direction technique d'une solution de partage intelligent d'électricité en circuit court.<br><br><b>Points clés :</b><ul><li>Design de Data Pipeline (HA & Load Balancing)</li><li>Unification MQTT / HTTP / Websocket</li><li>Core API Python/Flask (OAuth 2.0)</li><li>Algorithmique d'optimisation de l'autoconsommation</li><li>Sécurisation & Résilience du Smart Grid</li></ul>",
+        "details": "Projet de recherche sur 3 ans (BUT3 à Master 2). Direction technique d'une solution de partage intelligent d'électricité en circuit court.",
         "icon": "bi-lightning-charge",
         "link": "project.html?id=ecom",
-        "skills": ["IoT", "Python", "Flask", "MQTT", "OAuth 2.0", "HA", "Smart Grid", "Architecture"]
+        "skills": ["IoT", "Python", "Flask", "MQTT", "OAuth 2.0", "HA", "Smart Grid", "Architecture"],
+        "media": [
+          {
+            "url": "https://via.placeholder.com/800x400?text=ECOM+Architecture",
+            "alt": "Architecture ECOM",
+            "type": "image",
+            "caption": "Architecture globale du système ECOM"
+          },
+          {
+            "url": "https://via.placeholder.com/800x400?text=Data+Pipeline",
+            "alt": "Data Pipeline MQTT/HTTP",
+            "type": "diagram",
+            "caption": "Pipeline de données avec MQTT et HTTP"
+          }
+        ]
       },
       {
         "id": "sae501",
@@ -91,7 +146,15 @@
         "desc": "Conception et déploiement d'une infrastructure réseau complète.",
         "icon": "bi-diagram-3",
         "link": "project.html?id=sae501",
-        "skills": ["Cisco", "HSRP", "VRRP", "Routage"]
+        "skills": ["Cisco", "HSRP", "VRRP", "Routage"],
+        "media": [
+          {
+            "url": "https://via.placeholder.com/800x400?text=Network+Topology",
+            "alt": "Topologie réseau SAÉ-501",
+            "type": "diagram",
+            "caption": "Topologie réseau avec HSRP/VRRP"
+          }
+        ]
       },
       {
         "id": "sae502",
@@ -100,7 +163,15 @@
         "desc": "Déploiement d'une infrastructure réseau sécurisée pour un hôpital.",
         "icon": "bi-shield-lock",
         "link": "project.html?id=sae502",
-        "skills": ["VLAN", "Firewall", "VPN", "RFID"]
+        "skills": ["VLAN", "Firewall", "VPN", "RFID"],
+        "media": [
+          {
+            "url": "https://via.placeholder.com/800x400?text=Hospital+Network+Security",
+            "alt": "Schéma de sécurité hospitalier",
+            "type": "diagram",
+            "caption": "Architecture de sécurité réseau hospitalière"
+          }
+        ]
       }
     ],
     "contact_title": "Contact",
@@ -109,7 +180,8 @@
     "theme_nebula": "Nébuleuse",
     "theme_aurora": "Aurore",
     "project_overview": "Présentation du projet",
-    "project_tech": "Détails Techniques & Compétences"
+    "project_tech": "Détails Techniques & Compétences",
+    "project_media": "Visuels & Schémas"
   },
   "en": {
     "name": "Thomas Mirbey",
@@ -125,7 +197,13 @@
         "role": "Network & Security Apprentice Engineer",
         "date": "Sep 2025 - Present",
         "desc": "Management and securing of the metropolitan network infrastructures.",
-        "details": "Core missions: Administration of network equipment (Switches, Routers), perimeter security management, and network performance optimization for public services.",
+        "intro": "Core missions: Administration of network equipment (Switches, Routers), perimeter security management, and network performance optimization for public services.",
+        "skills": [
+          "Administration of network equipment (Switches, Routers)",
+          "Perimeter security management",
+          "Network performance optimization",
+          "Public services support"
+        ],
         "logo": "company1-logo.png"
       },
       {
@@ -134,7 +212,13 @@
         "role": "IIOT Apprentice",
         "date": "Sep 2024 - Feb 2025",
         "desc": "Developed and automated IoT connectivity processes.",
-        "details": "Technical focus: Implementation of TCP/IP and OPC/UA protocols for industrial data collection. Used JavaScript and REST APIs for data flow automation.",
+        "intro": "Technical focus: Implementation of TCP/IP and OPC/UA protocols for industrial data collection. Used JavaScript and REST APIs for data flow automation.",
+        "skills": [
+          "Implementation of TCP/IP and OPC/UA protocols",
+          "Industrial data collection",
+          "JavaScript and REST APIs usage",
+          "Data flow automation"
+        ],
         "logo": "company2-logo.png"
       },
       {
@@ -143,7 +227,13 @@
         "role": "Network Security and Automation Apprentice",
         "date": "Sep 2023 - Aug 2024",
         "desc": "Automated network and security tasks.",
-        "details": "Achievements: Automated IPAM and DNS management. Configuration and administration of Palo Alto firewalls and reverse proxies. Developed scripts to improve operational efficiency.",
+        "intro": "Achievements: Automated IPAM and DNS management. Configuration and administration of Palo Alto firewalls and reverse proxies. Developed scripts to improve operational efficiency.",
+        "skills": [
+          "Automated IPAM and DNS management",
+          "Palo Alto firewall configuration",
+          "Reverse proxy administration",
+          "Automation script development"
+        ],
         "logo": "company3-logo.png"
       },
       {
@@ -152,7 +242,13 @@
         "role": "Network Security and Automation Trainee",
         "date": "Jan 2023 - Mar 2023",
         "desc": "Technical support and assistance on automation projects.",
-        "details": "Learning the basics of network automation and discovering large-scale industrial security environments.",
+        "intro": "Learning the basics of network automation and discovering large-scale industrial security environments.",
+        "skills": [
+          "Learning network automation basics",
+          "Discovery of industrial security environments",
+          "Technical support on projects",
+          "Large-scale environments"
+        ],
         "logo": "company3-logo.png"
       }
     ],
@@ -162,19 +258,36 @@
         "id": "edu1",
         "title": "UFR STGI, Master in Embedded Systems & IoT",
         "date": "2024 - 2026",
-        "details": "Specialization in connected systems design, security of communicating objects, and low-power network protocols."
+        "intro": "Specialization in connected systems design, security of communicating objects, and low-power network protocols.",
+        "skills": [
+          "Connected systems design",
+          "Security of communicating objects",
+          "Low-power network protocols",
+          "Advanced IoT architecture"
+        ]
       },
       {
         "id": "edu2",
         "title": "IUT Belfort-Montbéliard, Bachelor's in Networks and Telecommunications",
         "date": "2021 - 2024",
-        "details": "Valedictorian. In-depth training in network administration, cybersecurity, and telecommunications."
+        "intro": "Valedictorian. In-depth training in network administration, cybersecurity, and telecommunications.",
+        "skills": [
+          "Network administration",
+          "Cybersecurity",
+          "Telecommunications",
+          "Valedictorian"
+        ]
       },
       {
         "id": "edu3",
         "title": "Lycée Armand Peugeot, Baccalaureate",
         "date": "2019 - 2021",
-        "details": "Specialties in Digital Sciences, Mathematics, and Physics."
+        "intro": "",
+        "skills": [
+          "Digital Sciences and Computer Science (NSI)",
+          "Mathematics",
+          "Physics"
+        ]
       }
     ],
     "cert_title": "Certifications",
@@ -191,10 +304,24 @@
         "title": "ECOM (Electric Consumption Optimization and Monitoring)",
         "date": "Jan. 2024 – Jan. 2026",
         "desc": "Optimization and Collaborative Energy Sharing in Residential Microgrids.",
-        "details": "3-year research project (BUT3 to Master 2). Technical direction of a smart electricity sharing solution in short circuits.<br><br><b>Key points:</b><ul><li>Data Pipeline Design (HA & Load Balancing)</li><li>MQTT / HTTP / Websocket Unification</li><li>Python/Flask Core API (OAuth 2.0)</li><li>Self-consumption optimization algorithms</li><li>Smart Grid Security & Resilience</li></ul>",
+        "details": "3-year research project (BUT3 to Master 2). Technical direction of a smart electricity sharing solution in short circuits.",
         "icon": "bi-lightning-charge",
         "link": "project.html?id=ecom",
-        "skills": ["IoT", "Python", "Flask", "MQTT", "OAuth 2.0", "HA", "Smart Grid", "Architecture"]
+        "skills": ["IoT", "Python", "Flask", "MQTT", "OAuth 2.0", "HA", "Smart Grid", "Architecture"],
+        "media": [
+          {
+            "url": "https://via.placeholder.com/800x400?text=ECOM+Architecture",
+            "alt": "ECOM Architecture",
+            "type": "image",
+            "caption": "Overall ECOM system architecture"
+          },
+          {
+            "url": "https://via.placeholder.com/800x400?text=Data+Pipeline",
+            "alt": "Data Pipeline MQTT/HTTP",
+            "type": "diagram",
+            "caption": "Data pipeline with MQTT and HTTP"
+          }
+        ]
       },
       {
         "id": "sae501",
@@ -203,7 +330,15 @@
         "desc": "Designed and deployed a complete network infrastructure.",
         "icon": "bi-diagram-3",
         "link": "project.html?id=sae501",
-        "skills": ["Cisco", "HSRP", "VRRP", "Routing"]
+        "skills": ["Cisco", "HSRP", "VRRP", "Routing"],
+        "media": [
+          {
+            "url": "https://via.placeholder.com/800x400?text=Network+Topology",
+            "alt": "SAÉ-501 Network Topology",
+            "type": "diagram",
+            "caption": "Network topology with HSRP/VRRP"
+          }
+        ]
       },
       {
         "id": "sae502",
@@ -212,7 +347,15 @@
         "desc": "Deployed a secure network infrastructure for a hospital.",
         "icon": "bi-shield-lock",
         "link": "project.html?id=sae502",
-        "skills": ["VLAN", "Firewall", "VPN", "RFID"]
+        "skills": ["VLAN", "Firewall", "VPN", "RFID"],
+        "media": [
+          {
+            "url": "https://via.placeholder.com/800x400?text=Hospital+Network+Security",
+            "alt": "Hospital security diagram",
+            "type": "diagram",
+            "caption": "Hospital network security architecture"
+          }
+        ]
       }
     ],
     "contact_title": "Contact",
@@ -221,6 +364,7 @@
     "theme_nebula": "Nebula",
     "theme_aurora": "Aurora",
     "project_overview": "Project Overview",
-    "project_tech": "Technical Details & Skills"
+    "project_tech": "Technical Details & Skills",
+    "project_media": "Visuals & Diagrams"
   }
 }
