@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderContact(data);
         
         // Update button texts
-        langToggle.textContent = lang === 'fr' ? 'EN' : 'FR';
+        langToggle.innerHTML = `<span>${lang === 'fr' ? 'EN' : 'FR'}</span>`;
         updateThemeButtonText(lang);
         document.documentElement.lang = lang;
     };
@@ -60,7 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const updateThemeButtonText = (lang) => {
         if (!siteData) return;
         const data = siteData[lang];
-        themeToggle.textContent = currentTheme === 'nebula' ? data.theme_aurora : data.theme_nebula;
+        // Use icons instead of text for theme toggle
+        themeToggle.innerHTML = currentTheme === 'nebula' ? 
+            '<i class="bi bi-sun-fill" title="' + data.theme_aurora + '"></i>' : 
+            '<i class="bi bi-moon-stars-fill" title="' + data.theme_nebula + '"></i>';
     };
 
     const applyTheme = (theme) => {
@@ -75,6 +78,12 @@ document.addEventListener('DOMContentLoaded', () => {
             panel.classList.toggle('active');
             if (chevron) chevron.classList.toggle('active-chevron');
         }
+    };
+
+    // Helper function to render skills list
+    const renderSkillsList = (skills) => {
+        if (!skills || !Array.isArray(skills)) return '';
+        return `<ul class="skills-list">${skills.map(skill => `<li>${skill}</li>`).join('')}</ul>`;
     };
 
     const renderExperiences = (exps) => {
@@ -97,7 +106,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <div class="details-panel" id="details-${exp.id}">
                     <div class="p-2 border-start border-3" style="border-color: var(--accent-color) !important;">
-                        ${exp.details}
+                        ${exp.intro ? `<p style="margin-bottom: 15px; line-height: 1.6;">${exp.intro}</p>` : ''}
+                        ${renderSkillsList(exp.skills)}
                     </div>
                 </div>
             </div>
@@ -107,23 +117,35 @@ document.addEventListener('DOMContentLoaded', () => {
     const renderEducation = (edu) => {
         const container = document.getElementById('edu-container');
         if (!container) return;
-        container.innerHTML = edu.map(item => `
-            <div class="edu-card collapsible-item" onclick="window.toggleDetails('${item.id}')">
-                <div class="edu-icon">
-                    <i class="bi bi-mortarboard"></i>
-                </div>
-                <div class="flex-grow-1">
-                    <div class="d-flex justify-content-between align-items-start flex-wrap">
-                        <h5 class="mb-1"><strong>${item.title}</strong></h5>
-                        <span class="text-muted small">${item.date}</span>
+        container.innerHTML = edu.map(item => {
+            // Split title into degree and institution if comma exists
+            // Assuming format in JSON is "Degree, Institution"
+            const parts = item.title.split(',');
+            const degree = parts[0].trim();
+            const institution = parts.length > 1 ? parts.slice(1).join(',').trim() : '';
+            
+            return `
+                <div class="edu-card collapsible-item" onclick="window.toggleDetails('${item.id}')">
+                    <div class="edu-icon">
+                        <i class="bi bi-mortarboard"></i>
                     </div>
-                    <div class="details-panel mt-2" id="details-${item.id}">
-                        ${item.details}
+                    <div class="edu-content flex-grow-1">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+                            <div style="flex: 1;">
+                                ${institution ? `<h5 class="mb-1"><strong>${institution}</strong></h5>` : ''}
+                                <h6 class="mb-1" style="color: var(--text-muted); font-weight: 500; font-size: 0.95rem;">${degree}</h6>
+                            </div>
+                            <span class="edu-date-badge">${item.date}</span>
+                        </div>
+                        <div class="details-panel mt-2" id="details-${item.id}">
+                            ${item.intro ? `<p style="margin-bottom: 15px; line-height: 1.6;">${item.intro}</p>` : ''}
+                            ${renderSkillsList(item.skills)}
+                        </div>
                     </div>
+                    <span class="chevron ms-2" id="chevron-${item.id}">▼</span>
                 </div>
-                <span class="chevron ms-2" id="chevron-${item.id}">▼</span>
-            </div>
-        `).join('');
+            `;
+        }).join('');
     };
 
     const renderCertifications = (certs) => {
@@ -145,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
         container.innerHTML = projs.map(proj => `
             <a href="${proj.link}" class="project-card" aria-label="${proj.title}">
                 <img src="${proj.icon}" alt="Icon" class="project-icon" />
-                <div>
+                <div class="flex-grow-1">
                     <strong>${proj.title}</strong><br />
                     <em>${proj.date}</em><br />
                     <span>${proj.desc}</span><br />

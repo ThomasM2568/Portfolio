@@ -205,7 +205,7 @@
       margin-top: -5px;
     }
     .details-panel.active {
-      max-height: 500px;
+      max-height: 800px;
       padding: 20px;
       border-top: 1px solid var(--accent-color);
       margin-bottom: 15px;
@@ -242,6 +242,20 @@
       border-radius: 12px;
       flex-shrink: 0;
     }
+    .edu-date-badge {
+      background: rgba(25, 118, 210, 0.08);
+      color: var(--accent-color);
+      border: 1px solid rgba(25, 118, 210, 0.2);
+      padding: 4px 12px;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .theme-aurora .edu-date-badge {
+      background: rgba(197, 160, 89, 0.1);
+      border-color: rgba(197, 160, 89, 0.2);
+    }
     .chevron {
       display: inline-block;
       transition: transform 0.3s;
@@ -250,6 +264,26 @@
     }
     .active-chevron {
       transform: rotate(180deg);
+    }
+
+    /* Skills List Styles */
+    .skills-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 10px 0;
+    }
+    .skills-list li {
+      padding: 6px 0;
+      padding-left: 20px;
+      position: relative;
+      line-height: 1.6;
+    }
+    .skills-list li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--accent-color);
+      font-weight: bold;
     }
     
     /* Social Icons Styles */
@@ -361,44 +395,396 @@
       cursor: pointer;
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: 1024px) {
+      .container {
+        padding: 0 15px;
+      }
+      .bg-section {
+        padding: 1.75rem;
+      }
       .project-card {
-        flex-wrap: wrap;
+        padding: 1.25rem;
+      }
+      .controls-container {
+        gap: 8px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 12px;
+      }
+      .py-5 {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+      }
+      .bg-section {
+        padding: 1.5rem;
+        border-radius: 12px;
+        margin-bottom: 1.5rem;
+      }
+      .section-title {
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+      }
+      .project-card {
         flex-direction: column;
         align-items: flex-start;
+        padding: 1rem;
+        gap: 12px;
       }
       .project-icon {
-        margin-bottom: 0.75rem;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 0.5rem;
         margin-right: 0;
       }
       .company-logo {
+        width: 35px;
+        height: 35px;
         margin-bottom: 0.5rem;
+        margin-right: 0;
       }
-      .mb-3.d-flex.align-items-center {
+      .timeline {
+        padding-left: 20px;
+      }
+      .timeline-dot {
+        left: -28px;
+        width: 12px;
+        height: 12px;
+      }
+      .collapsible-item {
+        padding: 12px;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .chevron {
+        margin-left: 0;
+        margin-top: 8px;
+      }
+      .edu-card {
+        flex-direction: column;
+        gap: 12px;
+      }
+      .edu-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.5rem;
+      }
+      .social-links {
+        gap: 15px;
+      }
+      .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
+      }
+      #cert-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 12px;
+      }
+      .cert-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding: 12px;
+      }
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+      .controls-container {
+        top: 15px;
+        right: 15px;
+        padding: 4px;
+      }
+      .control-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 0.75rem;
+      }
+      .cli-container {
+        padding: 4px 10px;
+        font-size: 0.9rem;
+      }
+      .about-content {
+        font-size: 1rem;
+        padding-left: 15px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .container {
+        padding: 0 10px;
+      }
+      .py-5 {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+      }
+      .mb-5 {
+        margin-bottom: 1rem !important;
+      }
+      header.text-center {
+        margin-bottom: 1.5rem;
+      }
+      .bg-section {
+        padding: 1rem;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .section-title {
+        font-size: 1.1rem;
+        margin-bottom: 0.75rem;
+      }
+      .project-card {
         flex-direction: column;
         align-items: flex-start;
+        padding: 0.75rem;
+        gap: 10px;
+      }
+      .project-icon {
+        width: 35px;
+        height: 35px;
+        margin-bottom: 0.25rem;
+        margin-right: 0;
+      }
+      .company-logo {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 0.25rem;
+        margin-right: 0;
+      }
+      .timeline {
+        padding-left: 15px;
+      }
+      .timeline-dot {
+        left: -22px;
+        width: 10px;
+        height: 10px;
+      }
+      .timeline-item {
+        margin-bottom: 20px;
+      }
+      .collapsible-item {
+        padding: 10px;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .d-flex.justify-content-between {
+        flex-direction: column;
+        gap: 8px;
+      }
+      .badge {
+        font-size: 0.7rem;
+        padding: 0.35rem 0.65rem;
+      }
+      .chevron {
+        margin-left: 0;
+        margin-top: 6px;
+        font-size: 0.9rem;
+      }
+      .edu-card {
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px;
+      }
+      .edu-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.3rem;
+      }
+      .edu-content {
+        width: 100%;
+      }
+      .skills-list li {
+        font-size: 0.9rem;
+        padding: 4px 0;
+        padding-left: 18px;
+      }
+      .social-links {
+        gap: 12px;
+      }
+      .social-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 1.1rem;
+      }
+      #cert-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+      .cert-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        padding: 10px;
+      }
+      .cert-info {
+        font-size: 0.8rem;
+      }
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .contact-card {
+        padding: 15px;
+      }
+      .contact-card i {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+      }
+      .contact-card span {
+        font-size: 0.9rem;
+      }
+      .contact-card label {
+        font-size: 0.7rem;
+      }
+      .controls-container {
+        top: 5px;
+        right: 5px;
+        gap: 3px;
+      }
+      .control-btn {
+        padding: 5px 10px;
+        font-size: 0.7rem;
+        min-width: 45px;
+      }
+      .cli-container {
+        padding: 3px 8px;
+        font-size: 0.8rem;
+        border-radius: 3px;
+      }
+      .cli-prompt {
+        margin-right: 5px;
+      }
+      #name-animation {
+        font-size: 1.2rem;
+      }
+      .cursor {
+        width: 8px;
+        height: 1em;
+        margin-left: 3px;
+      }
+      h1.display-4 {
+        font-size: 1.75rem !important;
+      }
+      h3 {
+        font-size: 1.1rem;
+      }
+      .about-content {
+        font-size: 0.95rem;
+        padding-left: 12px;
+      }
+      .contact-section {
+        padding: 1rem;
+        margin-top: 1rem;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .controls-container {
+        flex-direction: column;
+        top: 3px;
+        right: 3px;
+        gap: 2px;
+      }
+      .control-btn {
+        padding: 4px 8px;
+        font-size: 0.65rem;
+        min-width: 40px;
+      }
+      .project-card {
+        padding: 0.5rem;
+      }
+      .bg-section {
+        padding: 0.75rem;
+      }
+      .section-title {
+        font-size: 1rem;
+      }
+      h1.display-4 {
+        font-size: 1.5rem !important;
       }
     }
     /* Controls Styles */
     .controls-container {
       position: fixed;
-      top: 20px;
-      right: 20px;
+      top: 25px;
+      right: 25px;
       z-index: 1000;
       display: flex;
-      gap: 10px;
+      gap: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      padding: 6px;
+      border-radius: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+    }
+    .theme-aurora .controls-container {
+      background: rgba(255, 255, 255, 0.6);
+      border-color: rgba(197, 160, 89, 0.2);
+      box-shadow: 0 8px 32px rgba(197, 160, 89, 0.15);
     }
     .control-btn {
-      background: var(--accent-color);
-      color: white;
+      background: transparent;
+      color: var(--text-color);
       border: none;
-      padding: 8px 16px;
-      border-radius: 20px;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
       cursor: pointer;
-      font-weight: bold;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      min-width: 60px;
-      transition: background 0.2s, transform 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: relative;
+      overflow: hidden;
+      font-size: 0.85rem;
+      padding: 0;
+    }
+    .control-btn i {
+      font-size: 1.2rem;
+      z-index: 2;
+      transition: transform 0.3s ease;
+    }
+    .control-btn span {
+      z-index: 2;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .control-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--accent-color);
+      opacity: 0;
+      transform: scale(0.6);
+      transition: all 0.3s ease;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .control-btn:hover {
+      color: white !important;
+      transform: translateY(-3px);
+    }
+    .control-btn:hover i {
+      transform: rotate(15deg);
+    }
+    .control-btn:hover::before {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .theme-aurora .control-btn:hover {
+      color: #fff !important;
+    } transition: background 0.2s, transform 0.2s;
     }
     .control-btn:hover {
       background: var(--accent-hover);

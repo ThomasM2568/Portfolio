@@ -48,8 +48,11 @@
       border: 1px solid rgba(25, 118, 210, 0.1);
       box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     }
+    .theme-aurora .bg-section {
+      border-color: rgba(197, 160, 89, 0.1);
+    }
     .project-header {
-      padding: 4rem 0;
+      padding: 3rem 0;
       background: linear-gradient(135deg, var(--section-bg) 0%, var(--bg-color) 100%);
       border-radius: 0 0 50px 50px;
       margin-bottom: 3rem;
@@ -87,12 +90,6 @@
     .theme-aurora .skill-badge {
       background: rgba(197, 160, 89, 0.1);
     }
-    .theme-aurora .bg-section {
-      border-color: rgba(197, 160, 89, 0.1);
-    }
-    .theme-aurora .project-header {
-      border-bottom-color: rgba(197, 160, 89, 0.1);
-    }
     .project-icon-large {
       font-size: 4rem;
       color: var(--accent-color);
@@ -100,22 +97,189 @@
     }
     .controls-container {
       position: fixed;
-      top: 20px;
-      right: 20px;
+      top: 25px;
+      right: 25px;
       z-index: 1000;
       display: flex;
-      gap: 10px;
+      gap: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      padding: 6px;
+      border-radius: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+    }
+    .theme-aurora .controls-container {
+      background: rgba(255, 255, 255, 0.6);
+      border-color: rgba(197, 160, 89, 0.2);
+      box-shadow: 0 8px 32px rgba(197, 160, 89, 0.15);
     }
     .control-btn {
-      background: var(--accent-color);
-      color: white;
+      background: transparent;
+      color: var(--text-color);
       border: none;
-      padding: 8px 16px;
-      border-radius: 20px;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
       cursor: pointer;
-      font-weight: bold;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      min-width: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: relative;
+      overflow: hidden;
+      font-size: 0.85rem;
+      padding: 0;
+    }
+    .control-btn i {
+      font-size: 1.2rem;
+      z-index: 2;
+      transition: transform 0.3s ease;
+    }
+    .control-btn span {
+      z-index: 2;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .control-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--accent-color);
+      opacity: 0;
+      transform: scale(0.6);
+      transition: all 0.3s ease;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .control-btn:hover {
+      color: white !important;
+      transform: translateY(-3px);
+    }
+    .control-btn:hover i {
+      transform: rotate(15deg);
+    }
+    .control-btn:hover::before {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .theme-aurora .control-btn:hover {
+      color: #fff !important;
+    }
+
+    /* Media Gallery Styles */
+    .media-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .media-item {
+      background: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(25, 118, 210, 0.1);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .theme-aurora .media-item {
+      border-color: rgba(197, 160, 89, 0.1);
+    }
+    .media-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px var(--shadow-color);
+      border-color: var(--accent-color);
+    }
+    .media-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+    .media-caption {
+      padding: 15px;
+      font-size: 0.95rem;
+      color: var(--text-color);
+      font-weight: 500;
+      text-align: center;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .project-header {
+        padding: 2rem 0;
+        margin-bottom: 2rem;
+      }
+      .project-icon-large {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      .bg-section {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+      .controls-container {
+        top: 10px;
+        right: 10px;
+        gap: 5px;
+      }
+      .control-btn {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+        min-width: 50px;
+      }
+      .media-gallery {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+      .skill-badge {
+        font-size: 0.75rem;
+        padding: 4px 12px;
+        margin: 3px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .project-header {
+        padding: 1.5rem 0;
+        margin-bottom: 1.5rem;
+      }
+      .project-icon-large {
+        font-size: 2.5rem;
+        margin-bottom: 0.75rem;
+      }
+      .container {
+        padding: 0 10px;
+      }
+      .bg-section {
+        padding: 1rem;
+        border-radius: 12px;
+      }
+      .section-title {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+      }
+      .controls-container {
+        top: 5px;
+        right: 5px;
+        gap: 3px;
+      }
+      .control-btn {
+        padding: 5px 10px;
+        font-size: 0.75rem;
+        min-width: 45px;
+      }
+      .back-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 0.75rem 1rem;
+      }
     }
   </style>
 </head>
@@ -137,12 +301,19 @@
   </header>
 
   <div class="container pb-5">
-    <div class="row">
+    <div class="row g-4">
       <div class="col-lg-8">
         <section class="bg-section">
           <h2 class="section-title" data-i18n="project_overview">Project Overview</h2>
           <div id="p-details" class="lh-lg">
             <!-- Content from JSON -->
+          </div>
+        </section>
+
+        <section class="bg-section" id="media-section" style="display: none;">
+          <h2 class="section-title" data-i18n="project_media">Visuals & Diagrams</h2>
+          <div id="p-media" class="media-gallery">
+            <!-- Media from JSON -->
           </div>
         </section>
       </div>
@@ -174,9 +345,12 @@
 
         const applyTheme = (theme) => {
             document.body.className = `theme-${theme}`;
-            document.getElementById('theme-toggle').textContent = theme === 'nebula' ? 
-                (siteData ? siteData[currentLang].theme_aurora : 'Aurore') : 
-                (siteData ? siteData[currentLang].theme_nebula : 'Nébuleuse');
+            if (siteData) {
+                const data = siteData[currentLang];
+                document.getElementById('theme-toggle').innerHTML = theme === 'nebula' ? 
+                    '<i class="bi bi-sun-fill" title="' + data.theme_aurora + '"></i>' : 
+                    '<i class="bi bi-moon-stars-fill" title="' + data.theme_nebula + '"></i>';
+            }
         };
 
         const updateUI = (lang) => {
@@ -206,6 +380,21 @@
                 } else {
                     skillsContainer.innerHTML = '';
                 }
+
+                // Update Media Gallery
+                const mediaSection = document.getElementById('media-section');
+                const mediaContainer = document.getElementById('p-media');
+                if (project.media && project.media.length > 0) {
+                    mediaSection.style.display = 'block';
+                    mediaContainer.innerHTML = project.media.map(media => `
+                        <div class="media-item">
+                            <img src="${media.url}" alt="${media.alt}" />
+                            <div class="media-caption">${media.caption || media.alt}</div>
+                        </div>
+                    `).join('');
+                } else {
+                    mediaSection.style.display = 'none';
+                }
             }
 
             document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -217,7 +406,7 @@
             const backBtnText = data.back_btn.replace('← ', '').replace('←', '');
             document.getElementById('back-btn-text').textContent = backBtnText;
 
-            document.getElementById('lang-toggle').textContent = lang === 'fr' ? 'EN' : 'FR';
+            document.getElementById('lang-toggle').innerHTML = `<span>${lang === 'fr' ? 'EN' : 'FR'}</span>`;
             applyTheme(currentTheme);
         };
 
