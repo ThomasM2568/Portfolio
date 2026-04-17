@@ -90,6 +90,21 @@
     .theme-aurora .skill-badge {
       background: rgba(197, 160, 89, 0.1);
     }
+    .edu-date-badge {
+      background: rgba(25, 118, 210, 0.08);
+      color: var(--accent-color);
+      border: 1px solid rgba(25, 118, 210, 0.2);
+      padding: 4px 12px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      white-space: nowrap;
+      display: inline-block;
+    }
+    .theme-aurora .edu-date-badge {
+      background: rgba(197, 160, 89, 0.1);
+      border-color: rgba(197, 160, 89, 0.2);
+    }
     .project-icon-large {
       font-size: 4rem;
       color: var(--accent-color);
@@ -295,7 +310,9 @@
         <i class="bi bi-rocket-takeoff"></i>
       </div>
       <h1 id="p-title" class="display-4 fw-bold mb-3">Project Title</h1>
-      <h4 id="p-date" class="text-muted mb-4">Date</h4>
+      <div class="mb-4">
+        <span id="p-date" class="edu-date-badge">Date</span>
+      </div>
       <p id="p-desc" class="lead mx-auto" style="max-width: 800px;">Description</p>
     </div>
   </header>
