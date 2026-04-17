@@ -20,7 +20,7 @@
           "Optimisation des performances réseau",
           "Support des services publics"
         ],
-        "logo": "company1-logo.png"
+        "logo": "./img/gbm.png"
       },
       {
         "id": "exp2",
@@ -35,7 +35,7 @@
           "Utilisation de JavaScript et d'API REST",
           "Automatisation des flux de données"
         ],
-        "logo": "company2-logo.png"
+        "logo": "./img/forvia.jpg"
       },
       {
         "id": "exp3",
@@ -50,7 +50,7 @@
           "Administration de reverse proxies",
           "Développement de scripts d'automatisation"
         ],
-        "logo": "company3-logo.png"
+        "logo": "./img/stellantis.png"
       },
       {
         "id": "exp4",
@@ -65,7 +65,7 @@
           "Support technique sur les projets",
           "Environnements à grande échelle"
         ],
-        "logo": "company3-logo.png"
+        "logo": "./img/stellantis.png"
       }
     ],
     "edu_title": "Formation",
