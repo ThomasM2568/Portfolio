@@ -365,7 +365,7 @@
         "title": "SAÉ-502: Hospital Network Security",
         "date": "Oct 2023 - Nov 2023",
         "desc": "Deployed a secure network infrastructure for a hospital.",
-        "icon": "./img/sae502.png",
+        "icon": "./img/sae502.jpg",
         "link": "project.html?id=sae502",
         "skills": ["VLAN", "Firewall", "VPN", "RFID"],
         "media": [
