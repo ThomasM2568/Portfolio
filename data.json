@@ -16,10 +16,10 @@
         "intro": "Missions principales :",
         "skills": [
           "Administration d’équipements réseau (switchs / routeurs Cisco, pare-feux Fortinet)",
-    		  "Sécurisation et fiabilisation des automates liés à l’eau et à l’assainissement",
-    		  "Analyse d’audits de sécurité et proposition de mesures de remédiation avec le RSSI",
-    		  "Automatisation de configurations (FortiManager, scripts CLI / Jinja / TCL) et développement de scripts Python (Scan réseau / Migration PHPIpam > Netbox, Analyse de configuration obsolètes FW)",
-    		  "Participation au maintien en conditions opérationnelles (MCO)"
+          "Sécurisation et fiabilisation des automates liés à l’eau et à l’assainissement",
+          "Analyse d’audits de sécurité et proposition de mesures de remédiation avec le RSSI",
+          "Automatisation de configurations (FortiManager, scripts CLI / Jinja / TCL) et développement de scripts Python (Scan réseau / Migration PHPIpam > Netbox, Analyse de configuration obsolètes FW)",
+          "Participation au maintien en conditions opérationnelles (MCO)"
         ],
         "logo": "./img/gbm.png"
       },
@@ -39,38 +39,38 @@
         "logo": "./img/forvia.jpg"
       },
       {
-		  "id": "exp3",
-		  "company": "Stellantis",
-		  "role": "Apprenti Sécurité Réseau et Automatisation",
-		  "date": "Sep 2023 - Août 2024",
-		  "desc": "Automatisation et standardisation des opérations réseau et sécurité.",
-		  "intro": "Missions principales :",
-		  "skills": [
-			"Automatisation de la gestion IPAM / DNS (Infoblox)",
-			"Configuration et gestion de pare-feu Palo Alto et de reverse proxies F5",
-			"Développement et maintenance de scripts d’automatisation (Python, Perl, PHP)",
-			"Point d’entrée pour les besoins liés à l’automatisation (évolution et maintenance des outils)",
-			"Automatisation de tâches de sécurité (règles firewall, gestion des accès LDAP)",
-			"Analyse et extraction de configurations réseau pour améliorer la visibilité"
-		  ],
-		  "logo": "./img/stellantis.png"
-		},
+        "id": "exp3",
+        "company": "Stellantis",
+        "role": "Apprenti Sécurité Réseau et Automatisation",
+        "date": "Sep 2023 - Août 2024",
+        "desc": "Automatisation et standardisation des opérations réseau et sécurité.",
+        "intro": "Missions principales :",
+        "skills": [
+          "Automatisation de la gestion IPAM / DNS (Infoblox)",
+          "Configuration et gestion de pare-feu Palo Alto et de reverse proxies F5",
+          "Développement et maintenance de scripts d’automatisation (Python, Perl, PHP)",
+          "Point d’entrée pour les besoins liés à l’automatisation (évolution et maintenance des outils)",
+          "Automatisation de tâches de sécurité (règles firewall, gestion des accès LDAP)",
+          "Analyse et extraction de configurations réseau pour améliorer la visibilité"
+        ],
+        "logo": "./img/stellantis.png"
+      },
       {
-  "id": "exp4",
-  "company": "Stellantis",
-  "role": "Stagiaire Sécurité Réseau et Automatisation",
-  "date": "Jan 2023 - Mar 2023",
-  "desc": "Développement d’outils d’automatisation pour le diagnostic et le troubleshooting des incidents réseau et sécurité.",
-  "intro": "Missions principales :",
-  "skills": [
-    "Développement d’un outil de diagnostic réseau en Python (analyse des flux entre DMZ)",
-    "Conception modulaire facilitant l’intégration et la maintenance des fonctionnalités",
-    "Utilisation d’API REST pour interagir avec des équipements (Palo Alto, F5 BigIP)",
-    "Implémentation de Cisco Telemetry sur routeurs ASR9000 pour améliorer la supervision",
-    "Présentation de l’outil en anglais aux équipes techniques"
-  ],
-  "logo": "./img/stellantis.png"
-}
+        "id": "exp4",
+        "company": "Stellantis",
+        "role": "Stagiaire Sécurité Réseau et Automatisation",
+        "date": "Jan 2023 - Mar 2023",
+        "desc": "Développement d’outils d’automatisation pour le diagnostic et le troubleshooting des incidents réseau et sécurité.",
+        "intro": "Missions principales :",
+        "skills": [
+          "Développement d’un outil de diagnostic réseau en Python (analyse des flux entre DMZ)",
+          "Conception modulaire facilitant l’intégration et la maintenance des fonctionnalités",
+          "Utilisation d’API REST pour interagir avec des équipements (Palo Alto, F5 BigIP)",
+          "Implémentation de Cisco Telemetry sur routeurs ASR9000 pour améliorer la supervision",
+          "Présentation de l’outil en anglais aux équipes techniques"
+        ],
+        "logo": "./img/stellantis.png"
+      }
     ],
     "edu_title": "Formation",
     "education": [
@@ -99,40 +99,40 @@
         ]
       },
       {
-      "id": "edu3",
-      "title": "Lycée Armand Peugeot, Baccalauréat",
-      "date": "2019 - 2021",
-      "intro": "Mention Assez Bien. Spécialités Numérique et Sciences Informatiques, Mathématiques et Physique-Chimie.",
-      "skills": [
-        "Programmation Python (bases, algorithmique)",
-        "Réseaux fondamentaux (IP, TCP/UDP)",
-        "Systèmes Linux (commandes, environnement)"
-      ]
-    }
+        "id": "edu3",
+        "title": "Lycée Armand Peugeot, Baccalauréat",
+        "date": "2019 - 2021",
+        "intro": "Mention Assez Bien. Spécialités Numérique et Sciences Informatiques, Mathématiques et Physique-Chimie.",
+        "skills": [
+          "Programmation Python (bases, algorithmique)",
+          "Réseaux fondamentaux (IP, TCP/UDP)",
+          "Systèmes Linux (commandes, environnement)"
+        ]
+      }
     ],
     "cert_title": "Certifications",
     "certifications": [
-    {
-      "name": "Cisco CCNA Routing & Switching – Sept 2022 (Expire Sept 2025)",
-      "url": "https://www.cisco.com/c/en/us/training-events/training-certifications/certifications.html",
-      "badge": "ccna-badge.png"
-    },
-    {
-      "name": "Fortinet Networking Fundamentals – Oct 2025",
-      "url": "https://www.fortinet.com/training",
-      "badge": "fortinet-badge.png"
-    },
-    {
-      "name": "F5 – Getting Started with Local Traffic Manager (LTM) – Nov 2024",
-      "url": "https://www.f5.com/training",
-      "badge": "f5-badge.png"
-    },
-    {
-      "name": "F5 – Advanced Web Application Firewall (WAF) – Nov 2024",
-      "url": "https://www.f5.com/training",
-      "badge": "f5-badge.png"
-    }
-  ],
+      {
+        "name": "Cisco CCNA Routing & Switching – Sept 2022 (Expire Sept 2025)",
+        "url": "https://www.cisco.com/c/en/us/training-events/training-certifications/certifications.html",
+        "badge": "ccna-badge.png"
+      },
+      {
+        "name": "Fortinet Networking Fundamentals – Oct 2025",
+        "url": "https://www.fortinet.com/training",
+        "badge": "fortinet-badge.png"
+      },
+      {
+        "name": "F5 – Getting Started with Local Traffic Manager (LTM) – Nov 2024",
+        "url": "https://www.f5.com/training",
+        "badge": "f5-badge.png"
+      },
+      {
+        "name": "F5 – Advanced Web Application Firewall (WAF) – Nov 2024",
+        "url": "https://www.f5.com/training",
+        "badge": "f5-badge.png"
+      }
+    ],
     "proj_title": "Projets Clés",
     "projects": [
       {
@@ -206,9 +206,9 @@
   "en": {
     "name": "Thomas Mirbey",
     "title": "Network & Security Engineer",
-    "header_desc": "Passionate about network security, IoT connectivity, and process automation.",
+    "header_desc": "Passionate about network security, IIoT, and automation.",
     "about_title": "About Me",
-    "about_text": "I am a network & security engineer with expertise in IoT systems, automation, and security protocols. I am passionate about developing secure and scalable network infrastructures and automating processes to increase efficiency. Currently, I am honing my skills through hands-on experience in both network security and IIoT (Industrial IoT).",
+    "about_text": "A 23-year-old Network and Security Engineer, particularly interested in industrial environments. A future graduate with a Master's in Internet of Things from UFR STGI Montbéliard, I aim to leverage my dual expertise in networks/security and automation to design reliable solutions that simplify operations and limit human error. Attracted by international environments, I wish to evolve in demanding technical contexts and contribute to concrete projects.",
     "exp_title": "Professional Background",
     "experiences": [
       {
@@ -216,67 +216,71 @@
         "company": "Grand Besançon Métropole",
         "role": "Network & Security Apprentice Engineer",
         "date": "Sep 2025 - Present",
-        "desc": "Management and securing of the metropolitan network infrastructures.",
-        "intro": "Core missions: Administration of network equipment (Switches, Routers), perimeter security management, and network performance optimization for public services.",
+        "desc": "Participation in the operation, securing, and automation of network infrastructures and IoT environments.",
+        "intro": "Main missions:",
         "skills": [
-          "Administration of network equipment (Switches, Routers)",
-          "Perimeter security management",
-          "Network performance optimization",
-          "Public services support"
+          "Administration of network equipment (Cisco switches / routers, Fortinet firewalls)",
+          "Securing and improving reliability of water and sanitation-related PLCs",
+          "Analysis of security audits and proposal of remediation measures with the CISO",
+          "Configuration automation (FortiManager, CLI / Jinja / TCL scripts) and Python script development (Network scan / PHPIpam > Netbox migration, Obsolete FW configuration analysis)",
+          "Participation in Maintenance in Operational Conditions (MOC)"
         ],
-        "logo": "company1-logo.png"
+        "logo": "./img/gbm.png"
       },
       {
         "id": "exp2",
         "company": "FORVIA",
         "role": "IIOT Apprentice",
         "date": "Sep 2024 - Feb 2025",
-        "desc": "Developed and automated IoT connectivity processes.",
-        "intro": "Technical focus: Implementation of TCP/IP and OPC/UA protocols for industrial data collection. Used JavaScript and REST APIs for data flow automation.",
+        "desc": "Development and automation of IoT connectivity processes.",
+        "intro": "Technical focus: Implementation of TCP/IP and OPC/UA protocols for industrial data collection. Use of JavaScript and REST APIs for data flow automation.",
         "skills": [
           "Implementation of TCP/IP and OPC/UA protocols",
           "Industrial data collection",
-          "JavaScript and REST APIs usage",
+          "Use of JavaScript and REST APIs",
           "Data flow automation"
         ],
-        "logo": "company2-logo.png"
+        "logo": "./img/forvia.jpg"
       },
       {
         "id": "exp3",
         "company": "Stellantis",
         "role": "Network Security and Automation Apprentice",
         "date": "Sep 2023 - Aug 2024",
-        "desc": "Automated network and security tasks.",
-        "intro": "Achievements: Automated IPAM and DNS management. Configuration and administration of Palo Alto firewalls and reverse proxies. Developed scripts to improve operational efficiency.",
+        "desc": "Automation and standardization of network and security operations.",
+        "intro": "Main missions:",
         "skills": [
-          "Automated IPAM and DNS management",
-          "Palo Alto firewall configuration",
-          "Reverse proxy administration",
-          "Automation script development"
+          "Automation of IPAM / DNS management (Infoblox)",
+          "Configuration and management of Palo Alto firewalls and F5 reverse proxies",
+          "Development and maintenance of automation scripts (Python, Perl, PHP)",
+          "Point of contact for automation needs (evolution and maintenance of tools)",
+          "Automation of security tasks (firewall rules, LDAP access management)",
+          "Analysis and extraction of network configurations to improve visibility"
         ],
-        "logo": "company3-logo.png"
+        "logo": "./img/stellantis.png"
       },
       {
         "id": "exp4",
         "company": "Stellantis",
-        "role": "Network Security and Automation Trainee",
+        "role": "Network Security and Automation Intern",
         "date": "Jan 2023 - Mar 2023",
-        "desc": "Technical support and assistance on automation projects.",
-        "intro": "Learning the basics of network automation and discovering large-scale industrial security environments.",
+        "desc": "Development of automation tools for diagnostic and troubleshooting of network and security incidents.",
+        "intro": "Main missions:",
         "skills": [
-          "Learning network automation basics",
-          "Discovery of industrial security environments",
-          "Technical support on projects",
-          "Large-scale environments"
+          "Development of a network diagnostic tool in Python (traffic analysis between DMZs)",
+          "Modular design facilitating integration and maintenance of features",
+          "Use of REST APIs to interact with equipment (Palo Alto, F5 BigIP)",
+          "Implementation of Cisco Telemetry on ASR9000 routers to improve monitoring",
+          "Presentation of the tool in English to technical teams"
         ],
-        "logo": "company3-logo.png"
+        "logo": "./img/stellantis.png"
       }
     ],
-    "edu_title": "Training",
+    "edu_title": "Education",
     "education": [
       {
         "id": "edu1",
-        "title": "UFR STGI, Master in Embedded Systems & IoT",
+        "title": "UFR STGI, Master's in Embedded Systems & IoT",
         "date": "2024 - 2026",
         "intro": "Specialization in connected systems design, security of communicating objects, and low-power network protocols.",
         "skills": [
@@ -288,9 +292,9 @@
       },
       {
         "id": "edu2",
-        "title": "IUT Belfort-Montbéliard, Bachelor's in Networks and Telecommunications",
+        "title": "IUT Belfort-Montbéliard, BUT Networks and Telecommunications",
         "date": "2021 - 2024",
-        "intro": "Valedictorian. In-depth training in network administration, cybersecurity, and telecommunications.",
+        "intro": "Valedictorian. Training in network administration, cybersecurity, and telecommunications.",
         "skills": [
           "Network administration",
           "Cybersecurity",
@@ -302,20 +306,36 @@
         "id": "edu3",
         "title": "Lycée Armand Peugeot, Baccalaureate",
         "date": "2019 - 2021",
-        "intro": "",
+        "intro": "Honors (Mention Assez Bien). Specialties in Digital and Computer Sciences, Mathematics, and Physics-Chemistry.",
         "skills": [
-          "Digital Sciences and Computer Science (NSI)",
-          "Mathematics",
-          "Physics"
+          "Python programming (basics, algorithms)",
+          "Fundamental networks (IP, TCP/UDP)",
+          "Linux systems (commands, environment)"
         ]
       }
     ],
     "cert_title": "Certifications",
     "certifications": [
-      { "name": "Getting Started with Local Traffic Manager (LTM) – Nov 2024", "url": "https://www.f5.com/training", "badge": "ltm-badge.png" },
-      { "name": "Amazon API Gateway for Serverless Applications – Jul 2024", "url": "https://aws.amazon.com/training/", "badge": "aws-badge.png" },
-      { "name": "Introduction to Amazon API Gateway – Jul 2024", "url": "https://aws.amazon.com/training/", "badge": "aws-badge.png" },
-      { "name": "Cisco CCNA Routing & Switching – Sept 2022 (Expires Sept 2025)", "url": "https://www.cisco.com/c/en/us/training-events/training-certifications/certifications.html", "badge": "ccna-badge.png" }
+      {
+        "name": "Cisco CCNA Routing & Switching – Sept 2022 (Expires Sept 2025)",
+        "url": "https://www.cisco.com/c/en/us/training-events/training-certifications/certifications.html",
+        "badge": "ccna-badge.png"
+      },
+      {
+        "name": "Fortinet Networking Fundamentals – Oct 2025",
+        "url": "https://www.fortinet.com/training",
+        "badge": "fortinet-badge.png"
+      },
+      {
+        "name": "F5 – Getting Started with Local Traffic Manager (LTM) – Nov 2024",
+        "url": "https://www.f5.com/training",
+        "badge": "f5-badge.png"
+      },
+      {
+        "name": "F5 – Advanced Web Application Firewall (WAF) – Nov 2024",
+        "url": "https://www.f5.com/training",
+        "badge": "f5-badge.png"
+      }
     ],
     "proj_title": "Key Projects",
     "projects": [
@@ -323,7 +343,7 @@
         "id": "ecom",
         "title": "ECOM (Electric Consumption Optimization and Monitoring)",
         "date": "Jan. 2024 – Jan. 2026",
-        "desc": "Optimization and Collaborative Energy Sharing in Residential Microgrids.",
+        "desc": "Optimization and collaborative energy sharing in residential microgrids.",
         "details": "3-year research project (BUT3 to Master 2). Technical direction of a smart electricity sharing solution in short circuits.",
         "icon": "./img/ecom.png",
         "link": "project.html?id=ecom",
@@ -347,7 +367,7 @@
         "id": "sae501",
         "title": "SAÉ-501: Designing a Technical Solution",
         "date": "Dec 2023",
-        "desc": "Designed and deployed a complete network infrastructure.",
+        "desc": "Deployment of a complete WorldSkills-type network infrastructure.",
         "icon": "./img/sae501.jpg",
         "link": "project.html?id=sae501",
         "skills": ["Cisco", "HSRP", "VRRP", "Routing"],
@@ -364,7 +384,7 @@
         "id": "sae502",
         "title": "SAÉ-502: Hospital Network Security",
         "date": "Oct 2023 - Nov 2023",
-        "desc": "Deployed a secure network infrastructure for a hospital.",
+        "desc": "Deployment of a secure network infrastructure for a hospital.",
         "icon": "./img/sae502.jpg",
         "link": "project.html?id=sae502",
         "skills": ["VLAN", "Firewall", "VPN", "RFID"],
@@ -380,7 +400,7 @@
     ],
     "contact_title": "Contact",
     "see_details": "See details",
-    "back_btn": "← Back to Projects",
+    "back_btn": "← Back to projects",
     "theme_nebula": "Nebula",
     "theme_aurora": "Aurora",
     "project_overview": "Project Overview",
