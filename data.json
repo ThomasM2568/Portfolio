@@ -2,9 +2,9 @@
   "fr": {
     "name": "Thomas Mirbey",
     "title": "Ingénieur Réseaux & Sécurité",
-    "header_desc": "Passionné par la sécurité des réseaux, la connectivité IoT et l'automatisation des processus.",
+    "header_desc": "Passionné par la sécurité des réseaux, l'IIoT et l'automatisation.",
     "about_title": "À propos de moi",
-    "about_text": "Je suis un ingénieur réseaux et sécurité spécialisé dans les systèmes IoT, l'automatisation et les protocoles de sécurité. Je suis passionné par le développement d'infrastructures réseaux sécurisées et évolutives. Actuellement, je perfectionne mes compétences à travers des expériences concrètes en sécurité réseau et en IIoT (IoT Industriel).",
+    "about_text": "Ingénieur Réseau et Sécurité de 23 ans, particulièrement intéressé par les environnements industriels. Futur diplômé d’un Master Internet of Things à l’UFR STGI de Montbéliard, je souhaite mettre à profit ma double compétence en réseaux/sécurité et en automatisation pour concevoir des solutions fiables, qui simplifient les opérations et limitent les erreurs humaines. Attiré par les environnements internationaux, je souhaite évoluer dans des contextes techniques exigeants et contribuer à des projets concrets.",
     "exp_title": "Parcours Professionnel",
     "experiences": [
       {
@@ -12,13 +12,14 @@
         "company": "Grand Besançon Métropole",
         "role": "Apprenti Ingénieur Réseaux & Sécurité",
         "date": "Sep 2025 - Présent",
-        "desc": "Gestion et sécurisation des infrastructures réseaux de la métropole.",
-        "intro": "Missions principales : Administration des équipements réseaux (Switchs, Routeurs), gestion de la sécurité périmétrique, et optimisation des performances réseau pour les services publics.",
+        "desc": "Participation à l’exploitation, la sécurisation et l’automatisation des infrastructures réseau et des environnements IoT.",
+        "intro": "Missions principales :",
         "skills": [
-          "Administration des équipements réseaux (Switchs, Routeurs)",
-          "Gestion de la sécurité périmétrique",
-          "Optimisation des performances réseau",
-          "Support des services publics"
+          "Administration d’équipements réseau (switchs / routeurs Cisco, pare-feux Fortinet)",
+		  "Sécurisation et fiabilisation des automates liés à l’eau et à l’assainissement",
+		  "Analyse d’audits de sécurité et proposition de mesures de remédiation avec le RSSI",
+		  "Automatisation de configurations (FortiManager, scripts CLI / Jinja / TCL) et développement de scripts Python (Scan réseau / Migration PHPIpam > Netbox, Analyse de configuration obsolètes FW)",
+		  "Participation au maintien en conditions opérationnelles (MCO)"
         ],
         "logo": "./img/gbm.png"
       },
@@ -27,73 +28,75 @@
         "company": "FORVIA",
         "role": "Apprenti IIOT",
         "date": "Sep 2024 - Fév 2025",
-        "desc": "Développement et automatisation des processus de connectivité IoT.",
-        "intro": "Focus technique : Mise en œuvre de protocoles TCP/IP et OPC/UA pour la remontée de données industrielles. Utilisation de JavaScript et d'API REST pour l'automatisation des flux de données.",
+        "desc": "Développement et automatisation des processus de connectivité IIoT pour la tracabilité PLC.",
+        "intro": "Mission principale :",
         "skills": [
-          "Mise en œuvre de protocoles TCP/IP et OPC/UA",
-          "Remontée de données industrielles",
-          "Utilisation de JavaScript et d'API REST",
-          "Automatisation des flux de données"
+		  "Collecte de données de production depuis Kepware en OPC UA",
+          "Développement en JavaScript",
+          "Remontée de données industrielles via une API REST", 
         ],
         "logo": "./img/forvia.jpg"
       },
       {
-        "id": "exp3",
-        "company": "Stellantis",
-        "role": "Apprenti Sécurité Réseau et Automatisation",
-        "date": "Sep 2023 - Août 2024",
-        "desc": "Automatisation des tâches réseau et sécurité.",
-        "intro": "Réalisations : Automatisation de la gestion IPAM et DNS. Configuration et administration de pare-feu Palo Alto et de reverse proxies. Développement de scripts pour améliorer l'efficacité opérationnelle.",
-        "skills": [
-          "Automatisation de la gestion IPAM et DNS",
-          "Configuration de pare-feu Palo Alto",
-          "Administration de reverse proxies",
-          "Développement de scripts d'automatisation"
-        ],
-        "logo": "./img/stellantis.png"
-      },
+		  "id": "exp3",
+		  "company": "Stellantis",
+		  "role": "Apprenti Sécurité Réseau et Automatisation",
+		  "date": "Sep 2023 - Août 2024",
+		  "desc": "Automatisation et standardisation des opérations réseau et sécurité.",
+		  "intro": "Missions principales :",
+		  "skills": [
+			"Automatisation de la gestion IPAM / DNS (Infoblox)",
+			"Configuration et gestion de pare-feu Palo Alto et de reverse proxies F5",
+			"Développement et maintenance de scripts d’automatisation (Python, Perl, PHP)",
+			"Point d’entrée pour les besoins liés à l’automatisation (évolution et maintenance des outils)",
+			"Automatisation de tâches de sécurité (règles firewall, gestion des accès LDAP)",
+			"Analyse et extraction de configurations réseau pour améliorer la visibilité"
+		  ],
+		  "logo": "./img/stellantis.png"
+		}
       {
-        "id": "exp4",
-        "company": "Stellantis",
-        "role": "Stagiaire Sécurité Réseau et Automatisation",
-        "date": "Jan 2023 - Mar 2023",
-        "desc": "Support technique et assistance sur les projets d'automatisation.",
-        "intro": "Apprentissage des bases de l'automatisation réseau et découverte des environnements de sécurité industrielle à grande échelle.",
-        "skills": [
-          "Apprentissage des bases de l'automatisation réseau",
-          "Découverte des environnements de sécurité industrielle",
-          "Support technique sur les projets",
-          "Environnements à grande échelle"
-        ],
-        "logo": "./img/stellantis.png"
-      }
+  "id": "exp4",
+  "company": "Stellantis",
+  "role": "Stagiaire Sécurité Réseau et Automatisation",
+  "date": "Jan 2023 - Mar 2023",
+  "desc": "Développement d’outils d’automatisation pour le diagnostic et le troubleshooting des incidents réseau et sécurité.",
+  "intro": "Missions principales :",
+  "skills": [
+    "Développement d’un outil de diagnostic réseau en Python (analyse des flux entre DMZ)",
+    "Conception modulaire facilitant l’intégration et la maintenance des fonctionnalités",
+    "Utilisation d’API REST pour interagir avec des équipements (Palo Alto, F5 BigIP)",
+    "Implémentation de Cisco Telemetry sur routeurs ASR9000 pour améliorer la supervision",
+    "Présentation de l’outil en anglais aux équipes techniques"
+  ],
+  "logo": "./img/stellantis.png"
+}
     ],
     "edu_title": "Formation",
     "education": [
       {
-        "id": "edu1",
-        "title": "UFR STGI, Master en Systèmes Embarqués & IoT",
-        "date": "2024 - 2026",
-        "intro": "Spécialisation dans la conception de systèmes connectés, la sécurité des objets communicants et les protocoles réseaux basse consommation.",
-        "skills": [
-          "Conception de systèmes connectés",
-          "Sécurité des objets communicants",
-          "Protocoles réseaux basse consommation",
-          "Architecture IoT avancée"
-        ]
-      },
+      "id": "edu1",
+      "title": "UFR STGI – Master Systèmes embarqués & IoT",
+      "date": "2024 - 2026",
+      "intro": "Formation en anglais centrée sur les systèmes connectés, la cybersécurité IoT et les architectures distribuées.",
+      "skills": [
+        "Réseaux pour objets connectés (MQTT, CoAP)",
+        "Sécurité des systèmes IoT",
+        "Virtualisation et infrastructures (Docker, Kubernetes, Proxmox)",
+        "Architectures distribuées et systèmes résilients",
+        "Analyse de sécurité et détection d’intrusions"
+      ]
+    },
       {
-        "id": "edu2",
-        "title": "IUT Belfort-Montbéliard, BUT Réseaux et Télécommunications",
-        "date": "2021 - 2024",
-        "intro": "Major de promotion. Formation approfondie en administration réseaux, cybersécurité et télécommunications.",
-        "skills": [
-          "Administration réseaux",
-          "Cybersécurité",
-          "Télécommunications",
-          "Major de promotion"
-        ]
-      },
+      "id": "edu3",
+      "title": "Lycée Armand Peugeot – Baccalauréat",
+      "date": "2019 - 2021",
+      "intro": "Spécialités Numérique et Sciences Informatiques, Mathématiques et Physique-Chimie.",
+      "skills": [
+        "Programmation Python (bases, algorithmique)",
+        "Réseaux fondamentaux (IP, TCP/UDP)",
+        "Systèmes Linux (commandes, environnement)"
+      ]
+    },
       {
         "id": "edu3",
         "title": "Lycée Armand Peugeot, Baccalauréat",
