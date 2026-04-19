@@ -225,6 +225,44 @@
       text-align: center;
     }
 
+    /* Project Details List Styles */
+    #p-details {
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    #p-details p {
+      margin-bottom: 1rem;
+      color: var(--text-color);
+    }
+
+    #p-details ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 1.5rem;
+    }
+
+    #p-details li {
+      margin-bottom: 0.75rem;
+      padding-left: 1.5rem;
+      position: relative;
+      color: var(--text-color);
+    }
+
+    #p-details li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--accent-color);
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    #p-details strong {
+      color: var(--accent-color);
+      font-weight: 600;
+    }
+
     /* Responsive adjustments */
     @media (max-width: 768px) {
       .project-header {
@@ -370,6 +408,45 @@
             }
         };
 
+        const formatProjectDetails = (details) => {
+            if (!details) return '';
+            
+            // Split by newline and process each line
+            const lines = details.split('\n').filter(line => line.trim());
+            let html = '';
+            let inList = false;
+            
+            for (let line of lines) {
+                const trimmed = line.trim();
+                
+                // Check if line starts with bullet point or dash
+                if (trimmed.startsWith('•') || trimmed.startsWith('-')) {
+                    if (!inList) {
+                        html += '<ul>';
+                        inList = true;
+                    }
+                    // Remove bullet and dash, clean up the text
+                    const text = trimmed.replace(/^[•\-]\s*/, '');
+                    html += `<li>${text}</li>`;
+                } else if (trimmed) {
+                    // Close list if we were in one
+                    if (inList) {
+                        html += '</ul>';
+                        inList = false;
+                    }
+                    // Add as paragraph
+                    html += `<p>${trimmed}</p>`;
+                }
+            }
+            
+            // Close list if still open
+            if (inList) {
+                html += '</ul>';
+            }
+            
+            return html;
+        };
+
         const updateUI = (lang) => {
             if (!siteData) return;
             const data = siteData[lang];
@@ -379,7 +456,10 @@
                 document.getElementById('p-title').textContent = project.title;
                 document.getElementById('p-date').textContent = project.date;
                 document.getElementById('p-desc').textContent = project.desc;
-                document.getElementById('p-details').innerHTML = project.details || project.desc;
+                
+                // Format project details with proper list structure
+                document.getElementById('p-details').innerHTML = formatProjectDetails(project.details || project.desc);
+                
                 document.title = project.title + " - Thomas Mirbey";
                 
                 // Update Icon
