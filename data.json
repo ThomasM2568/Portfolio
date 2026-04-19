@@ -146,13 +146,13 @@
         "skills": ["IoT", "Python", "Flask", "MQTT", "OAuth 2.0", "HA", "Smart Grid", "Architecture"],
         "media": [
           {
-            "url": "./img/ecom.png",
+            "url": "./img/ecom_architecture_diagram.png",
             "alt": "Architecture ECOM",
             "type": "image",
             "caption": "Architecture globale du système ECOM"
           },
           {
-            "url": "https://via.placeholder.com/800x400?text=Data+Pipeline",
+            "url": "./img/data_pipeline.png",
             "alt": "Data Pipeline MQTT/HTTP",
             "type": "diagram",
             "caption": "Data pipeline with MQTT and HTTP"
@@ -352,13 +352,13 @@
         "skills": ["IoT", "Python", "Flask", "MQTT", "OAuth 2.0", "High Availability", "Smart Grid", "Architecture"],
         "media": [
           {
-            "url": "https://canva.link/cu2i7a2fevqomhr",
+            "url": "./img/ecom_architecture_diagram.png",
             "alt": "ECOM Architecture",
             "type": "image",
             "caption": "Overall ECOM system architecture"
           },
           {
-            "url": "https://via.placeholder.com/800x400?text=Data+Pipeline",
+            "url": "./img/data_pipeline.png",
             "alt": "Data Pipeline MQTT/HTTP",
             "type": "diagram",
             "caption": "Data pipeline with MQTT and HTTP"
