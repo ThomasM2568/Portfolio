@@ -29,9 +29,8 @@
         "role": "Apprenti IIOT",
         "date": "Sep 2024 - Fév 2025",
         "desc": "Développement et automatisation des processus de connectivité IoT.",
-        "intro": "Focus technique : Mise en œuvre de protocoles TCP/IP et OPC/UA pour la remontée de données industrielles. Utilisation de JavaScript et d'API REST pour l'automatisation des flux de données.",
+        "intro": "Focus technique : Connexion à Kepware en OPC/UA pour la remontée de données industrielles. Utilisation de JavaScript et d'API REST pour l'automatisation des flux de données.",
         "skills": [
-          "Mise en œuvre de protocoles TCP/IP et OPC/UA",
           "Remontée de données industrielles",
           "Utilisation de JavaScript et d'API REST",
           "Automatisation des flux de données"
@@ -235,9 +234,8 @@
         "role": "IIOT Apprentice",
         "date": "Sep 2024 - Feb 2025",
         "desc": "Development and automation of IoT connectivity processes.",
-        "intro": "Technical focus: Implementation of TCP/IP and OPC/UA protocols for industrial data collection. Use of JavaScript and REST APIs for data flow automation.",
+        "intro": "Technical focus: Connection with OPC/UA to Kepware for industrial data collection. Use of JavaScript and REST APIs for data flow automation.",
         "skills": [
-          "Implementation of TCP/IP and OPC/UA protocols",
           "Industrial data collection",
           "Use of JavaScript and REST APIs",
           "Data flow automation"
