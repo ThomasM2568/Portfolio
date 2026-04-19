@@ -334,63 +334,58 @@
       }
     ],
     "proj_title": "Key Projects",
-    "projects": [
+     "projects": [
       {
         "id": "ecom",
         "title": "ECOM (Electric Consumption Optimization and Monitoring)",
-        "date": "Jan. 2024 – Jan. 2026",
+        "date": "Jan 2024 – Jan 2026",
         "desc": "Optimization and collaborative energy sharing in residential microgrids.",
-        "details": "3-year research project (BUT3 to Master 2). Technical direction of a smart electricity sharing solution in short circuits.",
+        "details": "Project initiated during the 3rd year of a Bachelor's in Networks & Telecommunications (IoM track), continued during Master's studies as both a supervised project and a final research project.\n\n• Leadership & Architecture: Technical lead of a smart local electricity sharing solution between connected households.\n• Data Pipeline Design: End-to-end design of the processing chain (collection → processing → valorization) including high availability and load balancing.\n• Protocol Unification: Standardization using MQTT for internal communications and HTTP/WebSocket for external interfaces to abstract hardware heterogeneity.\n• Core API Development (Python/Flask): Development of a secure API using OAuth 2.0 enabling agnostic control of IoT devices regardless of underlying protocols.\n• Optimization Algorithms: Design of the energy-sharing engine with the objective of maximizing local self-consumption.\n• Security & Resilience: Implementation of distributed and secure architectures ensuring smart grid service continuity.",
         "icon": "./img/ecom.png",
         "link": "project.html?id=ecom",
-        "skills": ["IoT", "Python", "Flask", "MQTT", "OAuth 2.0", "HA", "Smart Grid", "Architecture"],
+        "skills": ["IoT", "Python", "Flask", "MQTT", "OAuth 2.0", "High Availability", "Smart Grid", "Architecture"],
         "media": [
           {
             "url": "https://via.placeholder.com/800x400?text=ECOM+Architecture",
             "alt": "ECOM Architecture",
             "type": "image",
             "caption": "Overall ECOM system architecture"
-          },
-          {
-            "url": "https://via.placeholder.com/800x400?text=Data+Pipeline",
-            "alt": "Data Pipeline MQTT/HTTP",
-            "type": "diagram",
-            "caption": "Data pipeline with MQTT and HTTP"
           }
         ]
       },
       {
         "id": "sae501",
-        "title": "SAÉ-501: Designing a Technical Solution",
+        "title": "SAE-501: Design, Implementation and Presentation of a Technical Solution",
         "date": "Dec 2023",
-        "desc": "Deployment of a complete WorldSkills-type network infrastructure.",
+        "desc": "Deployment of a complete network infrastructure (WorldSkills-style project).",
+        "details": "The objective was to design and deploy a full system and network infrastructure, including real equipment and virtualized servers (Proxmox VE and ESXi).\n\n• Core network deployment based on three Cisco routers, including VRF configuration to separate local and internet traffic.\n• Configuration of VLAN segmentation using Dot1Q subinterfaces on edge routers.\n• Implementation of routing protocols: OSPF (private network) and BGP (public network with route reflector).\n• NAT configuration for external connectivity.\n• High availability setup using HSRP on Cisco devices and VRRP on Linux web servers.\n• Automation: Development of Ansible playbooks for automated configuration backup to FTP servers and Linux server updates.\n• Monitoring: Contribution to the deployment of a Zabbix monitoring solution.",
         "icon": "./img/sae501.jpg",
         "link": "project.html?id=sae501",
-        "skills": ["Cisco", "HSRP", "VRRP", "Routing"],
+        "skills": ["Cisco", "HSRP", "VRRP", "BGP", "OSPF", "Ansible", "Proxmox", "ESXi"],
         "media": [
           {
             "url": "https://via.placeholder.com/800x400?text=Network+Topology",
-            "alt": "SAÉ-501 Network Topology",
+            "alt": "Network topology",
             "type": "diagram",
-            "caption": "Network topology with HSRP/VRRP"
+            "caption": "Project network topology"
           }
         ]
       },
       {
         "id": "sae502",
-        "title": "SAÉ-502: Hospital Network Security",
-        "date": "Oct 2023 - Nov 2023",
-        "desc": "Deployment of a secure network infrastructure for a hospital.",
-		"details": "test",
+        "title": "SAE-502: Managing an IT Project",
+        "date": "Oct 2023 – Nov 2023",
+        "desc": "Deployment of a secure network infrastructure for a hospital environment.",
+        "details": "Hospitals are prime targets for cyberattacks, especially ransomware, which can disrupt IT systems and compromise access to critical medical data. This project aimed to design a secure infrastructure ensuring data protection, service continuity, and system resilience.\n\n• Design and deployment of a multi-site hospital network infrastructure.\n• Equipment: 4 Cisco 1900 series routers, 6 Catalyst 3750 PoE switches, Stormshield SN210W firewall.\n• High availability architecture using VRRP, HSRP, and load balancing via HAProxy.\n• Full routing deployment (core network and inter-VLAN routing) and spanning-tree configuration.\n• Network security implementation: VLAN segmentation, firewall policies, and RADIUS authentication.\n• Secure interconnection via IPsec tunnel between hospital sites.\n• IoT integration: Deployment of sensors and RFID access systems using ESP8266 (Arduino) and Raspberry Pi (Python).\n• Comprehensive documentation to ensure maintainability and operational resilience.",
         "icon": "./img/sae502.png",
         "link": "project.html?id=sae502",
-        "skills": ["VLAN", "Firewall", "VPN", "RFID"],
+        "skills": ["VLAN", "Firewall", "VPN", "IPsec", "RADIUS", "HAProxy", "IoT", "RFID"],
         "media": [
           {
-            "url": "https://via.placeholder.com/800x400?text=Hospital+Network+Security",
-            "alt": "Hospital security diagram",
+            "url": "https://via.placeholder.com/800x400?text=Hospital+Network",
+            "alt": "Hospital network security",
             "type": "diagram",
-            "caption": "Hospital network security architecture"
+            "caption": "Secure hospital network architecture"
           }
         ]
       }
