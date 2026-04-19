@@ -150,6 +150,12 @@
             "alt": "Architecture ECOM",
             "type": "image",
             "caption": "Architecture globale du système ECOM"
+          },
+          {
+            "url": "https://via.placeholder.com/800x400?text=Data+Pipeline",
+            "alt": "Data Pipeline MQTT/HTTP",
+            "type": "diagram",
+            "caption": "Data pipeline with MQTT and HTTP"
           }
         ]
       },
@@ -350,6 +356,12 @@
             "alt": "ECOM Architecture",
             "type": "image",
             "caption": "Overall ECOM system architecture"
+          },
+          {
+            "url": "https://via.placeholder.com/800x400?text=Data+Pipeline",
+            "alt": "Data Pipeline MQTT/HTTP",
+            "type": "diagram",
+            "caption": "Data pipeline with MQTT and HTTP"
           }
         ]
       },
