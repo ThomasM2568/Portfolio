@@ -146,7 +146,7 @@
         "skills": ["IoT", "Python", "Flask", "MQTT", "OAuth 2.0", "HA", "Smart Grid", "Architecture"],
         "media": [
           {
-            "url": "https://canva.link/cu2i7a2fevqomhr",
+            "url": "./img/ecom.png",
             "alt": "Architecture ECOM",
             "type": "image",
             "caption": "Architecture globale du système ECOM"
