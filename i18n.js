@@ -192,10 +192,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     <label>LinkedIn</label>
                     <span>thomas-mirbey</span>
                 </a>
-                <a href="https://github.com/ThomasMirbey" target="_blank" rel="noopener" class="contact-card">
+                <a href="https://github.com/thomasm2568" target="_blank" rel="noopener" class="contact-card">
                     <i class="bi bi-github"></i>
                     <label>GitHub</label>
-                    <span>ThomasMirbey</span>
+                    <span>ThomasM2568</span>
                 </a>
             </div>
         `;
