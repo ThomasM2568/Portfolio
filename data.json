@@ -90,7 +90,7 @@
         "id": "edu2",
         "title": "IUT Belfort-Montbéliard, BUT Réseaux et Télécommunications",
         "date": "2021 - 2024",
-        "intro": "Major de promotion. Formation approfondie en administration réseaux, cybersécurité et télécommunications.",
+        "intro": "Major de promotion. Formation en administration réseaux, cybersécurité et télécommunications.",
         "skills": [
           "Administration réseaux",
           "Cybersécurité",
@@ -99,16 +99,16 @@
         ]
       },
       {
-        "id": "edu3",
-        "title": "Lycée Armand Peugeot, Baccalauréat",
-        "date": "2019 - 2021",
-        "intro": "",
-        "skills": [
-          "Numérique et Sciences Informatiques (NSI)",
-          "Mathématiques",
-          "Physique"
-        ]
-      }
+      "id": "edu3",
+      "title": "Lycée Armand Peugeot – Baccalauréat",
+      "date": "2019 - 2021",
+      "intro": "Mention Assez Bien. Spécialités Numérique et Sciences Informatiques, Mathématiques et Physique-Chimie.",
+      "skills": [
+        "Programmation Python (bases, algorithmique)",
+        "Réseaux fondamentaux (IP, TCP/UDP)",
+        "Systèmes Linux (commandes, environnement)"
+      ]
+    }
     ],
     "cert_title": "Certifications",
     "certifications": [
