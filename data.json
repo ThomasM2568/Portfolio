@@ -1,16 +1,16 @@
 {
   "fr": {
     "name": "Thomas Mirbey",
-    "title": "Ingénieur Réseaux & Sécurité",
+    "title": "Ingénieur Réseaux et Sécurité",
     "header_desc": "Passionné par la sécurité des réseaux, l'IIoT et l'automatisation.",
     "about_title": "À propos de moi",
-    "about_text": "Ingénieur Réseau et Sécurité de 23 ans, particulièrement intéressé par les environnements industriels. Futur diplômé d’un Master Internet of Things à l’UFR STGI de Montbéliard, je souhaite mettre à profit ma double compétence en réseaux/sécurité et en automatisation pour concevoir des solutions fiables, qui simplifient les opérations et limitent les erreurs humaines. Attiré par les environnements internationaux, je souhaite évoluer dans des contextes techniques exigeants et contribuer à des projets concrets.",
+    "about_text": "Ingénieur Réseaux et Sécurité de 23 ans, particulièrement intéressé par les environnements industriels. Futur diplômé d’un Master Internet of Things à l’UFR STGI de Montbéliard, je souhaite mettre à profit ma double compétence en réseaux et sécurité, ainsi qu'en automatisation, pour concevoir des solutions fiables qui simplifient les opérations et limitent les erreurs humaines. Attiré par les environnements internationaux, je souhaite évoluer dans des contextes techniques exigeants et contribuer à des projets concrets.",
     "exp_title": "Parcours Professionnel",
     "experiences": [
       {
         "id": "exp1",
         "company": "Grand Besançon Métropole",
-        "role": "Apprenti Ingénieur Réseaux & Sécurité",
+        "role": "Apprenti Ingénieur Réseaux et Sécurité",
         "date": "Sep 2025 - Présent",
         "desc": "Participation à l’exploitation, la sécurisation et l’automatisation des infrastructures réseau et des environnements IoT.",
         "intro": "Missions principales :",
@@ -18,7 +18,7 @@
           "Administration d’équipements réseau (switchs / routeurs Cisco, pare-feux Fortinet)",
           "Sécurisation et fiabilisation des automates liés à l’eau et à l’assainissement",
           "Analyse d’audits de sécurité et proposition de mesures de remédiation avec le RSSI",
-          "Automatisation de configurations (FortiManager, scripts CLI / Jinja / TCL) et développement de scripts Python (Scan réseau / Migration PHPIpam > Netbox, Analyse de configuration obsolètes FW)",
+          "Automatisation de configurations (FortiManager, scripts CLI / Jinja / TCL) et développement de scripts Python (Scan réseau / Migration PHPIpam > Netbox, Analyse de configurations obsolètes de pare-feu)",
           "Participation au maintien en conditions opérationnelles (MCO)"
         ],
         "logo": "./img/gbm.png"
@@ -29,7 +29,7 @@
         "role": "Apprenti IIOT",
         "date": "Sep 2024 - Fév 2025",
         "desc": "Développement et automatisation des processus de connectivité IoT.",
-        "intro": "Focus technique : Mise en œuvre de protocoles TCP/IP et OPC/UA pour la remontée de données industrielles. Utilisation de JavaScript et d'API REST pour l'automatisation des flux de données.",
+        "intro": "Focus technique : Mise en œuvre de protocoles TCP/IP et OPC/UA pour la collecte de données industrielles. Utilisation de JavaScript et d'API REST pour l'automatisation des flux de données.",
         "skills": [
           "Mise en œuvre de protocoles TCP/IP et OPC/UA",
           "Remontée de données industrielles",
@@ -47,10 +47,10 @@
         "intro": "Missions principales :",
         "skills": [
           "Automatisation de la gestion IPAM / DNS (Infoblox)",
-          "Configuration et gestion de pare-feu Palo Alto et de reverse proxies F5",
+          "Configuration et gestion de pare-feux Palo Alto et de reverse proxies F5",
           "Développement et maintenance de scripts d’automatisation (Python, Perl, PHP)",
           "Point d’entrée pour les besoins liés à l’automatisation (évolution et maintenance des outils)",
-          "Automatisation de tâches de sécurité (règles firewall, gestion des accès LDAP)",
+          "Automatisation de tâches de sécurité (règles de pare-feu, gestion des accès LDAP)",
           "Analyse et extraction de configurations réseau pour améliorer la visibilité"
         ],
         "logo": "./img/stellantis.png"
@@ -143,7 +143,15 @@
         "details": "Projet de recherche sur 3 ans (BUT3 à Master 2). Direction technique d'une solution de partage intelligent d'électricité en circuit court.",
         "icon": "./img/ecom.png",
         "link": "project.html?id=ecom",
-        "skills": ["IoT", "Python", "Flask", "MQTT", "OAuth 2.0", "HA", "Smart Grid", "Architecture"],
+        "skills": [
+          "IoT",
+          "Python",
+          "Flask",
+          "MQTT",
+          "OAuth 2.0",
+          "HA",
+          "Smart Grid"
+		],
         "media": [
           {
             "url": "https://via.placeholder.com/800x400?text=ECOM+Architecture",
@@ -164,9 +172,15 @@
         "title": "SAÉ-501 : Conception d'une Solution Technique",
         "date": "Déc 2023",
         "desc": "Déploiement d'une infrastructure réseau complète type WorldSkills.",
+        "details": "L'objectif était de concevoir et de mettre en œuvre une infrastructure complète système et réseau, intégrant des équipements réels ainsi que des serveurs de machines virtuelles (Proxmox VE et ESXi) sur un sujet de type concours WorldSkills. J'étais en charge de déployer le cœur du réseau de notre projet, composé de trois routeurs Cisco. L'un d'eux devait posséder une configuration VRF pour séparer le trafic local et internet sur deux tables de routage indépendantes. Sur nos routeurs en bordure, je devais configurer des sous-interfaces Dot1Q, également pour séparer les différents trafics par VLAN. J'ai configuré les protocoles de routage demandés dans le sujet (OSPF pour le réseau privé, BGP en route reflector pour le réseau public) en prenant en compte les spécificités techniques de nos infrastructures. Une configuration NAT devait également être réalisée. Je devais également m'occuper de la mise en place de la redondance et de la haute disponibilité de nos infrastructures, en configurant les protocoles HSRP sur nos routeurs et commutateurs Cisco, et VRRP sur nos serveurs web Linux. Une partie spécifique au parcours IoT était également à réaliser. Avec mon binôme, nous avons créé des playbooks Ansible pour pouvoir automatiser l'export de configuration d'équipements Cisco sur un serveur FTP et la mise à jour automatique des serveurs Linux. J'ai également pu l'assister sur la mise en place d'un serveur de monitoring Zabbix.",
         "icon": "./img/sae501.jpg",
         "link": "project.html?id=sae501",
-        "skills": ["Cisco", "HSRP", "VRRP", "Routage"],
+        "skills": [
+          "Cisco",
+          "HSRP",
+          "VRRP",
+          "Routage"
+        ],
         "media": [
           {
             "url": "https://via.placeholder.com/800x400?text=Network+Topology",
@@ -181,9 +195,15 @@
         "title": "SAÉ-502 : Sécurité Réseau Hospitalier",
         "date": "Oct 2023 - Nov 2023",
         "desc": "Déploiement d'une infrastructure réseau sécurisée pour un hôpital.",
+        "details": "Les hôpitaux sont des cibles privilégiées pour les cyberattaques, notamment les ransomwares, qui peuvent paralyser les systèmes informatiques et compromettre l'accès aux données médicales critiques. Ce projet vise à mettre en place une infrastructure réseau sécurisée pour protéger les informations sensibles, garantir la continuité des soins et éviter les interruptions des services médicaux. En créant des systèmes de sauvegarde robustes, des contrôles d'accès stricts et une documentation complète, nous cherchons à sécuriser l'environnement hospitalier face aux menaces cybernétiques. Nous avons mis en œuvre des VLANs pour segmenter le réseau, des pare-feux pour filtrer le trafic, des VPNs pour sécuriser les accès distants, et des systèmes d'authentification par RFID pour le personnel autorisé. L'objectif est de minimiser les risques et d'assurer une résilience maximale.",
         "icon": "./img/sae502.png",
         "link": "project.html?id=sae502",
-        "skills": ["VLAN", "Firewall", "VPN", "RFID"],
+        "skills": [
+          "VLAN",
+          "Firewall",
+          "VPN",
+          "RFID"
+        ],
         "media": [
           {
             "url": "https://via.placeholder.com/800x400?text=Hospital+Network+Security",
@@ -205,16 +225,16 @@
   },
   "en": {
     "name": "Thomas Mirbey",
-    "title": "Network & Security Engineer",
+    "title": "Network and Security Engineer",
     "header_desc": "Passionate about network security, IIoT, and automation.",
     "about_title": "About Me",
-    "about_text": "A 23-year-old Network and Security Engineer, particularly interested in industrial environments. A future graduate with a Master's in Internet of Things from UFR STGI Montbéliard, I aim to leverage my dual expertise in networks/security and automation to design reliable solutions that simplify operations and limit human error. Attracted by international environments, I wish to evolve in demanding technical contexts and contribute to concrete projects.",
+    "about_text": "A 23-year-old Network and Security Engineer, particularly interested in industrial environments. A future graduate with a Master's in Internet of Things from UFR STGI Montbéliard, I aim to leverage my dual expertise in networks and security, as well as in automation, to design reliable solutions that simplify operations and limit human error. Attracted by international environments, I wish to evolve in demanding technical contexts and contribute to concrete projects.",
     "exp_title": "Professional Background",
     "experiences": [
       {
         "id": "exp1",
         "company": "Grand Besançon Métropole",
-        "role": "Network & Security Apprentice Engineer",
+        "role": "Network and Security Engineer Apprentice",
         "date": "Sep 2025 - Present",
         "desc": "Participation in the operation, securing, and automation of network infrastructures and IoT environments.",
         "intro": "Main missions:",
@@ -222,7 +242,7 @@
           "Administration of network equipment (Cisco switches / routers, Fortinet firewalls)",
           "Securing and improving reliability of water and sanitation-related PLCs",
           "Analysis of security audits and proposal of remediation measures with the CISO",
-          "Configuration automation (FortiManager, CLI / Jinja / TCL scripts) and Python script development (Network scan / PHPIpam > Netbox migration, Obsolete FW configuration analysis)",
+          "Configuration automation (FortiManager, CLI / Jinja / TCL scripts) and Python script development (Network scan / PHPIpam > Netbox migration, Analysis of obsolete firewall configurations)",
           "Participation in Maintenance in Operational Conditions (MOC)"
         ],
         "logo": "./img/gbm.png"
@@ -282,7 +302,7 @@
         "id": "edu1",
         "title": "UFR STGI, Master's in Embedded Systems & IoT",
         "date": "2024 - 2026",
-        "intro": "Specialization in connected systems design, security of communicating objects, and low-power network protocols.",
+        "intro": "Specialization in the design of connected systems, the security of communicating objects, and low-power network protocols.",
         "skills": [
           "Connected systems design",
           "Security of communicating objects",
@@ -344,10 +364,18 @@
         "title": "ECOM (Electric Consumption Optimization and Monitoring)",
         "date": "Jan. 2024 – Jan. 2026",
         "desc": "Optimization and collaborative energy sharing in residential microgrids.",
-        "details": "3-year research project (BUT3 to Master 2). Technical direction of a smart electricity sharing solution in short circuits.",
+        "details": "3-year research project (3rd of Bachelor to Master 2). Technical direction of a smart electricity sharing solution in short circuits.",
         "icon": "./img/ecom.png",
         "link": "project.html?id=ecom",
-        "skills": ["IoT", "Python", "Flask", "MQTT", "OAuth 2.0", "HA", "Smart Grid", "Architecture"],
+        "skills": [
+          "IoT",
+          "Python",
+          "Flask",
+          "MQTT",
+          "OAuth 2.0",
+          "HA",
+          "Smart Grid",
+        ],
         "media": [
           {
             "url": "https://via.placeholder.com/800x400?text=ECOM+Architecture",
@@ -370,7 +398,12 @@
         "desc": "Deployment of a complete WorldSkills-type network infrastructure.",
         "icon": "./img/sae501.jpg",
         "link": "project.html?id=sae501",
-        "skills": ["Cisco", "HSRP", "VRRP", "Routing"],
+        "skills": [
+          "Cisco",
+          "HSRP",
+          "VRRP",
+          "Routing"
+        ],
         "media": [
           {
             "url": "https://via.placeholder.com/800x400?text=Network+Topology",
@@ -378,7 +411,8 @@
             "type": "diagram",
             "caption": "Network topology with HSRP/VRRP"
           }
-        ]
+        ],
+        "details": "The objective was to design and implement a complete system and network infrastructure, integrating real equipment as well as virtual machine servers (Proxmox VE and ESXi) on a WorldSkills competition-type subject. I was responsible for deploying the core of our project's network, composed of three Cisco routers. One of them had to have a VRF configuration to separate local and internet traffic on two independent routing tables. On our edge routers, I had to configure Dot1Q sub-interfaces, also to separate different traffic by VLAN. I configured the routing protocols requested in the subject (OSPF for the private network, BGP as a route reflector for the public network) taking into account the technical specificities of our infrastructures. A NAT configuration also had to be performed. I also had to take care of implementing redundancy and high availability for our infrastructures, by configuring HSRP protocols on our Cisco routers and switches, and VRRP on our Linux web servers. A specific part of the IoT track also had to be completed. With my partner, we created Ansible playbooks to automate the export of Cisco equipment configurations to an FTP server and the automatic update of Linux servers. I was also able to assist him in setting up a Zabbix monitoring server."
       },
       {
         "id": "sae502",
@@ -387,7 +421,12 @@
         "desc": "Deployment of a secure network infrastructure for a hospital.",
         "icon": "./img/sae502.png",
         "link": "project.html?id=sae502",
-        "skills": ["VLAN", "Firewall", "VPN", "RFID"],
+        "skills": [
+          "VLAN",
+          "Firewall",
+          "VPN",
+          "RFID"
+        ],
         "media": [
           {
             "url": "https://via.placeholder.com/800x400?text=Hospital+Network+Security",
@@ -395,7 +434,8 @@
             "type": "diagram",
             "caption": "Hospital network security architecture"
           }
-        ]
+        ],
+        "details": "Hospitals are prime targets for cyberattacks, particularly ransomware, which can paralyze IT systems and compromise access to critical medical data. This project aims to establish a secure network infrastructure to protect sensitive information, ensure continuity of care, and prevent interruptions of medical services. By creating robust backup systems, strict access controls, and comprehensive documentation, we seek to secure the hospital environment against cyber threats. We implemented VLANs to segment the network, firewalls to filter traffic, VPNs to secure remote access, and RFID authentication systems for authorized personnel. The objective is to minimize risks and ensure maximum resilience."
       }
     ],
     "contact_title": "Contact",
