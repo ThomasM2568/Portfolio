@@ -140,7 +140,7 @@
         "title": "ECOM (Electric Consumption Optimization and Monitoring)",
         "date": "Janv. 2024 – Janv. 2026",
         "desc": "Optimisation et partage collaboratif d'énergie dans les micro-réseaux résidentiels.",
-        "details": "Projet de recherche sur 3 ans (BUT3 à Master 2). Direction technique d'une solution de partage intelligent d'électricité en circuit court.",
+        "details": "Projet démarré en BUT3 Réseaux & Télécommunications (parcours IoM), poursuivi en Master IoT jusqu'en M2 en tant que projet de recherche.\n\n• Pilotage & Architecture : Direction technique d'une solution de partage intelligent d’électricité en circuit court entre habitations connectées.\n• Data Pipeline : Conception complète de la chaîne de traitement (collecte → traitement → valorisation) avec haute disponibilité et load balancing.\n• Unification protocolaire : Standardisation via MQTT (interne) et HTTP/WebSocket (externe) pour abstraction du matériel.\n• API Core : Développement d’une API sécurisée en Python/Flask avec OAuth 2.0 pour piloter les équipements IoT de manière agnostique.\n• Optimisation énergétique : Conception d’un algorithme visant à maximiser l’autoconsommation locale.\n• Sécurité & Résilience : Architecture distribuée et mécanismes de sécurisation pour garantir la continuité de service du smart grid.",
         "icon": "./img/ecom.png",
         "link": "project.html?id=ecom",
         "skills": ["IoT", "Python", "Flask", "MQTT", "OAuth 2.0", "HA", "Smart Grid", "Architecture"],
@@ -150,47 +150,42 @@
             "alt": "Architecture ECOM",
             "type": "image",
             "caption": "Architecture globale du système ECOM"
-          },
-          {
-            "url": "https://via.placeholder.com/800x400?text=Data+Pipeline",
-            "alt": "Data Pipeline MQTT/HTTP",
-            "type": "diagram",
-            "caption": "Pipeline de données avec MQTT et HTTP"
           }
         ]
       },
       {
         "id": "sae501",
         "title": "SAÉ-501 : Conception d'une Solution Technique",
-        "date": "Déc 2023",
+        "date": "Déc. 2023",
         "desc": "Déploiement d'une infrastructure réseau complète type WorldSkills.",
-		"details": "test",
+        "details": "Conception et déploiement d'une infrastructure complète (réseau + système) incluant équipements physiques et virtualisation (Proxmox, ESXi).\n\n• Déploiement du cœur réseau basé sur 3 routeurs Cisco avec segmentation via VRF.\n• Configuration de sous-interfaces VLAN (Dot1Q) et séparation des flux.\n• Mise en place des protocoles de routage : OSPF (privé) et BGP (public avec route reflector).\n• Configuration NAT et gestion des accès externes.\n• Haute disponibilité : HSRP sur équipements Cisco et VRRP sur serveurs Linux.\n• Automatisation : Playbooks Ansible pour sauvegarde de configurations et mises à jour système.\n• Monitoring : Participation au déploiement d’une solution Zabbix.",
         "icon": "./img/sae501.jpg",
         "link": "project.html?id=sae501",
-        "skills": ["Cisco", "HSRP", "VRRP", "Routage"],
+        "skills": ["Cisco", "HSRP", "VRRP", "BGP", "OSPF", "Ansible", "Proxmox", "ESXi"],
         "media": [
           {
             "url": "https://via.placeholder.com/800x400?text=Network+Topology",
-            "alt": "Topologie réseau SAÉ-501",
+            "alt": "Topologie réseau",
             "type": "diagram",
-            "caption": "Topologie réseau avec HSRP/VRRP"
+            "caption": "Topologie réseau du projet"
           }
         ]
       },
       {
         "id": "sae502",
         "title": "SAÉ-502 : Sécurité Réseau Hospitalier",
-        "date": "Oct 2023 - Nov 2023",
-        "desc": "Déploiement d'une infrastructure réseau sécurisée pour un hôpital.",
+        "date": "Oct. 2023 – Nov. 2023",
+        "desc": "Déploiement d'une infrastructure sécurisée pour un environnement hospitalier.",
+        "details": "Projet orienté cybersécurité visant à protéger les infrastructures hospitalières contre les cyberattaques (ransomwares, indisponibilité).\n\n• Conception et déploiement de l’architecture réseau multi-sites.\n• Équipements : routeurs Cisco 1900, switches Catalyst 3750, firewall Stormshield.\n• Haute disponibilité : VRRP, HSRP et load balancing via HAProxy.\n• Routage : inter-VLAN, cœur réseau, spanning-tree.\n• Sécurité : segmentation VLAN, firewalling, authentification RADIUS.\n• Interconnexion sécurisée : tunnel IPsec entre sites.\n• IoT : intégration de capteurs et badges RFID via ESP8266 (Arduino) et Raspberry Pi (Python).\n• Documentation complète pour assurer la maintenabilité et la résilience du système.",
         "icon": "./img/sae502.png",
         "link": "project.html?id=sae502",
-        "skills": ["VLAN", "Firewall", "VPN", "RFID"],
+        "skills": ["VLAN", "Firewall", "VPN", "IPsec", "RADIUS", "HAProxy", "IoT", "RFID"],
         "media": [
           {
-            "url": "https://via.placeholder.com/800x400?text=Hospital+Network+Security",
-            "alt": "Schéma de sécurité hospitalier",
+            "url": "https://via.placeholder.com/800x400?text=Hospital+Network",
+            "alt": "Architecture hospitalière",
             "type": "diagram",
-            "caption": "Architecture de sécurité réseau hospitalière"
+            "caption": "Architecture réseau sécurisée"
           }
         ]
       }
