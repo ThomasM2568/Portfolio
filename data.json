@@ -141,7 +141,7 @@
         "date": "Janv. 2024 – Janv. 2026",
         "desc": "Optimisation et partage collaboratif d'énergie dans les micro-réseaux résidentiels.",
         "details": "Projet de recherche sur 3 ans (BUT3 à Master 2). Direction technique d'une solution de partage intelligent d'électricité en circuit court.",
-        "icon": "bi-lightning-charge",
+        "icon": "./img/ecom.png",
         "link": "project.html?id=ecom",
         "skills": ["IoT", "Python", "Flask", "MQTT", "OAuth 2.0", "HA", "Smart Grid", "Architecture"],
         "media": [
@@ -164,7 +164,7 @@
         "title": "SAÉ-501 : Conception d'une Solution Technique",
         "date": "Déc 2023",
         "desc": "Déploiement d'une infrastructure réseau complète type WorldSkills.",
-        "icon": "bi-diagram-3",
+        "icon": "./img/sae501.jpg",
         "link": "project.html?id=sae501",
         "skills": ["Cisco", "HSRP", "VRRP", "Routage"],
         "media": [
@@ -181,7 +181,7 @@
         "title": "SAÉ-502 : Sécurité Réseau Hospitalier",
         "date": "Oct 2023 - Nov 2023",
         "desc": "Déploiement d'une infrastructure réseau sécurisée pour un hôpital.",
-        "icon": "bi-shield-lock",
+        "icon": "./img/sae502.jpg",
         "link": "project.html?id=sae502",
         "skills": ["VLAN", "Firewall", "VPN", "RFID"],
         "media": [
