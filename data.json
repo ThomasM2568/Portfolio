@@ -170,7 +170,7 @@
         "skills": ["Cisco", "HSRP", "VRRP", "BGP", "OSPF", "Ansible", "Proxmox", "ESXi"],
         "media": [
           {
-            "url": "https://via.placeholder.com/800x400?text=Network+Topology",
+            "url": "./img/Infrastructure_501.jpg",
             "alt": "Topologie réseau",
             "type": "diagram",
             "caption": "Topologie réseau du projet"
@@ -188,7 +188,7 @@
         "skills": ["VLAN", "Firewall", "VPN", "IPsec", "RADIUS", "HAProxy", "IoT", "RFID"],
         "media": [
           {
-            "url": "https://via.placeholder.com/800x400?text=Hospital+Network",
+            "url": "./img/infrastructure_502.png",
             "alt": "Architecture hospitalière",
             "type": "diagram",
             "caption": "Architecture réseau sécurisée"
@@ -376,7 +376,7 @@
         "skills": ["Cisco", "HSRP", "VRRP", "BGP", "OSPF", "Ansible", "Proxmox", "ESXi"],
         "media": [
           {
-            "url": "https://via.placeholder.com/800x400?text=Network+Topology",
+            "url": "./img/Infrastructure_501.jpg",
             "alt": "Network topology",
             "type": "diagram",
             "caption": "Project network topology"
@@ -394,7 +394,7 @@
         "skills": ["VLAN", "Firewall", "VPN", "IPsec", "RADIUS", "HAProxy", "IoT", "RFID"],
         "media": [
           {
-            "url": "https://via.placeholder.com/800x400?text=Hospital+Network",
+            "url": "./img/infrastructure_502.png",
             "alt": "Hospital network security",
             "type": "diagram",
             "caption": "Secure hospital network architecture"
