@@ -396,6 +396,7 @@
         "title": "SAÉ-501: Designing a Technical Solution",
         "date": "Dec 2023",
         "desc": "Deployment of a complete WorldSkills-type network infrastructure.",
+		"details": "The objective was to design and implement a complete system and network infrastructure, integrating real equipment as well as virtual machine servers (Proxmox VE and ESXi) on a WorldSkills competition-type subject. I was responsible for deploying the core of our project's network, composed of three Cisco routers. One of them had to have a VRF configuration to separate local and internet traffic on two independent routing tables. On our edge routers, I had to configure Dot1Q sub-interfaces, also to separate different traffic by VLAN. I configured the routing protocols requested in the subject (OSPF for the private network, BGP as a route reflector for the public network) taking into account the technical specificities of our infrastructures. A NAT configuration also had to be performed. I also had to take care of implementing redundancy and high availability for our infrastructures, by configuring HSRP protocols on our Cisco routers and switches, and VRRP on our Linux web servers. A specific part of the IoT track also had to be completed. With my partner, we created Ansible playbooks to automate the export of Cisco equipment configurations to an FTP server and the automatic update of Linux servers. I was also able to assist him in setting up a Zabbix monitoring server.",
         "icon": "./img/sae501.jpg",
         "link": "project.html?id=sae501",
         "skills": [
@@ -412,7 +413,6 @@
             "caption": "Network topology with HSRP/VRRP"
           }
         ],
-        "details": "The objective was to design and implement a complete system and network infrastructure, integrating real equipment as well as virtual machine servers (Proxmox VE and ESXi) on a WorldSkills competition-type subject. I was responsible for deploying the core of our project's network, composed of three Cisco routers. One of them had to have a VRF configuration to separate local and internet traffic on two independent routing tables. On our edge routers, I had to configure Dot1Q sub-interfaces, also to separate different traffic by VLAN. I configured the routing protocols requested in the subject (OSPF for the private network, BGP as a route reflector for the public network) taking into account the technical specificities of our infrastructures. A NAT configuration also had to be performed. I also had to take care of implementing redundancy and high availability for our infrastructures, by configuring HSRP protocols on our Cisco routers and switches, and VRRP on our Linux web servers. A specific part of the IoT track also had to be completed. With my partner, we created Ansible playbooks to automate the export of Cisco equipment configurations to an FTP server and the automatic update of Linux servers. I was also able to assist him in setting up a Zabbix monitoring server."
       },
       {
         "id": "sae502",
