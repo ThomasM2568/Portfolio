@@ -181,7 +181,7 @@
         "title": "SAÉ-502 : Sécurité Réseau Hospitalier",
         "date": "Oct 2023 - Nov 2023",
         "desc": "Déploiement d'une infrastructure réseau sécurisée pour un hôpital.",
-        "icon": "./img/sae502.jpg",
+        "icon": "./img/sae502.png",
         "link": "project.html?id=sae502",
         "skills": ["VLAN", "Firewall", "VPN", "RFID"],
         "media": [
@@ -385,7 +385,7 @@
         "title": "SAÉ-502: Hospital Network Security",
         "date": "Oct 2023 - Nov 2023",
         "desc": "Deployment of a secure network infrastructure for a hospital.",
-        "icon": "./img/sae502.jpg",
+        "icon": "./img/sae502.png",
         "link": "project.html?id=sae502",
         "skills": ["VLAN", "Firewall", "VPN", "RFID"],
         "media": [
