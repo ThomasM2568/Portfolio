@@ -112,11 +112,27 @@
     ],
     "cert_title": "Certifications",
     "certifications": [
-      { "name": "Getting Started with Local Traffic Manager (LTM) – Nov 2024", "url": "https://www.f5.com/training", "badge": "ltm-badge.png" },
-      { "name": "Amazon API Gateway for Serverless Applications – Juil 2024", "url": "https://aws.amazon.com/training/", "badge": "aws-badge.png" },
-      { "name": "Introduction to Amazon API Gateway – Juil 2024", "url": "https://aws.amazon.com/training/", "badge": "aws-badge.png" },
-      { "name": "Cisco CCNA Routing & Switching – Sept 2022 (Expire Sept 2025)", "url": "https://www.cisco.com/c/en/us/training-events/training-certifications/certifications.html", "badge": "ccna-badge.png" }
-    ],
+    {
+      "name": "Cisco CCNA Routing & Switching – Sept 2022 (Expire Sept 2025)",
+      "url": "https://www.cisco.com/c/en/us/training-events/training-certifications/certifications.html",
+      "badge": "ccna-badge.png"
+    },
+    {
+      "name": "Fortinet Networking Fundamentals – Oct 2025",
+      "url": "https://www.fortinet.com/training",
+      "badge": "fortinet-badge.png"
+    },
+    {
+      "name": "F5 – Getting Started with Local Traffic Manager (LTM) – Nov 2024",
+      "url": "https://www.f5.com/training",
+      "badge": "f5-badge.png"
+    },
+    {
+      "name": "F5 – Advanced Web Application Firewall (WAF) – Nov 2024",
+      "url": "https://www.f5.com/training",
+      "badge": "f5-badge.png"
+    }
+  ],
     "proj_title": "Projets Clés",
     "projects": [
       {
