@@ -4,7 +4,7 @@
     "title": "Ingénieur Réseaux & Sécurité",
     "header_desc": "Passionné par la sécurité des réseaux, l'IIoT et l'automatisation.",
     "about_title": "À propos de moi",
-    "about_text": "Ingénieur Réseau et Sécurité de 23 ans, particulièrement intéressé par les environnements industriels. Futur diplômé d’un Master Internet of Things à l’UFR STGI de Montbéliard, je souhaite mettre à profit ma double compétence en réseaux/sécurité et en automatisation pour concevoir des solutions fiables, qui simplifient les opérations et limitent les erreurs humaines. Attiré par les environnements internationaux, je souhaite évoluer dans des contextes techniques exigeants et contribuer à des projets concrets.",
+    "about_text": "Ingénieur Réseau et Sécurité de 23 ans, particulièrement intéressé par les environnements industriels. Futur diplômé d'un Master Internet of Things à l'UFR STGI de Montbéliard, je souhaite mettre à profit ma double compétence en réseaux/sécurité et en automatisation pour concevoir des solutions fiables, qui simplifient les opérations et limitent les erreurs humaines. Attiré par les environnements internationaux, je souhaite évoluer dans des contextes techniques exigeants et contribuer à des projets concrets.",
     "exp_title": "Parcours Professionnel",
     "experiences": [
       {
@@ -12,12 +12,12 @@
         "company": "Grand Besançon Métropole",
         "role": "Apprenti Ingénieur Réseaux & Sécurité",
         "date": "Sep 2025 - Présent",
-        "desc": "Participation à l’exploitation, la sécurisation et l’automatisation des infrastructures réseau et des environnements IoT.",
+        "desc": "Participation à l'exploitation, la sécurisation et l'automatisation des infrastructures réseau et des environnements IoT.",
         "intro": "Missions principales :",
         "skills": [
-          "Administration d’équipements réseau (switchs / routeurs Cisco, pare-feux Fortinet)",
-          "Sécurisation et fiabilisation des automates liés à l’eau et à l’assainissement",
-          "Analyse d’audits de sécurité et proposition de mesures de remédiation avec le RSSI",
+          "Administration d'équipements réseau (switchs / routeurs Cisco, pare-feux Fortinet)",
+          "Sécurisation et fiabilisation des automates liés à l'eau et à l'assainissement",
+          "Analyse d'audits de sécurité et proposition de mesures de remédiation avec le RSSI",
           "Automatisation de configurations (FortiManager, scripts CLI / Jinja / TCL) et développement de scripts Python (Scan réseau / Migration PHPIpam > Netbox, Analyse de configuration obsolètes FW)",
           "Participation au maintien en conditions opérationnelles (MCO)"
         ],
@@ -47,8 +47,8 @@
         "skills": [
           "Automatisation de la gestion IPAM / DNS (Infoblox)",
           "Configuration et gestion de pare-feu Palo Alto et de reverse proxies F5",
-          "Développement et maintenance de scripts d’automatisation (Python, Perl, PHP)",
-          "Point d’entrée pour les besoins liés à l’automatisation (évolution et maintenance des outils)",
+          "Développement et maintenance de scripts d'automatisation (Python, Perl, PHP)",
+          "Point d'entrée pour les besoins liés à l'automatisation (évolution et maintenance des outils)",
           "Automatisation de tâches de sécurité (règles firewall, gestion des accès LDAP)",
           "Analyse et extraction de configurations réseau pour améliorer la visibilité"
         ],
@@ -59,14 +59,14 @@
         "company": "Stellantis",
         "role": "Stagiaire Sécurité Réseau et Automatisation",
         "date": "Jan 2023 - Mar 2023",
-        "desc": "Développement d’outils d’automatisation pour le diagnostic et le troubleshooting des incidents réseau et sécurité.",
+        "desc": "Développement d'outils d'automatisation pour le diagnostic et le troubleshooting des incidents réseau et sécurité.",
         "intro": "Missions principales :",
         "skills": [
-          "Développement d’un outil de diagnostic réseau en Python (analyse des flux entre DMZ)",
-          "Conception modulaire facilitant l’intégration et la maintenance des fonctionnalités",
-          "Utilisation d’API REST pour interagir avec des équipements (Palo Alto, F5 BigIP)",
+          "Développement d'un outil de diagnostic réseau en Python (analyse des flux entre DMZ)",
+          "Conception modulaire facilitant l'intégration et la maintenance des fonctionnalités",
+          "Utilisation d'API REST pour interagir avec des équipements (Palo Alto, F5 BigIP)",
           "Implémentation de Cisco Telemetry sur routeurs ASR9000 pour améliorer la supervision",
-          "Présentation de l’outil en anglais aux équipes techniques"
+          "Présentation de l'outil en anglais aux équipes techniques"
         ],
         "logo": "./img/stellantis.png"
       }
@@ -139,7 +139,7 @@
         "title": "ECOM (Electric Consumption Optimization and Monitoring)",
         "date": "Janv. 2024 – Janv. 2026",
         "desc": "Optimisation et partage collaboratif d'énergie dans les micro-réseaux résidentiels.",
-        "details": "Projet démarré en BUT3 Réseaux & Télécommunications (parcours IoM), poursuivi en Master IoT jusqu'en M2 en tant que projet de recherche.\n\n• Pilotage & Architecture : Direction technique d'une solution de partage intelligent d’électricité en circuit court entre habitations connectées.\n• Data Pipeline : Conception complète de la chaîne de traitement (collecte → traitement → valorisation) avec haute disponibilité et load balancing.\n• Unification protocolaire : Standardisation via MQTT (interne) et HTTP/WebSocket (externe) pour abstraction du matériel.\n• API Core : Développement d’une API sécurisée en Python/Flask avec OAuth 2.0 pour piloter les équipements IoT de manière agnostique.\n• Optimisation énergétique : Conception d’un algorithme visant à maximiser l’autoconsommation locale.\n• Sécurité & Résilience : Architecture distribuée et mécanismes de sécurisation pour garantir la continuité de service du smart grid.",
+        "details": "Projet démarré en BUT3 Réseaux & Télécommunications (parcours IoM), poursuivi en Master IoT jusqu'en M2 en tant que projet de recherche.\n\n• Pilotage & Architecture : Direction technique d'une solution de partage intelligent d'électricité en circuit court entre habitations connectées.\n• Data Pipeline : Conception complète de la chaîne de traitement (collecte → traitement → valorisation) avec haute disponibilité et load balancing.\n• Unification protocolaire : Standardisation via MQTT (interne) et HTTP/WebSocket (externe) pour abstraction du matériel.\n• API Core : Développement d'une API sécurisée en Python/Flask avec OAuth 2.0 pour piloter les équipements IoT de manière agnostique.\n• Optimisation énergétique : Conception d'un algorithme visant à maximiser l'autoconsommation locale.\n• Sécurité & Résilience : Architecture distribuée et mécanismes de sécurisation pour garantir la continuité de service du smart grid.",
         "icon": "./img/ecom.png",
         "link": "project.html?id=ecom",
         "skills": ["IoT", "Python", "Flask", "MQTT", "OAuth 2.0", "HA", "Smart Grid", "Architecture"],
@@ -156,6 +156,35 @@
             "type": "diagram",
             "caption": "Data pipeline with MQTT and HTTP"
           }
+        ],
+        "codeBlocks": [
+          {
+            "label": "Configuration MQTT - Broker",
+            "language": "yaml",
+            "code": "# Configuration du broker MQTT\nlistener 1883\nprotocol mqtt\nmax_connections -1\nmax_queued_messages 1000\n\n# Authentification\nallow_anonymous false\npassword_file /etc/mosquitto/passwd\n\n# Persistance\npersistence true\npersistence_location /var/lib/mosquitto/"
+          },
+          {
+            "label": "API Flask - Endpoint OAuth",
+            "language": "python",
+            "code": "from flask import Flask, request, jsonify\nfrom flask_oauth import OAuth\n\napp = Flask(__name__)\noauth = OAuth()\n\n@app.route('/api/devices', methods=['GET'])\n@oauth.require_oauth()\ndef get_devices():\n    user_id = request.oauth.user.id\n    devices = Device.query.filter_by(user_id=user_id).all()\n    return jsonify([d.to_dict() for d in devices])\n\n@app.route('/api/devices/<device_id>/control', methods=['POST'])\n@oauth.require_oauth()\ndef control_device(device_id):\n    data = request.get_json()\n    device = Device.query.get(device_id)\n    publish_mqtt(f'devices/{device_id}/cmd', data)\n    return jsonify({'status': 'ok'})"
+          }
+        ],
+        "externalLinks": [
+          {
+            "title": "Rapport de Projet M2",
+            "url": "https://example.com/ecom-report-m2.pdf",
+            "icon": "bi-file-pdf"
+          },
+          {
+            "title": "Présentation PowerPoint",
+            "url": "https://example.com/ecom-presentation.pptx",
+            "icon": "bi-file-earmark-slides"
+          },
+          {
+            "title": "Repository GitHub",
+            "url": "https://github.com/example/ecom",
+            "icon": "bi-github"
+          }
         ]
       },
       {
@@ -163,7 +192,7 @@
         "title": "SAÉ-501 : Conception d'une Solution Technique",
         "date": "Déc. 2023",
         "desc": "Déploiement d'une infrastructure réseau complète type WorldSkills.",
-        "details": "Conception et déploiement d'une infrastructure complète (réseau + système) incluant équipements physiques et virtualisation (Proxmox, ESXi).\n\n• Déploiement du cœur réseau basé sur 3 routeurs Cisco avec segmentation via VRF.\n• Configuration de sous-interfaces VLAN (Dot1Q) et séparation des flux.\n• Mise en place des protocoles de routage : OSPF (privé) et BGP (public avec route reflector).\n• Configuration NAT et gestion des accès externes.\n• Haute disponibilité : HSRP sur équipements Cisco et VRRP sur serveurs Linux.\n• Automatisation : Playbooks Ansible pour sauvegarde de configurations et mises à jour système.\n• Monitoring : Participation au déploiement d’une solution Zabbix.",
+        "details": "Conception et déploiement d'une infrastructure complète (réseau + système) incluant équipements physiques et virtualisation (Proxmox, ESXi).\n\n• Déploiement du cœur réseau basé sur 3 routeurs Cisco avec segmentation via VRF.\n• Configuration de sous-interfaces VLAN (Dot1Q) et séparation des flux.\n• Mise en place des protocoles de routage : OSPF (privé) et BGP (public avec route reflector).\n• Configuration NAT et gestion des accès externes.\n• Haute disponibilité : HSRP sur équipements Cisco et VRRP sur serveurs Linux.\n• Automatisation : Playbooks Ansible pour sauvegarde de configurations et mises à jour système.\n• Monitoring : Participation au déploiement d'une solution Zabbix.",
         "icon": "./img/sae501.jpg",
         "link": "project.html?id=sae501",
         "skills": ["Cisco", "HSRP", "VRRP", "BGP", "OSPF", "Ansible", "Proxmox", "ESXi"],
@@ -174,6 +203,30 @@
             "type": "diagram",
             "caption": "Topologie réseau du projet"
           }
+        ],
+        "codeBlocks": [
+          {
+            "label": "Configuration OSPF - Cisco IOS",
+            "language": "cisco",
+            "code": "router ospf 1\n  router-id 10.0.0.1\n  network 10.0.0.0 0.0.0.255 area 0\n  network 192.168.1.0 0.0.0.255 area 1\n  passive-interface GigabitEthernet0/0\n  default-information originate\n  log-adjacency-changes"
+          },
+          {
+            "label": "Playbook Ansible - Backup Config",
+            "language": "yaml",
+            "code": "---\n- hosts: cisco_routers\n  gather_facts: no\n  tasks:\n    - name: Backup running config\n      ios_command:\n        commands:\n          - show running-config\n      register: config\n    \n    - name: Save to file\n      copy:\n        content: \"{{ config.stdout[0] }}\"\n        dest: \"./backups/{{ inventory_hostname }}_{{ ansible_date_time.iso8601 }}.cfg\""
+          }
+        ],
+        "externalLinks": [
+          {
+            "title": "Rapport Technique SAE-501",
+            "url": "https://example.com/sae501-report.pdf",
+            "icon": "bi-file-pdf"
+          },
+          {
+            "title": "Diagramme Topologie Visio",
+            "url": "https://example.com/sae501-topology.vsd",
+            "icon": "bi-file-earmark"
+          }
         ]
       },
       {
@@ -181,7 +234,7 @@
         "title": "SAÉ-502 : Sécurité Réseau Hospitalier",
         "date": "Oct. 2023 – Nov. 2023",
         "desc": "Déploiement d'une infrastructure sécurisée pour un environnement hospitalier.",
-        "details": "Projet orienté cybersécurité visant à protéger les infrastructures hospitalières contre les cyberattaques (ransomwares, indisponibilité).\n\n• Conception et déploiement de l’architecture réseau multi-sites.\n• Équipements : routeurs Cisco 1900, switches Catalyst 3750, firewall Stormshield.\n• Haute disponibilité : VRRP, HSRP et load balancing via HAProxy.\n• Routage : inter-VLAN, cœur réseau, spanning-tree.\n• Sécurité : segmentation VLAN, firewalling, authentification RADIUS.\n• Interconnexion sécurisée : tunnel IPsec entre sites.\n• IoT : intégration de capteurs et badges RFID via ESP8266 (Arduino) et Raspberry Pi (Python).\n• Documentation complète pour assurer la maintenabilité et la résilience du système.",
+        "details": "Projet orienté cybersécurité visant à protéger les infrastructures hospitalières contre les cyberattaques (ransomwares, indisponibilité).\n\n• Conception et déploiement de l'architecture réseau multi-sites.\n• Équipements : routeurs Cisco 1900, switches Catalyst 3750, firewall Stormshield.\n• Haute disponibilité : VRRP, HSRP et load balancing via HAProxy.\n• Routage : inter-VLAN, cœur réseau, spanning-tree.\n• Sécurité : segmentation VLAN, firewalling, authentification RADIUS.\n• Interconnexion sécurisée : tunnel IPsec entre sites.\n• IoT : intégration de capteurs et badges RFID via ESP8266 (Arduino) et Raspberry Pi (Python).\n• Documentation complète pour assurer la maintenabilité et la résilience du système.",
         "icon": "./img/sae502.png",
         "link": "project.html?id=sae502",
         "skills": ["VLAN", "Firewall", "VPN", "IPsec", "RADIUS", "HAProxy", "IoT", "RFID"],
@@ -191,6 +244,35 @@
             "alt": "Architecture hospitalière",
             "type": "diagram",
             "caption": "Architecture réseau sécurisée"
+          }
+        ],
+        "codeBlocks": [
+          {
+            "label": "Configuration IPsec - Tunnel Site-to-Site",
+            "language": "cisco",
+            "code": "crypto ikev2 proposal PROPOSAL-1\n  encryption aes-cbc-256\n  integrity sha512\n  group 20\n\ncrypto ikev2 policy POLICY-1\n  proposal PROPOSAL-1\n\ncrypto ikev2 keyring KEYRING-1\n  peer 203.0.113.10\n    address 203.0.113.10\n    pre-shared-key Secure@Pass123\n\ncrypto ikev2 profile PROFILE-1\n  match identity remote address 203.0.113.10\n  authentication remote pre-share\n  authentication local pre-share\n  keyring local KEYRING-1\n  lifetime 86400\n  dpd 10 3 on-demand"
+          },
+          {
+            "label": "Configuration RADIUS - Authentification",
+            "language": "plaintext",
+            "code": "# /etc/raddb/clients.conf\nclient 192.168.1.0/24 {\n    secret = RadiusSecret123\n    shortname = hospital_network\n    nastype = cisco\n}\n\n# /etc/raddb/users\ndefault Auth-Type := Local\n    Reply-Message = \"Hello, %u\"\n\nhospital_admin Auth-Type := Local\n    User-Password == \"SecurePass@123\"\n    Reply-Message = \"Access Granted\"\n    Service-Type = Administrative-User"
+          }
+        ],
+        "externalLinks": [
+          {
+            "title": "Rapport Sécurité Complet",
+            "url": "https://example.com/sae502-security-report.pdf",
+            "icon": "bi-file-pdf"
+          },
+          {
+            "title": "Présentation Finale",
+            "url": "https://example.com/sae502-presentation.pptx",
+            "icon": "bi-file-earmark-slides"
+          },
+          {
+            "title": "Documentation Technique",
+            "url": "https://example.com/sae502-documentation.docx",
+            "icon": "bi-file-earmark-word"
           }
         ]
       }
@@ -202,7 +284,9 @@
     "theme_aurora": "Aurore",
     "project_overview": "Présentation du projet",
     "project_tech": "Détails Techniques & Compétences",
-    "project_media": "Visuels & Schémas"
+    "project_media": "Visuels & Schémas",
+    "project_code": "Code & Configuration",
+    "project_links": "Ressources Externes"
   },
   "en": {
     "name": "Thomas Mirbey",
@@ -338,7 +422,7 @@
       }
     ],
     "proj_title": "Key Projects",
-     "projects": [
+    "projects": [
       {
         "id": "ecom",
         "title": "ECOM (Electric Consumption Optimization and Monitoring)",
@@ -361,6 +445,35 @@
             "type": "diagram",
             "caption": "Data pipeline with MQTT and HTTP"
           }
+        ],
+        "codeBlocks": [
+          {
+            "label": "MQTT Broker Configuration",
+            "language": "yaml",
+            "code": "# MQTT Broker Configuration\nlistener 1883\nprotocol mqtt\nmax_connections -1\nmax_queued_messages 1000\n\n# Authentication\nallow_anonymous false\npassword_file /etc/mosquitto/passwd\n\n# Persistence\npersistence true\npersistence_location /var/lib/mosquitto/"
+          },
+          {
+            "label": "Flask API - OAuth Endpoint",
+            "language": "python",
+            "code": "from flask import Flask, request, jsonify\nfrom flask_oauth import OAuth\n\napp = Flask(__name__)\noauth = OAuth()\n\n@app.route('/api/devices', methods=['GET'])\n@oauth.require_oauth()\ndef get_devices():\n    user_id = request.oauth.user.id\n    devices = Device.query.filter_by(user_id=user_id).all()\n    return jsonify([d.to_dict() for d in devices])\n\n@app.route('/api/devices/<device_id>/control', methods=['POST'])\n@oauth.require_oauth()\ndef control_device(device_id):\n    data = request.get_json()\n    device = Device.query.get(device_id)\n    publish_mqtt(f'devices/{device_id}/cmd', data)\n    return jsonify({'status': 'ok'})"
+          }
+        ],
+        "externalLinks": [
+          {
+            "title": "Master's Project Report",
+            "url": "https://example.com/ecom-report-m2.pdf",
+            "icon": "bi-file-pdf"
+          },
+          {
+            "title": "PowerPoint Presentation",
+            "url": "https://example.com/ecom-presentation.pptx",
+            "icon": "bi-file-earmark-slides"
+          },
+          {
+            "title": "GitHub Repository",
+            "url": "https://github.com/example/ecom",
+            "icon": "bi-github"
+          }
         ]
       },
       {
@@ -378,6 +491,30 @@
             "alt": "Network topology",
             "type": "diagram",
             "caption": "Project network topology"
+          }
+        ],
+        "codeBlocks": [
+          {
+            "label": "OSPF Configuration - Cisco IOS",
+            "language": "cisco",
+            "code": "router ospf 1\n  router-id 10.0.0.1\n  network 10.0.0.0 0.0.0.255 area 0\n  network 192.168.1.0 0.0.0.255 area 1\n  passive-interface GigabitEthernet0/0\n  default-information originate\n  log-adjacency-changes"
+          },
+          {
+            "label": "Ansible Playbook - Config Backup",
+            "language": "yaml",
+            "code": "---\n- hosts: cisco_routers\n  gather_facts: no\n  tasks:\n    - name: Backup running config\n      ios_command:\n        commands:\n          - show running-config\n      register: config\n    \n    - name: Save to file\n      copy:\n        content: \"{{ config.stdout[0] }}\"\n        dest: \"./backups/{{ inventory_hostname }}_{{ ansible_date_time.iso8601 }}.cfg\""
+          }
+        ],
+        "externalLinks": [
+          {
+            "title": "Technical Report SAE-501",
+            "url": "https://example.com/sae501-report.pdf",
+            "icon": "bi-file-pdf"
+          },
+          {
+            "title": "Topology Diagram Visio",
+            "url": "https://example.com/sae501-topology.vsd",
+            "icon": "bi-file-earmark"
           }
         ]
       },
@@ -397,6 +534,35 @@
             "type": "diagram",
             "caption": "Secure hospital network architecture"
           }
+        ],
+        "codeBlocks": [
+          {
+            "label": "IPsec Configuration - Site-to-Site Tunnel",
+            "language": "cisco",
+            "code": "crypto ikev2 proposal PROPOSAL-1\n  encryption aes-cbc-256\n  integrity sha512\n  group 20\n\ncrypto ikev2 policy POLICY-1\n  proposal PROPOSAL-1\n\ncrypto ikev2 keyring KEYRING-1\n  peer 203.0.113.10\n    address 203.0.113.10\n    pre-shared-key Secure@Pass123\n\ncrypto ikev2 profile PROFILE-1\n  match identity remote address 203.0.113.10\n  authentication remote pre-share\n  authentication local pre-share\n  keyring local KEYRING-1\n  lifetime 86400\n  dpd 10 3 on-demand"
+          },
+          {
+            "label": "RADIUS Configuration - Authentication",
+            "language": "plaintext",
+            "code": "# /etc/raddb/clients.conf\nclient 192.168.1.0/24 {\n    secret = RadiusSecret123\n    shortname = hospital_network\n    nastype = cisco\n}\n\n# /etc/raddb/users\ndefault Auth-Type := Local\n    Reply-Message = \"Hello, %u\"\n\nhospital_admin Auth-Type := Local\n    User-Password == \"SecurePass@123\"\n    Reply-Message = \"Access Granted\"\n    Service-Type = Administrative-User"
+          }
+        ],
+        "externalLinks": [
+          {
+            "title": "Complete Security Report",
+            "url": "https://example.com/sae502-security-report.pdf",
+            "icon": "bi-file-pdf"
+          },
+          {
+            "title": "Final Presentation",
+            "url": "https://example.com/sae502-presentation.pptx",
+            "icon": "bi-file-earmark-slides"
+          },
+          {
+            "title": "Technical Documentation",
+            "url": "https://example.com/sae502-documentation.docx",
+            "icon": "bi-file-earmark-word"
+          }
         ]
       }
     ],
@@ -407,6 +573,8 @@
     "theme_aurora": "Aurora",
     "project_overview": "Project Overview",
     "project_tech": "Technical Details & Skills",
-    "project_media": "Visuals & Diagrams"
+    "project_media": "Visuals & Diagrams",
+    "project_code": "Code & Configuration",
+    "project_links": "External Resources"
   }
 }
