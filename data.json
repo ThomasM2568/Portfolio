@@ -208,18 +208,18 @@
           {
             "label": "Configuration OSPF - Cisco IOS",
             "language": "cisco",
-            "code": "router ospf 1\n  router-id 10.0.0.1\n  network 10.0.0.0 0.0.0.255 area 0\n  network 192.168.1.0 0.0.0.255 area 1\n  passive-interface GigabitEthernet0/0\n  default-information originate\n  log-adjacency-changes"
+            "code": "router ospf 1 vrf MAN\n router-id 0.0.0.3\n log-adjacency-changes\n redistribute connected\n redistribute static\n network 10.1.254.248 0.0.0.3 area 0\n network 10.1.254.252 0.0.0.3 area 0\n network 10.116.1.0 0.0.0.3 area 0\n !\n router bgp 65130\n no synchronization\n bgp log-neighbor-changes\n redistribute connected\n redistribute static\n neighbor 31.1.126.14 remote-as 65116\n neighbor 91.1.222.98 remote-as 65116\n no auto-summary\n !\n address-family ipv4 vrf INET\n no synchronization\n aggregate-address 91.1.222.96 255.255.255.252 summary-only\n aggregate-address 31.1.126.12 255.255.255.252 summary-only\n exit-address-family\n"
           },
           {
-            "label": "Playbook Ansible - Backup Config",
+            "label": "Playbook Ansible - Backup Config et Configuration SNMP",
             "language": "yaml",
-            "code": "---\n- hosts: cisco_routers\n  gather_facts: no\n  tasks:\n    - name: Backup running config\n      ios_command:\n        commands:\n          - show running-config\n      register: config\n    \n    - name: Save to file\n      copy:\n        content: \"{{ config.stdout[0] }}\"\n        dest: \"./backups/{{ inventory_hostname }}_{{ ansible_date_time.iso8601 }}.cfg\""
+            "code": "name: Récupérer et transférer la configuration Cisco\n  hosts: all\n  gather_facts: False\n  connection: network_cli\n  vars_files:\n    - credentials.yml\n\n  tasks:\n      - name: Configurer la communauté SNMP '4P' en lecture/écriture\n        ios_config:\n          lines:\n            - snmp-server community 4P rw\n\n    - name: Récupérer la configuration complète\n      ios_command:\n        commands:\n          - show running-config\n      register: running_config\n\n    - name: Créer un fichier avec la configuration\n      copy:\n        content: \"{{ running_config.stdout[0] }}\"\n        dest: \"/tmp/config_{{ inventory_hostname }}.txt\"\n\n    - name: Transférer le fichier vers le serveur FTP\n      ansible.builtin.command:\n        cmd: |\n          ftp -n 8.8.1.12 <<EOF\n          user devops\n          put /tmp/config_{{ item }}.txt\n          quit\n          EOF\n      delegate_to: localhost\n      loop: \"{{ ansible_play_hosts }}\"\n      loop_control:\n        loop_var: item\n"
           }
         ],
         "externalLinks": [
           {
             "title": "Rapport Technique SAE-501",
-            "url": "https://example.com/sae501-report.pdf",
+            "url": "./doc/sae501-report.pdf",
             "icon": "bi-file-pdf"
           },
           {
@@ -497,18 +497,18 @@
           {
             "label": "OSPF Configuration - Cisco IOS",
             "language": "cisco",
-            "code": "router ospf 1\n  router-id 10.0.0.1\n  network 10.0.0.0 0.0.0.255 area 0\n  network 192.168.1.0 0.0.0.255 area 1\n  passive-interface GigabitEthernet0/0\n  default-information originate\n  log-adjacency-changes"
+            "code": "router ospf 1 vrf MAN\n router-id 0.0.0.3\n log-adjacency-changes\n redistribute connected\n redistribute static\n network 10.1.254.248 0.0.0.3 area 0\n network 10.1.254.252 0.0.0.3 area 0\n network 10.116.1.0 0.0.0.3 area 0\n !\n router bgp 65130\n no synchronization\n bgp log-neighbor-changes\n redistribute connected\n redistribute static\n neighbor 31.1.126.14 remote-as 65116\n neighbor 91.1.222.98 remote-as 65116\n no auto-summary\n !\n address-family ipv4 vrf INET\n no synchronization\n aggregate-address 91.1.222.96 255.255.255.252 summary-only\n aggregate-address 31.1.126.12 255.255.255.252 summary-only\n exit-address-family\n"
           },
           {
-            "label": "Ansible Playbook - Config Backup",
+            "label": "Ansible Playbook - Config Backup and SNMP Configuration",
             "language": "yaml",
-            "code": "---\n- hosts: cisco_routers\n  gather_facts: no\n  tasks:\n    - name: Backup running config\n      ios_command:\n        commands:\n          - show running-config\n      register: config\n    \n    - name: Save to file\n      copy:\n        content: \"{{ config.stdout[0] }}\"\n        dest: \"./backups/{{ inventory_hostname }}_{{ ansible_date_time.iso8601 }}.cfg\""
+            "code": "name: Retrieve and transfer Cisco configuration\n  hosts: all\n  gather_facts: False\n  connection: network_cli\n  vars_files:\n    - credentials.yml\n\n  tasks:\n      - name: Configure SNMP community '4P' with read/write access\n        ios_config:\n          lines:\n            - snmp-server community 4P rw\n\n    - name: Retrieve full configuration\n      ios_command:\n        commands:\n          - show running-config\n      register: running_config\n\n    - name: Create a file with the configuration\n      copy:\n        content: \"{{ running_config.stdout[0] }}\"\n        dest: \"/tmp/config_{{ inventory_hostname }}.txt\"\n\n    - name: Transfer file to FTP server\n      ansible.builtin.command:\n        cmd: |\n          ftp -n 8.8.1.12 <<EOF\n          user devops\n          put /tmp/config_{{ item }}.txt\n          quit\n          EOF\n      delegate_to: localhost\n      loop: \"{{ ansible_play_hosts }}\"\n      loop_control:\n        loop_var: item\n"
           }
         ],
         "externalLinks": [
           {
             "title": "Technical Report SAE-501",
-            "url": "https://example.com/sae501-report.pdf",
+            "url": "./doc/sae501-report.pdf",
             "icon": "bi-file-pdf"
           },
           {
