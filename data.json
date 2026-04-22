@@ -252,19 +252,17 @@
             "language": "cisco",
             "code": "spanning-tree mode rapid-pvst\n spanning-tree extend system-id\n spanning-tree vlan 1,10,20,30,40,50,60,90 priority 28672\n !\n interface FastEthernet1/0/1\n  description Vers SWAKAT03\n  switchport trunk encapsulation dot1q\n  switchport trunk allowed vlan 1,10,20,30,40,50,60,90\n  switchport mode trunk\n"
           },
-          
           {
             "label": "Configuration VRRP du server MQTT Master",
             "language": "plaintext",
             "code": "vrrp_instance VI_1 {\n        state MASTER\n        interface enp0s8 //Changer la carte si besoin\n        virtual_router_id 52\n        priority 50\n        advert_int 1\n        virtual_ipaddress {\n                10.0.90.1/24\n        }\n}\n"
-            "icon": "bi-file-pdf"
           },
           {
             "label": "Configuration Access List",
             "language": "cisco",
-            "code": "ip access-list extended AKAT-ACL\n !--- Local admin subnet to all admin subnets\n permit ip 10.0.10.0 0.0.0.255 10.1.10.0 0.0.0.255\n permit ip 10.0.10.0 0.0.0.255 10.0.10.0 0.0.0.255\n \n !--- Deny all subnets to admin subnet\n deny ip 10.0.0.0 0.0.255.255 10.1.10.0 0.0.0.255\n deny ip 10.0.0.0 0.0.255.255 10.0.10.0 0.0.0.255\n \n !--- All subnets to server\n permit ip 10.0.0.0 0.0.255.255 10.0.50.0 0.0.0.3\n permit ip 10.0.50.0 0.0.0.3 10.0.0.0 0.0.255.255\n permit udp any 10.0.50.0 0.0.0.3\n permit udp 10.0.50.0 0.0.0.3 10.0.0.0 0.0.255.255\n permit udp any host 10.0.50.1 eq 67\n permit udp host 10.0.50.1 eq 67 any\n permit udp any host 10.0.50.2 eq 67\n permit udp host 10.0.50.2 eq 67 any\n permit udp any host 10.0.50.1 eq 68\n permit udp host 10.0.50.1 eq 68 any\n permit udp any host 10.0.50.2 eq 68\n permit udp host 10.0.50.2 eq 68 any\n permit any 255.255.255.255\n permit 255.255.255.255 any\n \n !--- IOT subnet to database\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.3\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.4\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.5\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.6\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.7\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.8\n permit ip 10.0.90.0 0.0.0.255 host 10.1.50.3\n permit ip 10.0.90.0 0.0.0.255 host 10.1.50.4\n permit ip 10.0.90.0 0.0.0.255 host 10.1.50.5\n \n !--- Deny all\n deny ip any any\nr"
+            "code": "ip access-list extended AKAT-ACL\n !--- Local admin subnet to all admin subnets\n permit ip 10.0.10.0 0.0.0.255 10.1.10.0 0.0.0.255\n permit ip 10.0.10.0 0.0.0.255 10.0.10.0 0.0.0.255\n \n !--- Deny all subnets to admin subnet\n deny ip 10.0.0.0 0.0.255.255 10.1.10.0 0.0.0.255\n deny ip 10.0.0.0 0.0.255.255 10.0.10.0 0.0.0.255\n \n !--- All subnets to server\n permit ip 10.0.0.0 0.0.255.255 10.0.50.0 0.0.0.3\n permit ip 10.0.50.0 0.0.0.3 10.0.0.0 0.0.255.255\n permit udp any 10.0.50.0 0.0.0.3\n permit udp 10.0.50.0 0.0.0.3 10.0.0.0 0.0.255.255\n permit udp any host 10.0.50.1 eq 67\n permit udp host 10.0.50.1 eq 67 any\n permit udp any host 10.0.50.2 eq 67\n permit udp host 10.0.50.2 eq 67 any\n permit udp any host 10.0.50.1 eq 68\n permit udp host 10.0.50.1 eq 68 any\n permit udp any host 10.0.50.2 eq 68\n permit udp host 10.0.50.2 eq 68 any\n permit any 255.255.255.255\n permit 255.255.255.255 any\n \n !--- IOT subnet to database\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.3\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.4\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.5\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.6\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.7\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.8\n permit ip 10.0.90.0 0.0.0.255 host 10.1.50.3\n permit ip 10.0.90.0 0.0.0.255 host 10.1.50.4\n permit ip 10.0.90.0 0.0.0.255 host 10.1.50.5\n \n !--- Deny all\n deny ip any any\n"
           }
-          ],
+        ],
         "externalLinks": [
           {
             "title": "Rapport Technique SAE-502",
@@ -538,35 +536,34 @@
           }
         ],
         "codeBlocks": [
-    {
-      "label": "Spanning-Tree and Trunk Configuration",
-      "language": "cisco",
-      "code": "spanning-tree mode rapid-pvst\n spanning-tree extend system-id\n spanning-tree vlan 1,10,20,30,40,50,60,90 priority 28672\n !\n interface FastEthernet1/0/1\n  description To SWAKAT03\n  switchport trunk encapsulation dot1q\n  switchport trunk allowed vlan 1,10,20,30,40,50,60,90\n  switchport mode trunk\n"
-    },
-    {
-      "label": "VRRP Configuration for Master MQTT Server",
-      "language": "plaintext",
-      "code": "vrrp_instance VI_1 {\n        state MASTER\n        interface enp0s8 //Change interface if needed\n        virtual_router_id 52\n        priority 50\n        advert_int 1\n        virtual_ipaddress {\n                10.0.90.1/24\n        }\n}\n",
-      "icon": "bi-file-pdf"
-    },
-    {
-      "label": "Access List Configuration",
-      "language": "cisco",
-      "code": "ip access-list extended AKAT-ACL\n !--- Local admin subnet to all admin subnets\n permit ip 10.0.10.0 0.0.0.255 10.1.10.0 0.0.0.255\n permit ip 10.0.10.0 0.0.0.255 10.0.10.0 0.0.0.255\n \n !--- Deny all subnets to admin subnet\n deny ip 10.0.0.0 0.0.255.255 10.1.10.0 0.0.0.255\n deny ip 10.0.0.0 0.0.255.255 10.0.10.0 0.0.0.255\n \n !--- All subnets to server\n permit ip 10.0.0.0 0.0.255.255 10.0.50.0 0.0.0.3\n permit ip 10.0.50.0 0.0.0.3 10.0.0.0 0.0.255.255\n permit udp any 10.0.50.0 0.0.0.3\n permit udp 10.0.50.0 0.0.0.3 10.0.0.0 0.0.255.255\n permit udp any host 10.0.50.1 eq 67\n permit udp host 10.0.50.1 eq 67 any\n permit udp any host 10.0.50.2 eq 67\n permit udp host 10.0.50.2 eq 67 any\n permit udp any host 10.0.50.1 eq 68\n permit udp host 10.0.50.1 eq 68 any\n permit udp any host 10.0.50.2 eq 68\n permit udp host 10.0.50.2 eq 68 any\n permit any 255.255.255.255\n permit 255.255.255.255 any\n \n !--- IOT subnet to database\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.3\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.4\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.5\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.6\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.7\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.8\n permit ip 10.0.90.0 0.0.0.255 host 10.1.50.3\n permit ip 10.0.90.0 0.0.0.255 host 10.1.50.4\n permit ip 10.0.90.0 0.0.0.255 host 10.1.50.5\n \n !--- Deny all\n deny ip any any\n"
-    }
-  ],
-  "externalLinks": [
-    {
-      "title": "SAE-502 Technical Report",
-      "url": "https://github.com/ThomasM2568/Portfolio/blob/main/doc/sae502.pdf",
-      "icon": "bi-file-pdf"
-    },
-    {
-      "title": "GitHub Repository",
-      "url": "https://github.com/ThomasM2568/Sae5.02-Piloter-un-projet-informatique/tree/main",
-      "icon": "bi-github"
-    }
-  ]
+          {
+            "label": "Spanning-Tree and Trunk Configuration",
+            "language": "cisco",
+            "code": "spanning-tree mode rapid-pvst\n spanning-tree extend system-id\n spanning-tree vlan 1,10,20,30,40,50,60,90 priority 28672\n !\n interface FastEthernet1/0/1\n  description To SWAKAT03\n  switchport trunk encapsulation dot1q\n  switchport trunk allowed vlan 1,10,20,30,40,50,60,90\n  switchport mode trunk\n"
+          },
+          {
+            "label": "VRRP Configuration for Master MQTT Server",
+            "language": "plaintext",
+            "code": "vrrp_instance VI_1 {\n        state MASTER\n        interface enp0s8 //Change interface if needed\n        virtual_router_id 52\n        priority 50\n        advert_int 1\n        virtual_ipaddress {\n                10.0.90.1/24\n        }\n}\n"
+          },
+          {
+            "label": "Access List Configuration",
+            "language": "cisco",
+            "code": "ip access-list extended AKAT-ACL\n !--- Local admin subnet to all admin subnets\n permit ip 10.0.10.0 0.0.0.255 10.1.10.0 0.0.0.255\n permit ip 10.0.10.0 0.0.0.255 10.0.10.0 0.0.0.255\n \n !--- Deny all subnets to admin subnet\n deny ip 10.0.0.0 0.0.255.255 10.1.10.0 0.0.0.255\n deny ip 10.0.0.0 0.0.255.255 10.0.10.0 0.0.0.255\n \n !--- All subnets to server\n permit ip 10.0.0.0 0.0.255.255 10.0.50.0 0.0.0.3\n permit ip 10.0.50.0 0.0.0.3 10.0.0.0 0.0.255.255\n permit udp any 10.0.50.0 0.0.0.3\n permit udp 10.0.50.0 0.0.0.3 10.0.0.0 0.0.255.255\n permit udp any host 10.0.50.1 eq 67\n permit udp host 10.0.50.1 eq 67 any\n permit udp any host 10.0.50.2 eq 67\n permit udp host 10.0.50.2 eq 67 any\n permit udp any host 10.0.50.1 eq 68\n permit udp host 10.0.50.1 eq 68 any\n permit udp any host 10.0.50.2 eq 68\n permit udp host 10.0.50.2 eq 68 any\n permit any 255.255.255.255\n permit 255.255.255.255 any\n \n !--- IOT subnet to database\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.3\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.4\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.5\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.6\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.7\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.8\n permit ip 10.0.90.0 0.0.0.255 host 10.1.50.3\n permit ip 10.0.90.0 0.0.0.255 host 10.1.50.4\n permit ip 10.0.90.0 0.0.0.255 host 10.1.50.5\n \n !--- Deny all\n deny ip any any\n"
+          }
+        ],
+        "externalLinks": [
+          {
+            "title": "SAE-502 Technical Report",
+            "url": "https://github.com/ThomasM2568/Portfolio/blob/main/doc/sae502.pdf",
+            "icon": "bi-file-pdf"
+          },
+          {
+            "title": "GitHub Repository",
+            "url": "https://github.com/ThomasM2568/Sae5.02-Piloter-un-projet-informatique/tree/main",
+            "icon": "bi-github"
+          }
+        ]
       }
     ],
     "contact_title": "Contact",
