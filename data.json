@@ -208,7 +208,7 @@
           {
             "label": "Configuration OSPF - Cisco IOS",
             "language": "cisco",
-            "code": "router ospf 1 vrf MAN\n router-id 0.0.0.3\n log-adjacency-changes\n redistribute connected\n redistribute static\n network 10.1.254.248 0.0.0.3 area 0\n network 10.1.254.252 0.0.0.3 area 0\n network 10.116.1.0 0.0.0.3 area 0\n !\n router bgp 65130\n no synchronization\n bgp log-neighbor-changes\n redistribute connected\n redistribute static\n neighbor 31.1.126.14 remote-as 65116\n neighbor 91.1.222.98 remote-as 65116\n no auto-summary\n !\n address-family ipv4 vrf INET\n no synchronization\n aggregate-address 91.1.222.96 255.255.255.252 summary-only\n aggregate-address 31.1.126.12 255.255.255.252 summary-only\n exit-address-family\n"
+            "code": "router ospf 1 vrf MAN\n router-id 0.0.0.3\n log-adjacency-changes\n redistribute connected\n redistribute static\n network 10.1.254.248 0.0.0.3 area 0\n network 10.1.254.252 0.0.0.3 area 0\n network 10.116.1.0 0.0.0.3 area 0\n !\nrouter bgp 65130\n no synchronization\n bgp log-neighbor-changes\n redistribute connected\n redistribute static\n neighbor 31.1.126.14 remote-as 65116\n neighbor 91.1.222.98 remote-as 65116\n no auto-summary\n !\n address-family ipv4 vrf INET\n no synchronization\n aggregate-address 91.1.222.96 255.255.255.252 summary-only\n aggregate-address 31.1.126.12 255.255.255.252 summary-only\n exit-address-family\n"
           },
           {
             "label": "Playbook Ansible - Backup Config et Configuration SNMP",
@@ -497,7 +497,7 @@
           {
             "label": "OSPF Configuration - Cisco IOS",
             "language": "cisco",
-            "code": "router ospf 1 vrf MAN\n router-id 0.0.0.3\n log-adjacency-changes\n redistribute connected\n redistribute static\n network 10.1.254.248 0.0.0.3 area 0\n network 10.1.254.252 0.0.0.3 area 0\n network 10.116.1.0 0.0.0.3 area 0\n !\n router bgp 65130\n no synchronization\n bgp log-neighbor-changes\n redistribute connected\n redistribute static\n neighbor 31.1.126.14 remote-as 65116\n neighbor 91.1.222.98 remote-as 65116\n no auto-summary\n !\n address-family ipv4 vrf INET\n no synchronization\n aggregate-address 91.1.222.96 255.255.255.252 summary-only\n aggregate-address 31.1.126.12 255.255.255.252 summary-only\n exit-address-family\n"
+            "code": "router ospf 1 vrf MAN\n router-id 0.0.0.3\n log-adjacency-changes\n redistribute connected\n redistribute static\n network 10.1.254.248 0.0.0.3 area 0\n network 10.1.254.252 0.0.0.3 area 0\n network 10.116.1.0 0.0.0.3 area 0\n !\nrouter bgp 65130\n no synchronization\n bgp log-neighbor-changes\n redistribute connected\n redistribute static\n neighbor 31.1.126.14 remote-as 65116\n neighbor 91.1.222.98 remote-as 65116\n no auto-summary\n !\n address-family ipv4 vrf INET\n no synchronization\n aggregate-address 91.1.222.96 255.255.255.252 summary-only\n aggregate-address 31.1.126.12 255.255.255.252 summary-only\n exit-address-family\n"
           },
           {
             "label": "Ansible Playbook - Config Backup and SNMP Configuration",
