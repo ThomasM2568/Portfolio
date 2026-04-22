@@ -219,7 +219,7 @@
         "externalLinks": [
           {
             "title": "Rapport Technique SAE-501",
-            "url": "./doc/sae501-report.pdf",
+            "url": "https://github.com/ThomasM2568/Portfolio/blob/main/doc/sae501.pdf",
             "icon": "bi-file-pdf"
           },
           {
@@ -508,7 +508,7 @@
         "externalLinks": [
           {
             "title": "Technical Report SAE-501",
-            "url": "./doc/sae501-report.pdf",
+            "url": "https://github.com/ThomasM2568/Portfolio/blob/main/doc/sae501.pdf",
             "icon": "bi-file-pdf"
           },
           {
