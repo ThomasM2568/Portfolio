@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const container = document.getElementById('proj-container');
         if (!container) return;
         container.innerHTML = projs.map(proj => `
-            <a href="${proj.link}" class="project-card" aria-label="${proj.title}">
+            <a href="${proj.link}" class="project-card" aria-label="${proj.title}" style="text-decoration: none; color: inherit;">
                 <img src="${proj.icon}" alt="Icon" class="project-icon" />
                 <div class="flex-grow-1">
                     <strong>${proj.title}</strong><br />
