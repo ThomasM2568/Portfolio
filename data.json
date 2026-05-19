@@ -343,23 +343,23 @@
         "logo": "./img/forvia.jpg"
       },
       {
-        "id": "exp3",
-        "company": "Stellantis",
-        "role": "Network Security and Automation Apprentice",
-        "date": "Sep 2023 - Aug 2024",
-        "desc": "Automation and standardization of network and security operations.",
-        "intro": "Main missions:",
-        [
-          "Automation and industrialization of IPAM / DNS management (Infoblox)",
-          "Takeover, development, and maintenance of automation scripts (Python, Perl, PHP)",
-          "Palo Alto firewall and F5 reverse proxy (LTM/WAF) management",
-          "Development of audit and inventory tools for F5 configurations with Excel export",
-          "Automation of certificate management (CRL, internal CAs) on F5",
-          "Visibility and compliance improvement via network configuration analysis",
-          "Participation in AWS cloud automation projects (VPC and FW inspection)"
-        ],
-        "logo": "./img/stellantis.png"
-      },
+  "id": "exp3",
+  "company": "Stellantis",
+  "role": "Network Security and Automation Apprentice",
+  "date": "Sep 2023 - Aug 2024",
+  "desc": "Automation and standardization of network and security operations.",
+  "intro": "Main missions:",
+  "skills": [
+    "Automation and industrialization of IPAM / DNS management (Infoblox)",
+    "Takeover, development, and maintenance of automation scripts (Python, Perl, PHP)",
+    "Palo Alto firewall and F5 reverse proxy (LTM/WAF) management",
+    "Development of audit and inventory tools for F5 configurations with Excel export",
+    "Automation of certificate management (CRL, internal CAs) on F5",
+    "Visibility and compliance improvement via network configuration analysis",
+    "Participation in AWS cloud automation projects (VPC and FW inspection)"
+  ],
+  "logo": "./img/stellantis.png"
+},
       {
         "id": "exp4",
         "company": "Stellantis",
