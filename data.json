@@ -50,7 +50,6 @@
         "intro": "Missions principales :",
         "skills": [
           "Automatisation et industrialisation de la gestion IPAM / DNS (Infoblox)",
-																					
           "Reprise, développement et maintenance de scripts d'automatisation (Python, Perl, PHP)",
           "Gestion de pare-feu Palo Alto et de reverse proxies F5 (LTM/WAF)",
           "Développement d'outils d'audit et d'inventaire des configurations F5 avec export Excel",
@@ -69,7 +68,6 @@
         "intro": "Missions principales :",
         "skills": [
           "Conception d'un outil Python d'analyse des flux inter-DMZ",
-																								  
           "Utilisation d'API REST pour interagir avec des équipements (Palo Alto, F5 BigIP)",
           "Proof of Concept de Cisco Telemetry on ASR9000 routers for la supervision",
           "Amélioration des sauvegardes Palo Alto (ajout de format texte exploitable)",
@@ -86,13 +84,11 @@
         "date": "2024 - 2026",
         "intro": "Spécialisation dans la conception de systèmes connectés, la sécurité des objets communicants et les protocoles réseaux basse consommation.",
         "skills": [
-											 
           "Conception de systèmes connectés",
           "Sécurité des objets communicants",
           "Protocoles réseaux basse consommation",
           "Architecture IoT avancée"
         ]
-								
       },
       {
         "id": "edu2",
@@ -105,7 +101,6 @@
           "Télécommunications",
           "Major de promotion"
         ]
-							   
       },
       {
         "id": "edu3",
@@ -117,7 +112,6 @@
           "Réseaux fondamentaux (IP, TCP/UDP)",
           "Systèmes Linux (commandes, environnement)"
         ]
-								 
       }
     ],
     "cert_title": "Certifications",
@@ -141,11 +135,6 @@
         "name": "F5 – Advanced Web Application Firewall (WAF) – Nov 2024",
         "url": "https://www.linkedin.com/in/thomas-mirbey/overlay/Certifications/450325221/treasury?profileId=ACoAADhxaNgBd3Jyuxv0bqZB22r7z6rg_z-fPRE",
         "badge": "f5-badge.png"
-		
-	   
-																					   
-																																					   
-							   
       }
     ],
     "proj_title": "Projets Clés",
@@ -172,40 +161,6 @@
             "type": "diagram",
             "caption": "Data pipeline with MQTT and HTTP"
           }
-        ],
-        "codeBlocks": [
-          {
-            "label": "API Flask - Vérification OAuth2",
-            "language": "python",
-            "code": "@private_bp.before_request\ndef check_authorization():\n    start_time = time.time()\n    token = request.headers.get('Authorization')\n    userID = request.view_args.get('userID') if request.view_args else request.args.get('userID')\n\n    if not userID:\n        return jsonify({\"return_code\": \"KO error\", \"error\": \"Missing parameter userID\", \"received\": request.args}), 400\n\n    if not token:\n        return jsonify({\"return_code\": \"KO error\",\"error\": \"Authorization header missing\"}), 401\n    else:\n        g.token = token\n        token = request.headers.get('Authorization')\n        token = token.split(' ')[-1] if token else None\n\n        if token is None or str(token) == \"undefined\" or str(token) == \"null\":\n            return jsonify({\"return_code\": \"KO error\", \"error\": \"invalid token\"}), 401\n\n        token_introspection = introspect_token(\"FRMBAU01.ecom.local\", \"8080\", \"master\", token, \"BNeMJlqVcA2SbbIqq9SJtfqmmMKL5s8n\", \"apiconnect\")\n        if 'error' in token_introspection:\n            return jsonify({\"return_code\": \"KO error\", \"error\": \"invalid token\"}), 500\n\n        validated = inspect_introspect_response(token_introspection, userID)\n\n        if not validated.get(\"active\"):\n            return jsonify({\"return_code\": \"KO error\", \"error\": \"invalid token\"}), 401\n\n    if not validated.get(\"is_username_the_same\"):\n        return jsonify({\"return_code\": \"KO error\", \"error\": \"invalid token\"}), 401\n\n    g.userID = userID\n    g.token_info = validated"
-          },
-          {
-            "label": "HAProxy - Load Balancer & SSL",
-            "language": "plaintext",
-            "code": "frontend https_front\n    bind *:12345 ssl crt /home/tp/certs/server/server.pem\n    mode http\n    stick-table type ip size 200k expire 30m store conn_rate(60s)\n    tcp-request connection track-sc1 src\n    acl is_health_check src 127.0.0.1 192.168.1.7 192.168.1.8 192.168.1.9\n    tcp-request connection reject if { src_conn_rate ge 50 } !is_health_check\n    option forwardfor\n    default_backend api_servers\n\nbackend api_servers\n    balance leastconn\n    stick-table type ip size 200k expire 30m store conn_rate(60s)\n    stick on src\n    option httpchk GET /isalive\n    server FRMBAPI01 192.168.1.15:12345 check ssl verify required ca-file /home/tp/certs/ca.pem\n    server FRMBAPI02 192.168.1.16:12345 check ssl verify required ca-file /home/tp/certs/ca.pem\n    server FRMBAPI03 192.168.1.17:12345 check ssl verify required ca-file /home/tp/certs/ca.pem backup"
-          },
-          {
-            "label": "Mosquitto - MQTT & WebSockets SSL",
-            "language": "plaintext",
-            "code": "listener 8883 0.0.0.0\nprotocol mqtt\ncafile /home/tp/certs/ca/ca.crt\ncertfile /home/tp/certs/server/server.crt\nkeyfile /home/tp/certs/server/server.key\nrequire_certificate true\nallow_anonymous false\n\nlistener 9001 0.0.0.0\nprotocol websockets\ncafile /home/tp/certs/ca/ca.crt\ncertfile /home/tp/certs/server/server.crt\nkeyfile /home/tp/certs/server/server.key\nrequire_certificate false\nallow_anonymous false"
-          }
-        ],
-        "externalLinks": [
-          {
-            "title": "Rapport de Projet",
-            "url": "https://github.com/ThomasM2568/Portfolio/blob/main/doc/ecom.pdf",
-            "icon": "bi-file-pdf"
-          },
-          {
-            "title": "Présentation Finale (Canva)",
-            "url": "https://www.canva.com/design/DAG-rTlPXhQ/QJzI_uq6-HxqWrYkJeQPug/view",
-            "icon": "bi-file-earmark-slides"
-          },
-          {
-            "title": "Repository GitHub",
-            "url": "https://github.com/ThomasM2568/ECOM_project",
-            "icon": "bi-github"
-          }
         ]
       },
       {
@@ -224,88 +179,17 @@
             "type": "diagram",
             "caption": "Topologie réseau du projet"
           }
-        ],
-        "codeBlocks": [
-          {
-            "label": "Configuration OSPF - Cisco IOS",
-            "language": "cisco",
-            "code": "router ospf 1 vrf MAN\n router-id 0.0.0.3\n log-adjacency-changes\n redistribute connected\n redistribute static\n network 10.1.254.248 0.0.0.3 area 0\n network 10.1.254.252 0.0.0.3 area 0\n network 10.116.1.0 0.0.0.3 area 0\n !\nrouter bgp 65130\n no synchronization\n bgp log-neighbor-changes\n redistribute connected\n redistribute static\n neighbor 31.1.126.14 remote-as 65116\n neighbor 91.1.222.98 remote-as 65116\n no auto-summary\n !\n address-family ipv4 vrf INET\n no synchronization\n aggregate-address 91.1.222.96 255.255.255.252 summary-only\n aggregate-address 31.1.126.12 255.255.255.252 summary-only\n exit-address-family\n"
-          },
-          {
-            "label": "Playbook Ansible - Backup Config et Configuration SNMP",
-            "language": "yaml",
-            "code": "name: Récupérer et transférer la configuration Cisco\n  hosts: all\n  gather_facts: False\n  connection: network_cli\n  vars_files:\n    - credentials.yml\n\n  tasks:\n      - name: Configurer la communauté SNMP '4P' en lecture/écriture\n        ios_config:\n          lines:\n            - snmp-server community 4P rw\n\n    - name: Récupérer la configuration complète\n      ios_command:\n        commands:\n          - show running-config\n      register: running_config\n\n    - name: Créer un fichier avec la configuration\n      copy:\n        content: \"{{ running_config.stdout[0] }}\"\n        dest: \"/tmp/config_{{ inventory_hostname }}.txt\"\n\n    - name: Transférer le fichier vers le serveur FTP\n      ansible.builtin.command:\n        cmd: |\n          ftp -n 8.8.1.12 <<EOF\n          user devops\n          put /tmp/config_{{ item }}.txt\n          quit\n          EOF\n      delegate_to: localhost\n      loop: \"{{ ansible_play_hosts }}\"\n      loop_control:\n        loop_var: item\n"
-          }
-        ],
-        "externalLinks": [
-          {
-            "title": "Rapport Technique SAE-501",
-            "url": "https://github.com/ThomasM2568/Portfolio/blob/main/doc/sae501.pdf",
-            "icon": "bi-file-pdf"
-          },
-          {
-            "title": "Repository GitHub",
-            "url": "https://github.com/ThomasM2568/Sae5.01-Concevoir-realiser-et-presenter-une-solution-technique-",
-            "icon": "bi-github"
-          }
-        ]
-      },
-      {
-        "id": "sae502",
-        "title": "SAÉ-502 : Sécurité Réseau Hospitalier",
-        "date": "Oct. 2023 – Nov. 2023",
-        "desc": "Déploiement d'une infrastructure sécurisée pour un environnement hospitalier.",
-        "details": "Projet orienté cybersécurité visant à protéger les infrastructures hospitalières contre les cyberattaques (ransomwares, indisponibilité).\n\n• Conception et déploiement de l'architecture réseau multi-sites.\n• Équipements : routeurs Cisco 1900, switches Catalyst 3750, firewall Stormshield.\n• Haute disponibilité : VRRP, HSRP et load balancing via HAProxy.\n• Routage : inter-VLAN, cœur réseau, spanning-tree.\n• Sécurité : segmentation VLAN, firewalling, authentification RADIUS.\n• Interconnexion sécurisée : tunnel IPsec entre sites.\n• IoT : intégration de capteurs et badges RFID via ESP8266 (Arduino) et Raspberry Pi (Python).\n• Documentation complète pour assurer la maintenabilité et la résilience du système.",
-        "icon": "./img/sae502.png",
-        "link": "project.html?id=sae502",
-        "skills": ["VLAN", "Firewall", "VPN", "IPsec", "RADIUS", "HAProxy", "IoT", "RFID"],
-        "media": [
-          {
-            "url": "./img/infrastructure_502.png",
-            "alt": "Architecture hospitalière",
-            "type": "diagram",
-            "caption": "Architecture réseau sécurisée"
-          }
-        ],
-        "codeBlocks": [
-          {
-            "label": "Configuration Spanning-Tree et Trunk",
-            "language": "cisco",
-            "code": "spanning-tree mode rapid-pvst\n spanning-tree extend system-id\n spanning-tree vlan 1,10,20,30,40,50,60,90 priority 28672\n !\n interface FastEthernet1/0/1\n  description Vers SWAKAT03\n  switchport trunk encapsulation dot1q\n  switchport trunk allowed vlan 1,10,20,30,40,50,60,90\n  switchport mode trunk\n"
-          },
-          {
-            "label": "Configuration VRRP du server MQTT Master",
-            "language": "plaintext",
-            "code": "vrrp_instance VI_1 {\n        state MASTER\n        interface enp0s8 //Changer la carte si besoin\n        virtual_router_id 52\n        priority 50\n        advert_int 1\n        virtual_ipaddress {\n                10.0.90.1/24\n        }\n}\n"
-          },
-          {
-            "label": "Configuration Access List",
-            "language": "cisco",
-            "code": "ip access-list extended AKAT-ACL\n !--- Local admin subnet to all admin subnets\n permit ip 10.0.10.0 0.0.0.255 10.1.10.0 0.0.0.255\n permit ip 10.0.10.0 0.0.0.255 10.0.10.0 0.0.0.255\n \n !--- Deny all subnets to admin subnet\n deny ip 10.0.0.0 0.0.255.255 10.1.10.0 0.0.0.255\n deny ip 10.0.0.0 0.0.255.255 10.0.10.0 0.0.0.255\n \n !--- All subnets to server\n permit ip 10.0.0.0 0.0.255.255 10.0.50.0 0.0.0.3\n permit ip 10.0.50.0 0.0.0.3 10.0.0.0 0.0.255.255\n permit udp any 10.0.50.0 0.0.0.3\n permit udp 10.0.50.0 0.0.0.3 10.0.0.0 0.0.255.255\n permit udp any host 10.0.50.1 eq 67\n permit udp host 10.0.50.1 eq 67 any\n permit udp any host 10.0.50.2 eq 67\n permit udp host 10.0.50.2 eq 67 any\n permit udp any host 10.0.50.1 eq 68\n permit udp host 10.0.50.1 eq 68 any\n permit udp any host 10.0.50.2 eq 68\n permit udp host 10.0.50.2 eq 68 any\n permit any 255.255.255.255\n permit 255.255.255.255 any\n \n !--- IOT subnet to database\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.3\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.4\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.5\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.6\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.7\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.8\n permit ip 10.0.90.0 0.0.0.255 host 10.1.50.3\n permit ip 10.0.90.0 0.0.0.255 host 10.1.50.4\n permit ip 10.0.90.0 0.0.0.255 host 10.1.50.5\n \n !--- Deny all\n deny ip any any\n"
-          }
-        ],
-        "externalLinks": [
-          {
-            "title": "Rapport Technique SAE-502",
-            "url": "https://github.com/ThomasM2568/Portfolio/blob/main/doc/sae502.pdf",
-            "icon": "bi-file-pdf"
-          },
-          {
-            "title": "Repository GitHub",
-            "url": "https://github.com/ThomasM2568/Sae5.02-Piloter-un-projet-informatique/tree/main",
-            "icon": "bi-github"
-          }
         ]
       }
     ],
     "contact_title": "Contact",
-    "see_details": "Voir détails",
+    "see_details": "Voir les détails",
     "back_btn": "← Retour aux projets",
     "theme_nebula": "Nébuleuse",
     "theme_aurora": "Aurore",
-    "project_overview": "Présentation du projet",
+    "project_overview": "Présentation du Projet",
     "project_tech": "Détails Techniques & Compétences",
-    "project_media": "Visuels & Schémas",
+    "project_media": "Visuels & Diagrammes",
     "project_code": "Code & Configuration",
     "project_links": "Ressources Externes"
   },
@@ -314,24 +198,24 @@
     "title": "Network & Security Engineer",
     "header_desc": "Passionate about network security, IIoT, and automation.",
     "about_title": "About Me",
-    "about_text": "A 23-year-old Network and Security Engineer, particularly interested in industrial environments. A future graduate with a Master's in IoT from UFR STGI Montbéliard, I aim to leverage my dual expertise in networks/security and automation to design reliable solutions that simplify operations and limit human error. Attracted by international environments, I wish to evolve in demanding technical contexts and contribute to concrete projects.",
+    "about_text": "A 23-year-old Network and Security Engineer, particularly interested in industrial environments. A future graduate with an IoT Master's degree from UFR STGI in Montbéliard, I aim to leverage my dual expertise in networks/security and automation to design reliable solutions that simplify operations and reduce human error. Attracted by international environments, I seek to grow in demanding technical contexts and contribute to impactful projects.",
     "exp_title": "Professional Background",
     "experiences": [
       {
         "id": "exp1",
         "company": "Grand Besançon Métropole",
-        "role": "Network & Security Apprentice Engineer",
+        "role": "Network & Security Engineer Apprentice",
         "date": "Sep 2025 - Present",
         "desc": "Participation in the operation, securing, and automation of network infrastructures and IoT environments.",
         "intro": "Main missions:",
         "skills": [
-          "Network equipment administration (Cisco switches/routers, Fortinet firewalls)",
-          "Securing and reliability of industrial controllers (Sofrel SG4000) for water management",
-          "Security audit analysis and remediation proposal in collaboration with the CISO",
-          "Automation and harmonization of FW configurations (38 schools) via FortiManager (CLI/Jinja/TCL)",
-          "Implementation of Policy-Based Routing and Operational Maintenance (MCO)",
-          "IPAM Migration (PHPIPAM to Netbox) via Python scripts and SNMP scans",
-          "Python script development for daily operation optimization"
+          "Administration of network equipment (Cisco switches/routers, Fortinet firewalls)",
+          "Securing and reliability of industrial controllers (Sofrel SG4000) related to water systems",
+          "Analysis of security audits and proposal of remediation measures with the CISO",
+          "Automation and harmonization of firewalls (38 schools) via FortiManager (CLI/Jinja/TCL)",
+          "Implementation of Policy-Based Routing and management of operational maintenance (MCO)",
+          "Migration of IPAM (PHPIPAM to Netbox) via Python scripts and SNMP scanning",
+          "Development of Python scripts for daily operation optimization"
         ],
         "logo": "./img/gbm.png"
       },
@@ -341,13 +225,13 @@
         "role": "IIOT Apprentice",
         "date": "Sep 2024 - Feb 2025",
         "desc": "Development and automation of IoT connectivity processes.",
-        "intro": "Technical focus: Connection with OPC/UA to Kepware for industrial data collection. Use of JavaScript and REST APIs for data flow automation.",
+        "intro": "Technical focus: Connection to Kepware via OPC/UA for industrial data retrieval. Use of JavaScript and REST APIs for data flow automation.",
         "skills": [
-          "Development of IIoT data collection solutions using JavaScript",
-          "Industrial data retrieval via OPC/UA protocol (Kepware)",
+          "Development of IIoT data collection solutions in JavaScript",
+          "Retrieval of PLC data via OPC/UA protocol (Kepware)",
           "Development of new features, development sprints, and testing",
-          "Prototype creation, validation, and testing in real industrial conditions",
-          "Data flow automation via REST APIs"
+          "Prototyping, validation, and testing in real industrial conditions",
+          "Automation of data flows via REST APIs"
         ],
         "logo": "./img/forvia.jpg"
       },
@@ -358,7 +242,7 @@
         "date": "Sep 2023 - Aug 2024",
         "desc": "Automation and standardization of network and security operations.",
         "intro": "Main missions:",
-        [
+        "skills": [
           "Automation and industrialization of IPAM / DNS management (Infoblox)",
           "Takeover, development, and maintenance of automation scripts (Python, Perl, PHP)",
           "Palo Alto firewall and F5 reverse proxy (LTM/WAF) management",
@@ -366,7 +250,7 @@
           "Automation of certificate management (CRL, internal CAs) on F5",
           "Visibility and compliance improvement via network configuration analysis",
           "Participation in AWS cloud automation projects (VPC and FW inspection)"
-        ,
+        ],
         "logo": "./img/stellantis.png"
       },
       {
@@ -374,20 +258,19 @@
         "company": "Stellantis",
         "role": "Network Security and Automation Intern",
         "date": "Jan 2023 - Mar 2023",
-        "desc": "Development of automation tools for diagnostic and troubleshooting of network and security incidents.",
+        "desc": "Development of automation tools for network and security incident diagnosis and troubleshooting.",
         "intro": "Main missions:",
         "skills": [
           "Design of a Python tool for inter-DMZ flow analysis",
-																				
           "Use of REST APIs to interact with equipment (Palo Alto, F5 BigIP)",
           "Proof of Concept of Cisco Telemetry on ASR9000 routers for monitoring",
-          "Palo Alto backup improvement (addition of exploitable text format)",
-          "Tool presentation in English to international technical teams"
+          "Improvement of Palo Alto backups (addition of exploitable text format)",
+          "Presentation of the tool in English to international technical teams"
         ],
         "logo": "./img/stellantis.png"
       }
     ],
-    "edu_title": "Education",
+    "edu_title": "Training",
     "education": [
       {
         "id": "edu1",
@@ -395,12 +278,11 @@
         "date": "2024 - 2026",
         "intro": "Specialization in connected systems design, security of communicating objects, and low-power network protocols.",
         "skills": [
-          "IoT/IIoT Network Security",
-          "Connected Systems Design",
-          "Low-Power Network Protocols",
-          "Advanced IoT Architecture"
+          "Connected systems design",
+          "Security of communicating objects",
+          "Low-power network protocols",
+          "Advanced IoT architecture"
         ]
-								
       },
       {
         "id": "edu2",
@@ -413,19 +295,17 @@
           "Telecommunications",
           "Valedictorian"
         ]
-							   
       },
       {
         "id": "edu3",
-        "title": "Lycée Armand Peugeot, Baccalaureate",
+        "title": "Lycée Armand Peugeot, High School Diploma",
         "date": "2019 - 2021",
-        "intro": "Honors (Mention Assez Bien). Specialties in Digital and Computer Sciences, Mathematics, and Physics-Chemistry.",
+        "intro": "Honors. Specialties in Digital and Computer Sciences, Mathematics, and Physics-Chemistry.",
         "skills": [
           "Python programming (basics, algorithms)",
-          "Fundamental networks (IP, TCP/UDP)",
+          "Network fundamentals (IP, TCP/UDP)",
           "Linux systems (commands, environment)"
         ]
-								 
       }
     ],
     "cert_title": "Certifications",
@@ -449,11 +329,6 @@
         "name": "F5 – Advanced Web Application Firewall (WAF) – Nov 2024",
         "url": "https://www.linkedin.com/in/thomas-mirbey/overlay/Certifications/450325221/treasury?profileId=ACoAADhxaNgBd3Jyuxv0bqZB22r7z6rg_z-fPRE",
         "badge": "f5-badge.png"
-		
-	   
-																					   
-																																					   
-							   
       }
     ],
     "proj_title": "Key Projects",
@@ -463,56 +338,22 @@
         "title": "ECOM (Electric Consumption Optimization and Monitoring)",
         "date": "Jan 2024 – Jan 2026",
         "desc": "Optimization and collaborative energy sharing in residential microgrids.",
-        "details": "Project initiated during the 3rd year of a Bachelor's in Networks & Telecommunications (IoM track), continued during Master's studies as both a supervised project and a final research project.\n\n• Leadership & Architecture: Technical lead of a smart local electricity sharing solution between connected households.\n• Data Pipeline Design: End-to-end design of the processing chain (collection → processing → valorization) including high availability and load balancing.\n• Protocol Unification: Standardization using MQTT for internal communications and HTTP/WebSocket for external interfaces to abstract hardware heterogeneity.\n• Core API Development (Python/Flask): Development of a secure API using OAuth 2.0 enabling agnostic control of IoT devices regardless of underlying protocols.\n• Optimization Algorithms: Design of the energy-sharing engine with the objective of maximizing local self-consumption.\n• Security & Resilience: Implementation of distributed and secure architectures ensuring smart grid service continuity.",
+        "details": "Project started in BUT3 Networks & Telecommunications (IoM track), continued in IoT Master's until M2 as a research project.\n\n• Management & Architecture: Technical direction of a smart short-circuit electricity sharing solution between connected homes.\n• Data Pipeline: Complete design of the processing chain (collection → processing → valuation) with high availability and load balancing.\n• Protocol Unification: Standardization via MQTT (internal) and HTTP/WebSocket (external) for hardware abstraction.\n• Core API: Development of a secure API in Python/Flask with OAuth 2.0 to control IoT equipment agnostically.\n• Energy Optimization: Design of an algorithm aimed at maximizing local self-consumption.\n• Security & Resilience: Distributed architecture and security mechanisms to ensure smart grid service continuity.",
         "icon": "./img/ecom.png",
         "link": "project.html?id=ecom",
-        "skills": ["IoT", "Python", "Flask", "MQTT", "OAuth 2.0", "High Availability", "Smart Grid", "Architecture"],
+        "skills": ["IoT", "Python", "Flask", "MQTT", "OAuth 2.0", "HA", "Smart Grid", "Architecture"],
         "media": [
           {
             "url": "./img/ecom_architecture_diagram.png",
             "alt": "ECOM Architecture",
             "type": "image",
-            "caption": "Overall ECOM system architecture"
+            "caption": "Global ECOM system architecture"
           },
           {
             "url": "./img/data_pipeline.png",
-            "alt": "Data Pipeline MQTT/HTTP",
+            "alt": "MQTT/HTTP Data Pipeline",
             "type": "diagram",
             "caption": "Data pipeline with MQTT and HTTP"
-          }
-        ],
-        "codeBlocks": [
-          {
-            "label": "Flask API - OAuth2 Verification",
-            "language": "python",
-            "code": "@private_bp.before_request\ndef check_authorization():\n    start_time = time.time()\n    token = request.headers.get('Authorization')\n    userID = request.view_args.get('userID') if request.view_args else request.args.get('userID')\n\n    if not userID:\n        return jsonify({\"return_code\": \"KO error\", \"error\": \"Missing parameter userID\", \"received\": request.args}), 400\n\n    if not token:\n        return jsonify({\"return_code\": \"KO error\",\"error\": \"Authorization header missing\"}), 401\n    else:\n        g.token = token\n        token = request.headers.get('Authorization')\n        token = token.split(' ')[-1] if token else None\n\n        if token is None or str(token) == \"undefined\" or str(token) == \"null\":\n            return jsonify({\"return_code\": \"KO error\", \"error\": \"invalid token\"}), 401\n\n        token_introspection = introspect_token(\"FRMBAU01.ecom.local\", \"8080\", \"master\", token, \"BNeMJlqVcA2SbbIqq9SJtfqmmMKL5s8n\", \"apiconnect\")\n        if 'error' in token_introspection:\n            return jsonify({\"return_code\": \"KO error\", \"error\": \"invalid token\"}), 500\n\n        validated = inspect_introspect_response(token_introspection, userID)\n\n        if not validated.get(\"active\"):\n            return jsonify({\"return_code\": \"KO error\", \"error\": \"invalid token\"}), 401\n\n    if not validated.get(\"is_username_the_same\"):\n        return jsonify({\"return_code\": \"KO error\", \"error\": \"invalid token\"}), 401\n\n    g.userID = userID\n    g.token_info = validated"
-          },
-          {
-            "label": "HAProxy - Load Balancer & SSL",
-            "language": "plaintext",
-            "code": "frontend https_front\n    bind *:12345 ssl crt /home/tp/certs/server/server.pem\n    mode http\n    stick-table type ip size 200k expire 30m store conn_rate(60s)\n    tcp-request connection track-sc1 src\n    acl is_health_check src 127.0.0.1 192.168.1.7 192.168.1.8 192.168.1.9\n    tcp-request connection reject if { src_conn_rate ge 50 } !is_health_check\n    option forwardfor\n    default_backend api_servers\n\nbackend api_servers\n    balance leastconn\n    stick-table type ip size 200k expire 30m store conn_rate(60s)\n    stick on src\n    option httpchk GET /isalive\n    server FRMBAPI01 192.168.1.15:12345 check ssl verify required ca-file /home/tp/certs/ca.pem\n    server FRMBAPI02 192.168.1.16:12345 check ssl verify required ca-file /home/tp/certs/ca.pem\n    server FRMBAPI03 192.168.1.17:12345 check ssl verify required ca-file /home/tp/certs/ca.pem backup"
-          },
-          {
-            "label": "Mosquitto - MQTT & WebSockets SSL",
-            "language": "plaintext",
-            "code": "listener 8883 0.0.0.0\nprotocol mqtt\ncafile /home/tp/certs/ca/ca.crt\ncertfile /home/tp/certs/server/server.crt\nkeyfile /home/tp/certs/server/server.key\nrequire_certificate true\nallow_anonymous false\n\nlistener 9001 0.0.0.0\nprotocol websockets\ncafile /home/tp/certs/ca/ca.crt\ncertfile /home/tp/certs/server/server.crt\nkeyfile /home/tp/certs/server/server.key\nrequire_certificate false\nallow_anonymous false"
-          }
-        ],
-        "externalLinks": [
-          {
-            "title": "Project Report",
-            "url": "https://github.com/ThomasM2568/Portfolio/blob/main/doc/ecom.pdf",
-            "icon": "bi-file-pdf"
-          },
-          {
-            "title": "Final Presentation (Canva)",
-            "url": "https://www.canva.com/design/DAG-rTlPXhQ/QJzI_uq6-HxqWrYkJeQPug/view",
-            "icon": "bi-file-earmark-slides"
-          },
-          {
-            "title": "GitHub Repository",
-            "url": "https://github.com/ThomasM2568/ECOM_project",
-            "icon": "bi-github"
           }
         ]
       },
@@ -531,77 +372,6 @@
             "alt": "Network topology",
             "type": "diagram",
             "caption": "Project network topology"
-          }
-        ],
-        "codeBlocks": [
-          {
-            "label": "OSPF Configuration - Cisco IOS",
-            "language": "cisco",
-            "code": "router ospf 1 vrf MAN\n router-id 0.0.0.3\n log-adjacency-changes\n redistribute connected\n redistribute static\n network 10.1.254.248 0.0.0.3 area 0\n network 10.1.254.252 0.0.0.3 area 0\n network 10.116.1.0 0.0.0.3 area 0\n !\nrouter bgp 65130\n no synchronization\n bgp log-neighbor-changes\n redistribute connected\n redistribute static\n neighbor 31.1.126.14 remote-as 65116\n neighbor 91.1.222.98 remote-as 65116\n no auto-summary\n !\n address-family ipv4 vrf INET\n no synchronization\n aggregate-address 91.1.222.96 255.255.255.252 summary-only\n aggregate-address 31.1.126.12 255.255.255.252 summary-only\n exit-address-family\n"
-          },
-          {
-            "label": "Ansible Playbook - Config Backup and SNMP Configuration",
-            "language": "yaml",
-            "code": "name: Retrieve and transfer Cisco configuration\n  hosts: all\n  gather_facts: False\n  connection: network_cli\n  vars_files:\n    - credentials.yml\n\n  tasks:\n      - name: Configure SNMP community '4P' with read/write access\n        ios_config:\n          lines:\n            - snmp-server community 4P rw\n\n    - name: Retrieve full configuration\n      ios_command:\n        commands:\n          - show running-config\n      register: running_config\n\n    - name: Create a file with the configuration\n      copy:\n        content: \"{{ running_config.stdout[0] }}\"\n        dest: \"/tmp/config_{{ inventory_hostname }}.txt\"\n\n    - name: Transfer file to FTP server\n      ansible.builtin.command:\n        cmd: |\n          ftp -n 8.8.1.12 <<EOF\n          user devops\n          put /tmp/config_{{ item }}.txt\n          quit\n          EOF\n      delegate_to: localhost\n      loop: \"{{ ansible_play_hosts }}\"\n      loop_control:\n        loop_var: item\n"
-          }
-        ],
-        "externalLinks": [
-          {
-            "title": "Technical Report SAE-501",
-            "url": "https://github.com/ThomasM2568/Portfolio/blob/main/doc/sae501.pdf",
-            "icon": "bi-file-pdf"
-          },
-          {
-            "title": "GitHub Repository (In French)",
-            "url": "https://github.com/ThomasM2568/Sae5.01-Concevoir-realiser-et-presenter-une-solution-technique-",
-            "icon": "bi-github"
-          }
-        ]
-      },
-      {
-        "id": "sae502",
-        "title": "SAE-502: Managing an IT Project",
-        "date": "Oct 2023 – Nov 2023",
-        "desc": "Deployment of a secure network infrastructure for a hospital environment.",
-        "details": "Hospitals are prime targets for cyberattacks, especially ransomware, which can disrupt IT systems and compromise access to critical medical data. This project aimed to design a secure infrastructure ensuring data protection, service continuity, and system resilience.\n\n• Design and deployment of a multi-site hospital network infrastructure.\n• Equipment: 4 Cisco 1900 series routers, 6 Catalyst 3750 PoE switches, Stormshield SN210W firewall.\n• High availability architecture using VRRP, HSRP, and load balancing via HAProxy.\n• Full routing deployment (core network and inter-VLAN routing) and spanning-tree configuration.\n• Network security implementation: VLAN segmentation, firewall policies, and RADIUS authentication.\n• Secure interconnection via IPsec tunnel between hospital sites.\n• IoT integration: Deployment of sensors and RFID access systems using ESP8266 (Arduino) and Raspberry Pi (Python).\n• Comprehensive documentation to ensure maintainability and operational resilience.",
-        "icon": "./img/sae502.png",
-        "link": "project.html?id=sae502",
-        "skills": ["VLAN", "Firewall", "VPN", "IPsec", "RADIUS", "HAProxy", "IoT", "RFID"],
-        "media": [
-          {
-            "url": "./img/infrastructure_502.png",
-            "alt": "Hospital network security",
-            "type": "diagram",
-            "caption": "Secure hospital network architecture"
-          }
-        ],
-        "codeBlocks": [
-          {
-            "label": "Spanning-Tree and Trunk Configuration",
-            "language": "cisco",
-            "code": "spanning-tree mode rapid-pvst\n spanning-tree extend system-id\n spanning-tree vlan 1,10,20,30,40,50,60,90 priority 28672\n !\n interface FastEthernet1/0/1\n  description To SWAKAT03\n  switchport trunk encapsulation dot1q\n  switchport trunk allowed vlan 1,10,20,30,40,50,60,90\n  switchport mode trunk\n"
-          },
-          {
-            "label": "VRRP Configuration for Master MQTT Server",
-            "language": "plaintext",
-            "code": "vrrp_instance VI_1 {\n        state MASTER\n        interface enp0s8 //Change interface if needed\n        virtual_router_id 52\n        priority 50\n        advert_int 1\n        virtual_ipaddress {\n                10.0.90.1/24\n        }\n}\n"
-          },
-          {
-            "label": "Access List Configuration",
-            "language": "cisco",
-            "code": "ip access-list extended AKAT-ACL\n !--- Local admin subnet to all admin subnets\n permit ip 10.0.10.0 0.0.0.255 10.1.10.0 0.0.0.255\n permit ip 10.0.10.0 0.0.0.255 10.0.10.0 0.0.0.255\n \n !--- Deny all subnets to admin subnet\n deny ip 10.0.0.0 0.0.255.255 10.1.10.0 0.0.0.255\n deny ip 10.0.0.0 0.0.255.255 10.0.10.0 0.0.0.255\n \n !--- All subnets to server\n permit ip 10.0.0.0 0.0.255.255 10.0.50.0 0.0.0.3\n permit ip 10.0.50.0 0.0.0.3 10.0.0.0 0.0.255.255\n permit udp any 10.0.50.0 0.0.0.3\n permit udp 10.0.50.0 0.0.0.3 10.0.0.0 0.0.255.255\n permit udp any host 10.0.50.1 eq 67\n permit udp host 10.0.50.1 eq 67 any\n permit udp any host 10.0.50.2 eq 67\n permit udp host 10.0.50.2 eq 67 any\n permit udp any host 10.0.50.1 eq 68\n permit udp host 10.0.50.1 eq 68 any\n permit udp any host 10.0.50.2 eq 68\n permit udp host 10.0.50.2 eq 68 any\n permit any 255.255.255.255\n permit 255.255.255.255 any\n \n !--- IOT subnet to database\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.3\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.4\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.5\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.6\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.7\n permit ip 10.0.90.0 0.0.0.255 host 10.0.50.8\n permit ip 10.0.90.0 0.0.0.255 host 10.1.50.3\n permit ip 10.0.90.0 0.0.0.255 host 10.1.50.4\n permit ip 10.0.90.0 0.0.0.255 host 10.1.50.5\n \n !--- Deny all\n deny ip any any\n"
-          }
-        ],
-        "externalLinks": [
-          {
-            "title": "SAE-502 Technical Report",
-            "url": "https://github.com/ThomasM2568/Portfolio/blob/main/doc/sae502.pdf",
-            "icon": "bi-file-pdf"
-          },
-          {
-            "title": "GitHub Repository",
-            "url": "https://github.com/ThomasM2568/Sae5.02-Piloter-un-projet-informatique/tree/main",
-            "icon": "bi-github"
           }
         ]
       }
