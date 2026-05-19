@@ -75,147 +75,31 @@
         ],
         "logo": "./img/stellantis.png"
       }
-    ],
-    "edu_title": "Formation",
-    "education": [
-      {
-        "id": "edu1",
-        "title": "UFR STGI, Master IoT",
-        "date": "2024 - 2026",
-        "intro": "Spécialisation dans la conception de systèmes connectés, la sécurité des objets communicants et les protocoles réseaux basse consommation.",
-        "skills": [
-          "Conception de systèmes connectés",
-          "Sécurité des objets communicants",
-          "Protocoles réseaux basse consommation",
-          "Architecture IoT avancée"
-        ]
-      },
-      {
-        "id": "edu2",
-        "title": "IUT Belfort-Montbéliard, BUT Réseaux et Télécommunications",
-        "date": "2021 - 2024",
-        "intro": "Major de promotion. Formation en administration réseaux, cybersécurité et télécommunications.",
-        "skills": [
-          "Administration réseaux",
-          "Cybersécurité",
-          "Télécommunications",
-          "Major de promotion"
-        ]
-      },
-      {
-        "id": "edu3",
-        "title": "Lycée Armand Peugeot, Baccalauréat",
-        "date": "2019 - 2021",
-        "intro": "Mention Assez Bien. Spécialités Numérique et Sciences Informatiques, Mathématiques et Physique-Chimie.",
-        "skills": [
-          "Programmation Python (bases, algorithmique)",
-          "Réseaux fondamentaux (IP, TCP/UDP)",
-          "Systèmes Linux (commandes, environnement)"
-        ]
-      }
-    ],
-    "cert_title": "Certifications",
-    "certifications": [
-      {
-        "name": "Cisco CCNA Routing & Switching – Sept 2022 (Expire Sept 2025)",
-        "url": "https://www.linkedin.com/in/thomas-mirbey/overlay/Certifications/1582396410/treasury?profileId=ACoAADhxaNgBd3Jyuxv0bqZB22r7z6rg_z-fPRE",
-        "badge": "ccna-badge.png"
-      },
-      {
-        "name": "Fortinet Networking Fundamentals – Oct 2025",
-        "url": "https://www.linkedin.com/in/thomas-mirbey/overlay/Certifications/1222040923/treasury/?profileId=ACoAADhxaNgBd3Jyuxv0bqZB22r7z6rg_z-fPRE",
-        "badge": "fortinet-badge.png"
-      },
-      {
-        "name": "F5 – Getting Started with Local Traffic Manager (LTM) – Nov 2024",
-        "url": "https://www.linkedin.com/in/thomas-mirbey/overlay/Certifications/193513278/treasury?profileId=ACoAADhxaNgBd3Jyuxv0bqZB22r7z6rg_z-fPRE",
-        "badge": "f5-badge.png"
-      },
-      {
-        "name": "F5 – Advanced Web Application Firewall (WAF) – Nov 2024",
-        "url": "https://www.linkedin.com/in/thomas-mirbey/overlay/Certifications/450325221/treasury?profileId=ACoAADhxaNgBd3Jyuxv0bqZB22r7z6rg_z-fPRE",
-        "badge": "f5-badge.png"
-      }
-    ],
-    "proj_title": "Projets Clés",
-    "projects": [
-      {
-        "id": "ecom",
-        "title": "ECOM (Electric Consumption Optimization and Monitoring)",
-        "date": "Janv. 2024 – Janv. 2026",
-        "desc": "Optimisation et partage collaboratif d'énergie dans les micro-réseaux résidentiels.",
-        "details": "Projet démarré en BUT3 Réseaux & Télécommunications (parcours IoM), poursuivi en Master IoT jusqu'en M2 en tant que projet de recherche.\n\n• Pilotage & Architecture : Direction technique d'une solution de partage intelligent d'électricité en circuit court entre habitations connectées.\n• Data Pipeline : Conception complète de la chaîne de traitement (collecte → traitement → valorisation) avec haute disponibilité et load balancing.\n• Unification protocolaire : Standardisation via MQTT (interne) et HTTP/WebSocket (externe) pour abstraction du matériel.\n• API Core : Développement d'une API sécurisée en Python/Flask avec OAuth 2.0 pour piloter les équipements IoT de manière agnostique.\n• Optimisation énergétique : Conception d'un algorithme visant à maximiser l'autoconsommation locale.\n• Sécurité & Résilience : Architecture distribuée et mécanismes de sécurisation pour garantir la continuité de service du smart grid.",
-        "icon": "./img/ecom.png",
-        "link": "project.html?id=ecom",
-        "skills": ["IoT", "Python", "Flask", "MQTT", "OAuth 2.0", "HA", "Smart Grid", "Architecture"],
-        "media": [
-          {
-            "url": "./img/ecom_architecture_diagram.png",
-            "alt": "Architecture ECOM",
-            "type": "image",
-            "caption": "Architecture globale du système ECOM"
-          },
-          {
-            "url": "./img/data_pipeline.png",
-            "alt": "Data Pipeline MQTT/HTTP",
-            "type": "diagram",
-            "caption": "Data pipeline with MQTT and HTTP"
-          }
-        ]
-      },
-      {
-        "id": "sae501",
-        "title": "SAÉ-501 : Conception d'une Solution Technique",
-        "date": "Déc. 2023",
-        "desc": "Déploiement d'une infrastructure réseau complète type WorldSkills.",
-        "details": "Conception et déploiement d'une infrastructure complète (réseau + système) incluant équipements physiques et virtualisation (Proxmox, ESXi).\n\n• Déploiement du cœur réseau basé sur 3 routeurs Cisco avec segmentation via VRF.\n• Configuration de sous-interfaces VLAN (Dot1Q) et séparation des flux.\n• Mise en place des protocoles de routage : OSPF (privé) et BGP (public avec route reflector).\n• Configuration NAT et gestion des accès externes.\n• Haute disponibilité : HSRP sur équipements Cisco et VRRP sur serveurs Linux.\n• Automatisation : Playbooks Ansible pour sauvegarde de configurations et mises à jour système.\n• Monitoring : Participation au déploiement d'une solution Zabbix.",
-        "icon": "./img/sae501.jpg",
-        "link": "project.html?id=sae501",
-        "skills": ["Cisco", "HSRP", "VRRP", "BGP", "OSPF", "Ansible", "Proxmox", "ESXi"],
-        "media": [
-          {
-            "url": "./img/Infrastructure_501.jpg",
-            "alt": "Topologie réseau",
-            "type": "diagram",
-            "caption": "Topologie réseau du projet"
-          }
-        ]
-      }
-    ],
-    "contact_title": "Contact",
-    "see_details": "Voir les détails",
-    "back_btn": "← Retour aux projets",
-    "theme_nebula": "Nébuleuse",
-    "theme_aurora": "Aurore",
-    "project_overview": "Présentation du Projet",
-    "project_tech": "Détails Techniques & Compétences",
-    "project_media": "Visuels & Diagrammes",
-    "project_code": "Code & Configuration",
-    "project_links": "Ressources Externes"
+    ]
   },
   "en": {
     "name": "Thomas Mirbey",
     "title": "Network & Security Engineer",
     "header_desc": "Passionate about network security, IIoT, and automation.",
     "about_title": "About Me",
-    "about_text": "A 23-year-old Network and Security Engineer, particularly interested in industrial environments. A future graduate with an IoT Master's degree from UFR STGI in Montbéliard, I aim to leverage my dual expertise in networks/security and automation to design reliable solutions that simplify operations and reduce human error. Attracted by international environments, I seek to grow in demanding technical contexts and contribute to impactful projects.",
+    "about_text": "A 23-year-old Network and Security Engineer, particularly interested in industrial environments. A future graduate with a Master's in IoT from UFR STGI Montbéliard, I aim to leverage my dual expertise in networks/security and automation to design reliable solutions that simplify operations and limit human error. Attracted by international environments, I wish to evolve in demanding technical contexts and contribute to concrete projects.",
     "exp_title": "Professional Background",
     "experiences": [
       {
         "id": "exp1",
         "company": "Grand Besançon Métropole",
-        "role": "Network & Security Engineer Apprentice",
+        "role": "Network & Security Apprentice Engineer",
         "date": "Sep 2025 - Present",
         "desc": "Participation in the operation, securing, and automation of network infrastructures and IoT environments.",
         "intro": "Main missions:",
         "skills": [
-          "Administration of network equipment (Cisco switches/routers, Fortinet firewalls)",
-          "Securing and reliability of industrial controllers (Sofrel SG4000) related to water systems",
-          "Analysis of security audits and proposal of remediation measures with the CISO",
-          "Automation and harmonization of firewalls (38 schools) via FortiManager (CLI/Jinja/TCL)",
-          "Implementation of Policy-Based Routing and management of operational maintenance (MCO)",
-          "Migration of IPAM (PHPIPAM to Netbox) via Python scripts and SNMP scanning",
-          "Development of Python scripts for daily operation optimization"
+          "Network equipment administration (Cisco switches/routers, Fortinet firewalls)",
+          "Securing and reliability of industrial controllers (Sofrel SG4000) for water management",
+          "Security audit analysis and remediation proposal in collaboration with the CISO",
+          "Automation and harmonization of FW configurations (38 schools) via FortiManager (CLI/Jinja/TCL)",
+          "Implementation of Policy-Based Routing and Operational Maintenance (MCO)",
+          "IPAM Migration (PHPIPAM to Netbox) via Python scripts and SNMP scans",
+          "Python script development for daily operation optimization"
         ],
         "logo": "./img/gbm.png"
       },
@@ -225,13 +109,13 @@
         "role": "IIOT Apprentice",
         "date": "Sep 2024 - Feb 2025",
         "desc": "Development and automation of IoT connectivity processes.",
-        "intro": "Technical focus: Connection to Kepware via OPC/UA for industrial data retrieval. Use of JavaScript and REST APIs for data flow automation.",
+        "intro": "Technical focus: Connection with OPC/UA to Kepware for industrial data collection. Use of JavaScript and REST APIs for data flow automation.",
         "skills": [
-          "Development of IIoT data collection solutions in JavaScript",
-          "Retrieval of PLC data via OPC/UA protocol (Kepware)",
+          "Development of IIoT data collection solutions using JavaScript",
+          "Industrial data retrieval via OPC/UA protocol (Kepware)",
           "Development of new features, development sprints, and testing",
-          "Prototyping, validation, and testing in real industrial conditions",
-          "Automation of data flows via REST APIs"
+          "Prototype creation, validation, and testing in real industrial conditions",
+          "Data flow automation via REST APIs"
         ],
         "logo": "./img/forvia.jpg"
       },
@@ -258,133 +142,17 @@
         "company": "Stellantis",
         "role": "Network Security and Automation Intern",
         "date": "Jan 2023 - Mar 2023",
-        "desc": "Development of automation tools for network and security incident diagnosis and troubleshooting.",
+        "desc": "Development of automation tools for diagnostic and troubleshooting of network and security incidents.",
         "intro": "Main missions:",
         "skills": [
           "Design of a Python tool for inter-DMZ flow analysis",
           "Use of REST APIs to interact with equipment (Palo Alto, F5 BigIP)",
           "Proof of Concept of Cisco Telemetry on ASR9000 routers for monitoring",
-          "Improvement of Palo Alto backups (addition of exploitable text format)",
-          "Presentation of the tool in English to international technical teams"
+          "Palo Alto backup improvement (addition of exploitable text format)",
+          "Tool presentation in English to international technical teams"
         ],
         "logo": "./img/stellantis.png"
       }
-    ],
-    "edu_title": "Training",
-    "education": [
-      {
-        "id": "edu1",
-        "title": "UFR STGI, Master IoT",
-        "date": "2024 - 2026",
-        "intro": "Specialization in connected systems design, security of communicating objects, and low-power network protocols.",
-        "skills": [
-          "Connected systems design",
-          "Security of communicating objects",
-          "Low-power network protocols",
-          "Advanced IoT architecture"
-        ]
-      },
-      {
-        "id": "edu2",
-        "title": "IUT Belfort-Montbéliard, BUT Networks and Telecommunications",
-        "date": "2021 - 2024",
-        "intro": "Valedictorian. Training in network administration, cybersecurity, and telecommunications.",
-        "skills": [
-          "Network administration",
-          "Cybersecurity",
-          "Telecommunications",
-          "Valedictorian"
-        ]
-      },
-      {
-        "id": "edu3",
-        "title": "Lycée Armand Peugeot, High School Diploma",
-        "date": "2019 - 2021",
-        "intro": "Honors. Specialties in Digital and Computer Sciences, Mathematics, and Physics-Chemistry.",
-        "skills": [
-          "Python programming (basics, algorithms)",
-          "Network fundamentals (IP, TCP/UDP)",
-          "Linux systems (commands, environment)"
-        ]
-      }
-    ],
-    "cert_title": "Certifications",
-    "certifications": [
-      {
-        "name": "Cisco CCNA Routing & Switching – Sept 2022 (Expires Sept 2025)",
-        "url": "https://www.linkedin.com/in/thomas-mirbey/overlay/Certifications/1582396410/treasury?profileId=ACoAADhxaNgBd3Jyuxv0bqZB22r7z6rg_z-fPRE",
-        "badge": "ccna-badge.png"
-      },
-      {
-        "name": "Fortinet Networking Fundamentals – Oct 2025",
-        "url": "https://www.linkedin.com/in/thomas-mirbey/overlay/Certifications/1222040923/treasury/?profileId=ACoAADhxaNgBd3Jyuxv0bqZB22r7z6rg_z-fPRE",
-        "badge": "fortinet-badge.png"
-      },
-      {
-        "name": "F5 – Getting Started with Local Traffic Manager (LTM) – Nov 2024",
-        "url": "https://www.linkedin.com/in/thomas-mirbey/overlay/Certifications/193513278/treasury?profileId=ACoAADhxaNgBd3Jyuxv0bqZB22r7z6rg_z-fPRE",
-        "badge": "f5-badge.png"
-      },
-      {
-        "name": "F5 – Advanced Web Application Firewall (WAF) – Nov 2024",
-        "url": "https://www.linkedin.com/in/thomas-mirbey/overlay/Certifications/450325221/treasury?profileId=ACoAADhxaNgBd3Jyuxv0bqZB22r7z6rg_z-fPRE",
-        "badge": "f5-badge.png"
-      }
-    ],
-    "proj_title": "Key Projects",
-    "projects": [
-      {
-        "id": "ecom",
-        "title": "ECOM (Electric Consumption Optimization and Monitoring)",
-        "date": "Jan 2024 – Jan 2026",
-        "desc": "Optimization and collaborative energy sharing in residential microgrids.",
-        "details": "Project started in BUT3 Networks & Telecommunications (IoM track), continued in IoT Master's until M2 as a research project.\n\n• Management & Architecture: Technical direction of a smart short-circuit electricity sharing solution between connected homes.\n• Data Pipeline: Complete design of the processing chain (collection → processing → valuation) with high availability and load balancing.\n• Protocol Unification: Standardization via MQTT (internal) and HTTP/WebSocket (external) for hardware abstraction.\n• Core API: Development of a secure API in Python/Flask with OAuth 2.0 to control IoT equipment agnostically.\n• Energy Optimization: Design of an algorithm aimed at maximizing local self-consumption.\n• Security & Resilience: Distributed architecture and security mechanisms to ensure smart grid service continuity.",
-        "icon": "./img/ecom.png",
-        "link": "project.html?id=ecom",
-        "skills": ["IoT", "Python", "Flask", "MQTT", "OAuth 2.0", "HA", "Smart Grid", "Architecture"],
-        "media": [
-          {
-            "url": "./img/ecom_architecture_diagram.png",
-            "alt": "ECOM Architecture",
-            "type": "image",
-            "caption": "Global ECOM system architecture"
-          },
-          {
-            "url": "./img/data_pipeline.png",
-            "alt": "MQTT/HTTP Data Pipeline",
-            "type": "diagram",
-            "caption": "Data pipeline with MQTT and HTTP"
-          }
-        ]
-      },
-      {
-        "id": "sae501",
-        "title": "SAE-501: Design, Implementation and Presentation of a Technical Solution",
-        "date": "Dec 2023",
-        "desc": "Deployment of a complete network infrastructure (WorldSkills-style project).",
-        "details": "The objective was to design and deploy a full system and network infrastructure, including real equipment and virtualized servers (Proxmox VE and ESXi).\n\n• Core network deployment based on three Cisco routers, including VRF configuration to separate local and internet traffic.\n• Configuration of VLAN segmentation using Dot1Q subinterfaces on edge routers.\n• Implementation of routing protocols: OSPF (private network) and BGP (public network with route reflector).\n• NAT configuration for external connectivity.\n• High availability setup using HSRP on Cisco devices and VRRP on Linux web servers.\n• Automation: Development of Ansible playbooks for automated configuration backup to FTP servers and Linux server updates.\n• Monitoring: Contribution to the deployment of a Zabbix monitoring solution.",
-        "icon": "./img/sae501.jpg",
-        "link": "project.html?id=sae501",
-        "skills": ["Cisco", "HSRP", "VRRP", "BGP", "OSPF", "Ansible", "Proxmox", "ESXi"],
-        "media": [
-          {
-            "url": "./img/Infrastructure_501.jpg",
-            "alt": "Network topology",
-            "type": "diagram",
-            "caption": "Project network topology"
-          }
-        ]
-      }
-    ],
-    "contact_title": "Contact",
-    "see_details": "See details",
-    "back_btn": "← Back to projects",
-    "theme_nebula": "Nebula",
-    "theme_aurora": "Aurora",
-    "project_overview": "Project Overview",
-    "project_tech": "Technical Details & Skills",
-    "project_media": "Visuals & Diagrams",
-    "project_code": "Code & Configuration",
-    "project_links": "External Resources"
+    ]
   }
 }
