@@ -182,10 +182,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!container) return;
         container.innerHTML = `
             <div class="contact-grid">
-                <a href="mailto:thomas.mirbey@edu.univ-fcomte.fr" class="contact-card">
+                <a href="mailto:thomas.mirbey@gmail.com" class="contact-card">
                     <i class="bi bi-envelope-at"></i>
                     <label>Email</label>
-                    <span>thomas.mirbey@edu.univ-fcomte.fr</span>
+                    <span>thomas.mirbey@gmail.com</span>
                 </a>
                 <a href="https://www.linkedin.com/in/thomas-mirbey" target="_blank" rel="noopener" class="contact-card">
                     <i class="bi bi-linkedin"></i>
