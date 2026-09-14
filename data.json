@@ -4,14 +4,14 @@
     "title": "Ingénieur Réseaux & Sécurité",
     "header_desc": "Passionné par la sécurité des réseaux, l'IIoT et l'automatisation.",
     "about_title": "À propos de moi",
-    "about_text": "Ingénieur Réseau et Sécurité de 23 ans, particulièrement intéressé par les environnements industriels. Futur diplômé d'un Master IoT à l'UFR STGI de Montbéliard, je souhaite mettre à profit ma double compétence en réseaux/sécurité et en automatisation pour concevoir des solutions fiables, qui simplifient les opérations et limitent les erreurs humaines. Attiré par les environnements internationaux, je souhaite évoluer dans des contextes techniques exigeants et contribuer à des projets concrets.",
+    "about_text": "Diplômé d'un Master IoT spécialisé réseaux et cybersécurité, avec plusieurs expériences en administration réseau, sécurité et automatisation. Compétences sur Palo Alto, Fortinet, Cisco et Linux. Développement de scripts Python et intégration d'API REST pour l'automatisation des opérations réseau. Sensibilité forte aux sujets cybersécurité et infrastructures sécurisées.",
     "exp_title": "Parcours Professionnel",
     "experiences": [
       {
         "id": "exp1",
         "company": "Grand Besançon Métropole",
         "role": "Apprenti Ingénieur Réseaux & Sécurité",
-        "date": "Sep 2025 - Présent",
+        "date": "Sep 2025 - Août 2026",
         "desc": "Participation à l'exploitation, la sécurisation et l'automatisation des infrastructures réseau et des environnements IoT.",
         "intro": "Missions principales :",
         "skills": [
@@ -305,14 +305,13 @@
     "title": "Network & Security Engineer",
     "header_desc": "Passionate about network security, IIoT, and automation.",
     "about_title": "About Me",
-    "about_text": "A 23-year-old Network and Security Engineer, particularly interested in industrial environments. A future graduate with a Master's in IoT from UFR STGI Montbéliard, I aim to leverage my dual expertise in networks/security and automation to design reliable solutions that simplify operations and limit human error. Attracted by international environments, I wish to evolve in demanding technical contexts and contribute to concrete projects.",
-    "exp_title": "Professional Background",
+"about_text": "Holder of a Master’s degree in IoT specializing in networks and cybersecurity, with experience in network administration, security, and automation. Skilled in Palo Alto, Fortinet, Cisco, and Linux technologies. Proficient in Python scripting and REST API integration for network operations automation. Strong focus on cybersecurity and secure infrastructure.",    "exp_title": "Professional Background",
     "experiences": [
       {
         "id": "exp1",
         "company": "Grand Besançon Métropole",
         "role": "Network & Security Apprentice Engineer",
-        "date": "Sep 2025 - Present",
+        "date": "Sep 2025 – Aug 2026",
         "desc": "Participation in the operation, securing, and automation of network infrastructures and IoT environments.",
         "intro": "Main missions:",
         "skills": [
