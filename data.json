@@ -1,7 +1,7 @@
 {
   "fr": {
     "name": "Thomas Mirbey",
-    "title": "Ingénieur Réseaux & Sécurité",
+    "title": "Ingénieur Sécurité Réseau et Automatisation",
     "header_desc": "Passionné par la sécurité des réseaux, l'IIoT et l'automatisation.",
     "about_title": "À propos de moi",
     "about_text": "Diplômé d'un Master IoT spécialisé réseaux et cybersécurité, avec plusieurs expériences en administration réseau, sécurité et automatisation. Compétences sur Palo Alto, Fortinet, Cisco et Linux. Développement de scripts Python et intégration d'API REST pour l'automatisation des opérations réseau. Sensibilité forte aux sujets cybersécurité et infrastructures sécurisées.",
@@ -302,7 +302,7 @@
   },
   "en": {
     "name": "Thomas Mirbey",
-    "title": "Network & Security Engineer",
+    "title": "Network Security and Automation Engineer",
     "header_desc": "Passionate about network security, IIoT, and automation.",
     "about_title": "About Me",
 "about_text": "Holder of a Master’s degree in IoT specializing in networks and cybersecurity, with experience in network administration, security, and automation. Skilled in Palo Alto, Fortinet, Cisco, and Linux technologies. Proficient in Python scripting and REST API integration for network operations automation. Strong focus on cybersecurity and secure infrastructure.",    "exp_title": "Professional Background",
