@@ -16,11 +16,11 @@
         "intro": "Missions principales :",
         "skills": [
           "Administration d'équipements réseau (switchs / routeurs Cisco, pare-feux Fortinet)",
-          "Sécurisation et fiabilisation des automates industriels (Sofrel SG4000) liés à l'eau",
+          "Sécurisation et fiabilisation des automates industriels liés à l'eau via des routeurs sans fils Ubiquiti",
           "Analyse d'audits de sécurité et proposition de mesures de remédiation avec le RSSI",
           "Automatisation et harmonisation des FW (38 écoles) via FortiManager (CLI/Jinja/TCL)",
           "Mise en place de Policy-Based Routing et gestion du maintien en conditions opérationnelles (MCO)",
-          "Migration de l'IPAM (PHPIPAM vers Netbox) via scripts Python et scan SNMP",
+          "Migration de l'IPAM (PHPIPAM vers Netbox, 16000+ entrées) via scripts Python",
           "Développement de scripts Python pour l'optimisation des opérations quotidiennes"
         ],
         "logo": "./img/gbm.png"
@@ -317,11 +317,11 @@
         "intro": "Main missions:",
         "skills": [
           "Network equipment administration (Cisco switches/routers, Fortinet firewalls)",
-          "Securing and reliability of industrial controllers (Sofrel SG4000) for water management",
+          "Securing and reliability of industrial controllers for water management using Ubiquiti wireless routers",
           "Security audit analysis and remediation proposal in collaboration with the CISO",
           "Automation and harmonization of FW configurations (38 schools) via FortiManager (CLI/Jinja/TCL)",
           "Implementation of Policy-Based Routing and Operational Maintenance (MCO)",
-          "IPAM Migration (PHPIPAM to Netbox) via Python scripts and SNMP scans",
+          "IPAM Migration (PHPIPAM to Netbox, 16000+ entries) via Python scripts",
           "Python script development for daily operation optimization"
         ],
         "logo": "./img/gbm.png"
