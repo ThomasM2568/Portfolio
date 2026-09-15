@@ -19,7 +19,7 @@
           "Harmonisation et déploiement de configurations sur 38 écoles via templates et scripting (Jinja/TCL) sur FortiManager afin d’assurer l’homogénéité du parc et de gagner en efficacité.",
           "Conception de scripts d'automatisation de tâches réseau en Python (Wake On Lan pour FortiGate, identification de configurations obsolètes) pour optimiser la gestion de la vie courante des équipes d’exploitation.",
           "Migration de l'IPAM (PHPIPAM vers Netbox) via des scripts Python pour assurer l’intégrité des données (16 000 entrées).",
-          "Fiabilisation et sécurisation des communications des automates industriels (Sofrel SG4000) d'eau et d'assainissement."
+          "Fiabilisation et sécurisation des communications des automates industriels (Sofrel SG4000) d'eau et d'assainissement (Fortinet, Ubiquiti)."
         ],
         "logo": "./img/gbm.png"
       },
@@ -338,7 +338,7 @@
           "Harmonization and deployment of configurations across 38 schools using templates and scripting (Jinja/TCL) on FortiManager to ensure fleet consistency and improve efficiency.",
           "Development of Python scripts to automate network tasks (Wake On LAN for FortiGate, identification of obsolete configurations) to optimize day-to-day operations for the operations teams.",
           "IPAM migration (PHPIPAM to Netbox) using Python scripts to ensure data integrity (16,000 entries).",
-          "Reliability and security improvements for communications with industrial controllers (Sofrel SG4000) used for water and wastewater management."
+          "Reliability and security improvements for communications with industrial controllers (Sofrel SG4000) used for water and wastewater management (Fortinet, Ubiquiti)."
         ],
         "logo": "./img/gbm.png"
       },
