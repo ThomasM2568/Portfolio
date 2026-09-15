@@ -12,16 +12,16 @@
         "company": "Grand Besançon Métropole",
         "role": "Apprenti Ingénieur Réseaux & Sécurité",
         "date": "Sep 2025 - Août 2026",
-        "desc": "Participation à l'exploitation, la sécurisation et l'automatisation des infrastructures réseau et des environnements IoT.",
+        "desc": "Gestion des équipements (switches/routeurs Cisco, pare-feu Fortinet) et opérations de vie courante (policies, security profiles, VPNs, ouvertures de flux, analyse de logs, diagnostic d'incidents).",
         "intro": "Missions principales :",
         "skills": [
-          "Administration d'équipements réseau (switchs / routeurs Cisco, pare-feux Fortinet)",
-          "Sécurisation et fiabilisation des automates industriels liés à l'eau via des routeurs sans fils Ubiquiti",
-          "Analyse d'audits de sécurité et proposition de mesures de remédiation avec le RSSI",
-          "Automatisation et harmonisation des FW (38 écoles) via FortiManager (CLI/Jinja/TCL)",
-          "Mise en place de Policy-Based Routing et gestion du maintien en conditions opérationnelles (MCO)",
-          "Migration de l'IPAM (PHPIPAM vers Netbox, 16000+ entrées) via scripts Python",
-          "Développement de scripts Python pour l'optimisation des opérations quotidiennes"
+          "Gestion des équipements (switches/routeurs Cisco, pare-feu Fortinet) et opérations de vie courante (policies, security profiles, VPNs, ouvertures de flux, analyse de logs, diagnostic d'incidents).",
+          "Harmonisation et déploiement de configurations sur 38 écoles via templates et scripting (Jinja/TCL) sur FortiManager afin d’assurer l’homogénéité du parc et de gagner en efficacité.",
+          "Conception de scripts d'automatisation de tâches réseau en Python (Wake On Lan pour FortiGate, identification de configurations obsolètes) pour optimiser la gestion de la vie courante des équipes d’exploitation.",
+																								 
+																											  
+          "Migration de l'IPAM (PHPIPAM vers Netbox) via des scripts Python pour assurer l’intégrité des données (16 000 entrées).",
+          "Fiabilisation et sécurisation des communications des automates industriels (Sofrel SG4000) d'eau et d'assainissement."
         ],
         "logo": "./img/gbm.png"
       },
@@ -30,14 +30,14 @@
         "company": "FORVIA",
         "role": "Apprenti IIOT",
         "date": "Sep 2024 - Fév 2025",
-        "desc": "Développement et automatisation des processus de connectivité IoT.",
+        "desc": "Collecte de données industrielles via scripts JavaScript, intégration d'API REST et connectivité via le protocole OPC UA.",
         "intro": "Focus technique : Connexion à Kepware en OPC/UA pour la remontée de données industrielles. Utilisation de JavaScript et d'API REST pour l'automatisation des flux de données.",
         "skills": [
-          "Développement de solutions de collecte de données IIoT en JavaScript",
-          "Remontée de données automates via le protocole OPC/UA (Kepware)",
-          "Développement de nouvelles fonctionnalités, sprints de développement et tests",
-          "Création de prototypes, validation et tests en conditions réelles industrielles",
-          "Automatisation des flux de données via API REST"
+          "Collecte de données industrielles via scripts JavaScript, intégration d'API REST et connectivité via le protocole OPC UA.",
+          "Gestion, suivi et versionnage du code des applications industrielles via Git."
+																							 
+																							  
+															
         ],
         "logo": "./img/forvia.jpg"
       },
@@ -46,17 +46,18 @@
         "company": "Stellantis",
         "role": "Apprenti Sécurité Réseau et Automatisation",
         "date": "Sep 2023 - Août 2024",
-        "desc": "Automatisation et standardisation des opérations réseau et sécurité.",
+        "desc": "Automatisation et industrialisation des opérations d'infrastructure (IPAM/DNS Infoblox) et des tâches de sécurité (gestion des règles firewall Palo Alto, nettoyage de configurations, traitement de caches LDAP) via API REST pour optimiser et fiabiliser la gestion de la vie courante des équipes d’exploitation.",
         "intro": "Missions principales :",
         "skills": [
-          "Automatisation et industrialisation de la gestion IPAM / DNS (Infoblox)",
-																					
-          "Reprise, développement et maintenance de scripts d'automatisation (Python, Perl, PHP)",
-          "Gestion de pare-feu Palo Alto et de reverse proxies F5 (LTM/WAF)",
-          "Développement d'outils d'audit et d'inventaire des configurations F5 avec export Excel",
-          "Automatisation de la gestion des certificats (CRL, autorités internes) sur F5",
-          "Amélioration de la visibilité et conformité via analyse de configurations réseau",
-          "Participation à des projets d'automatisation cloud AWS (VPC et inspection FW)"
+          "Automatisation et industrialisation des opérations d'infrastructure (IPAM/DNS Infoblox) et des tâches de sécurité (gestion des règles firewall Palo Alto, nettoyage de configurations, traitement de caches LDAP) via API REST pour optimiser et fiabiliser la gestion de la vie courante des équipes d’exploitation.",
+					 
+          "Reprise, développement et maintenance de scripts d'automatisation (Python, Perl, PHP) pour les opérations réseaux sécurité (Pôle Automation Factory) après le départ des développeurs en tant que point d'entrée unique.",
+          "Mise en place d’une API Infoblox pour la gestion DNS de déploiements automatiques d’infrastructures cloud.",
+          "Déploiement d’un script Python de création automatique de règles de filtrage sur Panorama à partir de la CMDB pour l’accès aux applications de toutes les sociétés extérieures.",
+          "Développement d'outils d'audit et d'inventaire des configurations via l’API F5 en Python avec export Excel.",
+          "Automatisation de la gestion des certificats (CRL autorités internes) et contrôle de leur déploiement sur F5.",
+          "Amélioration des fichiers de sauvegardes de configuration Palo Alto (ajout d'un format texte exploitable en complément de l'export XML).",
+          "Participation à des projets d'automatisation cloud AWS avec déploiement de VPC et intégration de pare-feux Palo Alto (VPC Inspection)."
         ],
         "logo": "./img/stellantis.png"
       },
@@ -65,15 +66,15 @@
         "company": "Stellantis",
         "role": "Stagiaire Sécurité Réseau et Automatisation",
         "date": "Jan 2023 - Mar 2023",
-        "desc": "Développement d'outils d'automatisation pour le diagnostic et le troubleshooting des incidents réseau et sécurité.",
+        "desc": "Développement d'un outil de diagnostic réseau en Python via les API Palo Alto, F5 et Infoblox pour analyser les flux des trois DMZ exposant des applications sur Internet (Accès Authentifié, Non-Authentifié et Voiture Connectée).",
         "intro": "Missions principales :",
         "skills": [
-          "Conception d'un outil Python d'analyse des flux inter-DMZ",
-																								  
-          "Utilisation d'API REST pour interagir avec des équipements (Palo Alto, F5 BigIP)",
-          "Proof of Concept de Cisco Telemetry on ASR9000 routers for la supervision",
-          "Amélioration des sauvegardes Palo Alto (ajout de format texte exploitable)",
-          "Présentation de l'outil en anglais aux équipes techniques internationales"
+          "Développement d'un outil de diagnostic réseau en Python via les API Palo Alto, F5 et Infoblox pour analyser les flux des trois DMZ exposant des applications sur Internet (Accès Authentifié, Non-Authentifié et Voiture Connectée).",
+          "Proof of concept de Cisco Telemetry (ASR9000) et de Telegraf pour le monitoring réseau."
+																							  
+																					  
+																						
+																					   
         ],
         "logo": "./img/stellantis.png"
       }
@@ -145,11 +146,20 @@
         "id": "ecom",
         "title": "ECOM (Electric Consumption Optimization and Monitoring)",
         "date": "Janv. 2024 – Janv. 2026",
-        "desc": "Optimisation et partage collaboratif d'énergie dans les micro-réseaux résidentiels.",
-        "details": "Projet démarré en BUT3 Réseaux & Télécommunications (parcours IoM), poursuivi en Master IoT jusqu'en M2 en tant que projet de recherche.\n\n• Pilotage & Architecture : Direction technique d'une solution de partage intelligent d'électricité en circuit court entre habitations connectées.\n• Data Pipeline : Conception complète de la chaîne de traitement (collecte → traitement → valorisation) avec haute disponibilité et load balancing.\n• Unification protocolaire : Standardisation via MQTT (interne) et HTTP/WebSocket (externe) pour abstraction du matériel.\n• API Core : Développement d'une API sécurisée en Python/Flask avec OAuth 2.0 pour piloter les équipements IoT de manière agnostique.\n• Optimisation énergétique : Conception d'un algorithme visant à maximiser l'autoconsommation locale.\n• Sécurité & Résilience : Architecture distribuée et mécanismes de sécurisation pour garantir la continuité de service du smart grid.",
+        "desc": "Conception d'une infrastructure distribuée, redondée et sécurisée pour optimiser la gestion de consommation et de production électrique d'un groupe de maisons connectées.",
+        "details": "• Conception d'une infrastructure distribuée, redondée et sécurisée pour optimiser la gestion de consommation et de production électrique d'un groupe de maisons connectées.\n\n• Unification protocolaire et standardisation via MQTT (interne) et HTTP/WebSocket (externe) pour abstraction du matériel.\n\n• Développement d'une API sécurisée en Python/Flask avec OAuth 2.0 pour piloter les équipements IoT de manière agnostique.\n\n• Déploiement de machines virtuelles Linux sur Proxmox pour fournir l'ensemble des services de la solution.",
         "icon": "./img/ecom.png",
         "link": "project.html?id=ecom",
-        "skills": ["IoT", "Python", "Flask", "MQTT", "OAuth 2.0", "HA", "Smart Grid", "Architecture"],
+        "skills": [
+          "IoT",
+          "Python",
+          "Flask",
+          "MQTT",
+          "OAuth 2.0",
+          "HA",
+          "Smart Grid",
+          "Architecture"
+        ],
         "media": [
           {
             "url": "./img/ecom_architecture_diagram.png",
@@ -203,11 +213,20 @@
         "id": "sae501",
         "title": "SAÉ-501 : Conception d'une Solution Technique",
         "date": "Déc. 2023",
-        "desc": "Déploiement d'une infrastructure réseau complète type WorldSkills.",
-        "details": "Déploiement d'une infrastructure complète (réseau + système) incluant équipements physiques et virtualisation (Proxmox, ESXi).\n\n• Déploiement du cœur réseau basé sur 3 routeurs Cisco avec segmentation via VRF.\n• Configuration de sous-interfaces VLAN (Dot1Q) et séparation des flux.\n• Mise en place des protocoles de routage : OSPF (privé) et BGP (public avec route reflector).\n• Configuration NAT et gestion des accès externes.\n• Haute disponibilité : HSRP sur équipements Cisco et VRRP sur serveurs Linux.\n• Automatisation : Playbooks Ansible pour sauvegarde de configurations et mises à jour système.\n• Monitoring : Participation au déploiement d'une solution Zabbix.",
+        "desc": "Déploiement d'une infrastructure réseau (Cisco et Proxmox/ESXi).",
+        "details": "• Déploiement d'une infrastructure réseau (Cisco et Proxmox/ESXi).\n\n• Configuration des protocoles de routage OSPF et BGP avec architecture Route Reflector.\n\n• Déploiement de haute disponibilité via HSRP sur les équipements Cisco et VRRP sur les serveurs Linux.\n\n• Automatisation de l'administration de l'infrastructure grâce à des playbooks Ansible dédiés aux sauvegardes de configuration et aux mises à jour des systèmes.",
         "icon": "./img/sae501.jpg",
         "link": "project.html?id=sae501",
-        "skills": ["Cisco", "HSRP", "VRRP", "BGP", "OSPF", "Ansible", "Proxmox", "ESXi"],
+        "skills": [
+          "Cisco",
+          "HSRP",
+          "VRRP",
+          "BGP",
+          "OSPF",
+          "Ansible",
+          "Proxmox",
+          "ESXi"
+        ],
         "media": [
           {
             "url": "./img/Infrastructure_501.jpg",
@@ -245,11 +264,20 @@
         "id": "sae502",
         "title": "SAÉ-502 : Sécurité Réseau Hospitalier",
         "date": "Oct. 2023 – Nov. 2023",
-        "desc": "Déploiement d'une infrastructure sécurisée pour un environnement hospitalier.",
-        "details": "Projet orienté cybersécurité visant à protéger les infrastructures hospitalières contre les cyberattaques (ransomwares, indisponibilité).\n\n• Conception et déploiement de l'architecture réseau multi-sites.\n• Équipements : routeurs Cisco 1900, switches Catalyst 3750, firewall Stormshield.\n• Haute disponibilité : VRRP, HSRP et load balancing via HAProxy.\n• Routage : inter-VLAN, cœur réseau, spanning-tree.\n• Sécurité : segmentation VLAN, firewalling, authentification RADIUS.\n• Interconnexion sécurisée : tunnel IPsec entre sites.\n• IoT : intégration de capteurs et badges RFID via ESP8266 (Arduino) et Raspberry Pi (Python).\n• Documentation complète pour assurer la maintenabilité et la résilience du système.",
+        "desc": "Mise en œuvre d'une architecture réseau composée de routeurs Cisco 1900, de switches Catalyst 3750 et d'un firewall Stormshield.",
+        "details": "• Mise en œuvre d'une architecture réseau composée de routeurs Cisco 1900, de switches Catalyst 3750 et d'un firewall Stormshield.\n\n• Déploiement de mécanismes de haute disponibilité intégrant HSRP, VRRP et l'équilibrage de charge via HAProxy.\n\n• Configuration du cœur de réseau avec routage inter-VLAN, Spanning Tree et segmentation des flux afin de renforcer la résilience de l'infrastructure.\n\n• Sécurisation des communications grâce au firewalling, à l'authentification centralisée RADIUS et à l'interconnexion des sites via des tunnels IPsec.",
         "icon": "./img/sae502.png",
         "link": "project.html?id=sae502",
-        "skills": ["VLAN", "Firewall", "VPN", "IPsec", "RADIUS", "HAProxy", "IoT", "RFID"],
+        "skills": [
+          "VLAN",
+          "Firewall",
+          "VPN",
+          "IPsec",
+          "RADIUS",
+          "HAProxy",
+          "IoT",
+          "RFID"
+        ],
         "media": [
           {
             "url": "./img/infrastructure_502.png",
@@ -305,7 +333,8 @@
     "title": "Network Security and Automation Engineer",
     "header_desc": "Passionate about network security, IIoT, and automation.",
     "about_title": "About Me",
-"about_text": "Holder of a Master’s degree in IoT specializing in networks and cybersecurity, with experience in network administration, security, and automation. Skilled in Palo Alto, Fortinet, Cisco, and Linux technologies. Proficient in Python scripting and REST API integration for network operations automation. Strong focus on cybersecurity and secure infrastructure.",    "exp_title": "Professional Background",
+    "about_text": "Holder of a Master’s degree in IoT specializing in networks and cybersecurity, with experience in network administration, security, and automation. Skilled in Palo Alto, Fortinet, Cisco, and Linux technologies. Proficient in Python scripting and REST API integration for network operations automation. Strong focus on cybersecurity and secure infrastructure.",
+    "exp_title": "Professional Background",
     "experiences": [
       {
         "id": "exp1",
@@ -342,23 +371,23 @@
         "logo": "./img/forvia.jpg"
       },
       {
-  "id": "exp3",
-  "company": "Stellantis",
-  "role": "Network Security and Automation Apprentice",
-  "date": "Sep 2023 - Aug 2024",
-  "desc": "Automation and standardization of network and security operations.",
-  "intro": "Main missions:",
-  "skills": [
-    "Automation and industrialization of IPAM / DNS management (Infoblox)",
-    "Takeover, development, and maintenance of automation scripts (Python, Perl, PHP)",
-    "Palo Alto firewall and F5 reverse proxy (LTM/WAF) management",
-    "Development of audit and inventory tools for F5 configurations with Excel export",
-    "Automation of certificate management (CRL, internal CAs) on F5",
-    "Visibility and compliance improvement via network configuration analysis",
-    "Participation in AWS cloud automation projects (VPC and FW inspection)"
-  ],
-  "logo": "./img/stellantis.png"
-},
+        "id": "exp3",
+        "company": "Stellantis",
+        "role": "Network Security and Automation Apprentice",
+        "date": "Sep 2023 - Aug 2024",
+        "desc": "Automation and standardization of network and security operations.",
+        "intro": "Main missions:",
+        "skills": [
+          "Automation and industrialization of IPAM / DNS management (Infoblox)",
+          "Takeover, development, and maintenance of automation scripts (Python, Perl, PHP)",
+          "Palo Alto firewall and F5 reverse proxy (LTM/WAF) management",
+          "Development of audit and inventory tools for F5 configurations with Excel export",
+          "Automation of certificate management (CRL, internal CAs) on F5",
+          "Visibility and compliance improvement via network configuration analysis",
+          "Participation in AWS cloud automation projects (VPC and FW inspection)"
+        ],
+        "logo": "./img/stellantis.png"
+      },
       {
         "id": "exp4",
         "company": "Stellantis",
@@ -368,7 +397,7 @@
         "intro": "Main missions:",
         "skills": [
           "Design of a Python tool for inter-DMZ flow analysis",
-																				
+					
           "Use of REST APIs to interact with equipment (Palo Alto, F5 BigIP)",
           "Proof of Concept of Cisco Telemetry on ASR9000 routers for monitoring",
           "Palo Alto backup improvement (addition of exploitable text format)",
@@ -448,7 +477,16 @@
         "details": "Project initiated during the 3rd year of a Bachelor's in Networks & Telecommunications (IoM track), continued during Master's studies as both a supervised project and a final research project.\n\n• Leadership & Architecture: Technical lead of a smart local electricity sharing solution between connected households.\n• Data Pipeline Design: End-to-end design of the processing chain (collection → processing → valorization) including high availability and load balancing.\n• Protocol Unification: Standardization using MQTT for internal communications and HTTP/WebSocket for external interfaces to abstract hardware heterogeneity.\n• Core API Development (Python/Flask): Development of a secure API using OAuth 2.0 enabling agnostic control of IoT devices regardless of underlying protocols.\n• Optimization Algorithms: Design of the energy-sharing engine with the objective of maximizing local self-consumption.\n• Security & Resilience: Implementation of distributed and secure architectures ensuring smart grid service continuity.",
         "icon": "./img/ecom.png",
         "link": "project.html?id=ecom",
-        "skills": ["IoT", "Python", "Flask", "MQTT", "OAuth 2.0", "High Availability", "Smart Grid", "Architecture"],
+        "skills": [
+          "IoT",
+          "Python",
+          "Flask",
+          "MQTT",
+          "OAuth 2.0",
+          "High Availability",
+          "Smart Grid",
+          "Architecture"
+        ],
         "media": [
           {
             "url": "./img/ecom_architecture_diagram.png",
@@ -506,7 +544,16 @@
         "details": "The objective was to deploy a full system and network infrastructure, including real equipment and virtualized servers (Proxmox VE and ESXi).\n\n• Core network deployment based on three Cisco routers, including VRF configuration to separate local and internet traffic.\n• Configuration of VLAN segmentation using Dot1Q subinterfaces on edge routers.\n• Implementation of routing protocols: OSPF (private network) and BGP (public network with route reflector).\n• NAT configuration for external connectivity.\n• High availability setup using HSRP on Cisco devices and VRRP on Linux web servers.\n• Automation: Development of Ansible playbooks for automated configuration backup to FTP servers and Linux server updates.\n• Monitoring: Contribution to the deployment of a Zabbix monitoring solution.",
         "icon": "./img/sae501.jpg",
         "link": "project.html?id=sae501",
-        "skills": ["Cisco", "HSRP", "VRRP", "BGP", "OSPF", "Ansible", "Proxmox", "ESXi"],
+        "skills": [
+          "Cisco",
+          "HSRP",
+          "VRRP",
+          "BGP",
+          "OSPF",
+          "Ansible",
+          "Proxmox",
+          "ESXi"
+        ],
         "media": [
           {
             "url": "./img/Infrastructure_501.jpg",
@@ -548,7 +595,16 @@
         "details": "Hospitals are prime targets for cyberattacks, especially ransomware, which can disrupt IT systems and compromise access to critical medical data. This project aimed to design a secure infrastructure ensuring data protection, service continuity, and system resilience.\n\n• Design and deployment of a multi-site hospital network infrastructure.\n• Equipment: 4 Cisco 1900 series routers, 6 Catalyst 3750 PoE switches, Stormshield SN210W firewall.\n• High availability architecture using VRRP, HSRP, and load balancing via HAProxy.\n• Full routing deployment (core network and inter-VLAN routing) and spanning-tree configuration.\n• Network security implementation: VLAN segmentation, firewall policies, and RADIUS authentication.\n• Secure interconnection via IPsec tunnel between hospital sites.\n• IoT integration: Deployment of sensors and RFID access systems using ESP8266 (Arduino) and Raspberry Pi (Python).\n• Comprehensive documentation to ensure maintainability and operational resilience.",
         "icon": "./img/sae502.png",
         "link": "project.html?id=sae502",
-        "skills": ["VLAN", "Firewall", "VPN", "IPsec", "RADIUS", "HAProxy", "IoT", "RFID"],
+        "skills": [
+          "VLAN",
+          "Firewall",
+          "VPN",
+          "IPsec",
+          "RADIUS",
+          "HAProxy",
+          "IoT",
+          "RFID"
+        ],
         "media": [
           {
             "url": "./img/infrastructure_502.png",
