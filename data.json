@@ -18,8 +18,6 @@
           "Gestion des équipements (switches/routeurs Cisco, pare-feu Fortinet) et opérations de vie courante (policies, security profiles, VPNs, ouvertures de flux, analyse de logs, diagnostic d'incidents).",
           "Harmonisation et déploiement de configurations sur 38 écoles via templates et scripting (Jinja/TCL) sur FortiManager afin d’assurer l’homogénéité du parc et de gagner en efficacité.",
           "Conception de scripts d'automatisation de tâches réseau en Python (Wake On Lan pour FortiGate, identification de configurations obsolètes) pour optimiser la gestion de la vie courante des équipes d’exploitation.",
-																								 
-																											  
           "Migration de l'IPAM (PHPIPAM vers Netbox) via des scripts Python pour assurer l’intégrité des données (16 000 entrées).",
           "Fiabilisation et sécurisation des communications des automates industriels (Sofrel SG4000) d'eau et d'assainissement."
         ],
@@ -35,9 +33,6 @@
         "skills": [
           "Collecte de données industrielles via scripts JavaScript, intégration d'API REST et connectivité via le protocole OPC UA.",
           "Gestion, suivi et versionnage du code des applications industrielles via Git."
-																							 
-																							  
-															
         ],
         "logo": "./img/forvia.jpg"
       },
@@ -50,7 +45,6 @@
         "intro": "Missions principales :",
         "skills": [
           "Automatisation et industrialisation des opérations d'infrastructure (IPAM/DNS Infoblox) et des tâches de sécurité (gestion des règles firewall Palo Alto, nettoyage de configurations, traitement de caches LDAP) via API REST pour optimiser et fiabiliser la gestion de la vie courante des équipes d’exploitation.",
-					 
           "Reprise, développement et maintenance de scripts d'automatisation (Python, Perl, PHP) pour les opérations réseaux sécurité (Pôle Automation Factory) après le départ des développeurs en tant que point d'entrée unique.",
           "Mise en place d’une API Infoblox pour la gestion DNS de déploiements automatiques d’infrastructures cloud.",
           "Déploiement d’un script Python de création automatique de règles de filtrage sur Panorama à partir de la CMDB pour l’accès aux applications de toutes les sociétés extérieures.",
@@ -71,10 +65,6 @@
         "skills": [
           "Développement d'un outil de diagnostic réseau en Python via les API Palo Alto, F5 et Infoblox pour analyser les flux des trois DMZ exposant des applications sur Internet (Accès Authentifié, Non-Authentifié et Voiture Connectée).",
           "Proof of concept de Cisco Telemetry (ASR9000) et de Telegraf pour le monitoring réseau."
-																							  
-																					  
-																						
-																					   
         ],
         "logo": "./img/stellantis.png"
       }
@@ -341,16 +331,14 @@
         "company": "Grand Besançon Métropole",
         "role": "Network & Security Apprentice Engineer",
         "date": "Sep 2025 – Aug 2026",
-        "desc": "Participation in the operation, securing, and automation of network infrastructures and IoT environments.",
+        "desc": "Management of network equipment (Cisco switches/routers, Fortinet firewalls) and day-to-day operations (policies, security profiles, VPNs, flow openings, log analysis, incident troubleshooting).",
         "intro": "Main missions:",
         "skills": [
-          "Network equipment administration (Cisco switches/routers, Fortinet firewalls)",
-          "Securing and reliability of industrial controllers for water management using Ubiquiti wireless routers",
-          "Security audit analysis and remediation proposal in collaboration with the CISO",
-          "Automation and harmonization of FW configurations (38 schools) via FortiManager (CLI/Jinja/TCL)",
-          "Implementation of Policy-Based Routing and Operational Maintenance (MCO)",
-          "IPAM Migration (PHPIPAM to Netbox, 16000+ entries) via Python scripts",
-          "Python script development for daily operation optimization"
+          "Management of network equipment (Cisco switches/routers, Fortinet firewalls) and day-to-day operations (policies, security profiles, VPNs, flow openings, log analysis, incident troubleshooting).",
+          "Harmonization and deployment of configurations across 38 schools using templates and scripting (Jinja/TCL) on FortiManager to ensure fleet consistency and improve efficiency.",
+          "Development of Python scripts to automate network tasks (Wake On LAN for FortiGate, identification of obsolete configurations) to optimize day-to-day operations for the operations teams.",
+          "IPAM migration (PHPIPAM to Netbox) using Python scripts to ensure data integrity (16,000 entries).",
+          "Reliability and security improvements for communications with industrial controllers (Sofrel SG4000) used for water and wastewater management."
         ],
         "logo": "./img/gbm.png"
       },
@@ -359,14 +347,11 @@
         "company": "FORVIA",
         "role": "IIOT Apprentice",
         "date": "Sep 2024 - Feb 2025",
-        "desc": "Development and automation of IoT connectivity processes.",
+        "desc": "Industrial data collection using JavaScript scripts, REST API integration, and connectivity through the OPC UA protocol.",
         "intro": "Technical focus: Connection with OPC/UA to Kepware for industrial data collection. Use of JavaScript and REST APIs for data flow automation.",
         "skills": [
-          "Development of IIoT data collection solutions using JavaScript",
-          "Industrial data retrieval via OPC/UA protocol (Kepware)",
-          "Development of new features, development sprints, and testing",
-          "Prototype creation, validation, and testing in real industrial conditions",
-          "Data flow automation via REST APIs"
+          "Industrial data collection using JavaScript scripts, REST API integration, and connectivity through the OPC UA protocol.",
+          "Management, tracking, and version control of industrial application code using Git."
         ],
         "logo": "./img/forvia.jpg"
       },
@@ -375,16 +360,17 @@
         "company": "Stellantis",
         "role": "Network Security and Automation Apprentice",
         "date": "Sep 2023 - Aug 2024",
-        "desc": "Automation and standardization of network and security operations.",
+        "desc": "Automation and industrialization of infrastructure operations (Infoblox IPAM/DNS) and security tasks (Palo Alto firewall rule management, configuration cleanup, LDAP cache handling) via REST APIs to optimize and improve the reliability of day-to-day operations for the operations teams.",
         "intro": "Main missions:",
         "skills": [
-          "Automation and industrialization of IPAM / DNS management (Infoblox)",
-          "Takeover, development, and maintenance of automation scripts (Python, Perl, PHP)",
-          "Palo Alto firewall and F5 reverse proxy (LTM/WAF) management",
-          "Development of audit and inventory tools for F5 configurations with Excel export",
-          "Automation of certificate management (CRL, internal CAs) on F5",
-          "Visibility and compliance improvement via network configuration analysis",
-          "Participation in AWS cloud automation projects (VPC and FW inspection)"
+          "Automation and industrialization of infrastructure operations (Infoblox IPAM/DNS) and security tasks (Palo Alto firewall rule management, configuration cleanup, LDAP cache handling) via REST APIs to optimize and improve the reliability of day-to-day operations for the operations teams.",
+          "Takeover, development, and maintenance of automation scripts (Python, Perl, PHP) for network and security operations (Automation Factory team) after the developers' departure, acting as the single point of entry.",
+          "Implementation of an Infoblox API for DNS management of automated cloud infrastructure deployments.",
+          "Deployment of a Python script for automatic creation of filtering rules on Panorama from the CMDB to provide application access for all external companies.",
+          "Development of configuration audit and inventory tools using the F5 API in Python with Excel export.",
+          "Automation of certificate management (CRLs for internal authorities) and verification of their deployment on F5.",
+          "Improvement of Palo Alto configuration backup files by adding an exploitable text format alongside the XML export.",
+          "Participation in AWS cloud automation projects involving VPC deployment and Palo Alto firewall integration (VPC Inspection)."
         ],
         "logo": "./img/stellantis.png"
       },
@@ -393,15 +379,11 @@
         "company": "Stellantis",
         "role": "Network Security and Automation Intern",
         "date": "Jan 2023 - Mar 2023",
-        "desc": "Development of automation tools for diagnostic and troubleshooting of network and security incidents.",
+        "desc": "Development of a Python network diagnostic tool using Palo Alto, F5, and Infoblox APIs to analyze traffic flows across the three DMZs exposing applications to the Internet (Authenticated, Unauthenticated, and Connected Car).",
         "intro": "Main missions:",
         "skills": [
-          "Design of a Python tool for inter-DMZ flow analysis",
-					
-          "Use of REST APIs to interact with equipment (Palo Alto, F5 BigIP)",
-          "Proof of Concept of Cisco Telemetry on ASR9000 routers for monitoring",
-          "Palo Alto backup improvement (addition of exploitable text format)",
-          "Tool presentation in English to international technical teams"
+          "Development of a Python network diagnostic tool using Palo Alto, F5, and Infoblox APIs to analyze traffic flows across the three DMZs exposing applications to the Internet (Authenticated, Unauthenticated, and Connected Car).",
+          "Proof of concept for Cisco Telemetry (ASR9000) and Telegraf for network monitoring."
         ],
         "logo": "./img/stellantis.png"
       }
@@ -473,8 +455,8 @@
         "id": "ecom",
         "title": "ECOM (Electric Consumption Optimization and Monitoring)",
         "date": "Jan 2024 – Jan 2026",
-        "desc": "Optimization and collaborative energy sharing in residential microgrids.",
-        "details": "Project initiated during the 3rd year of a Bachelor's in Networks & Telecommunications (IoM track), continued during Master's studies as both a supervised project and a final research project.\n\n• Leadership & Architecture: Technical lead of a smart local electricity sharing solution between connected households.\n• Data Pipeline Design: End-to-end design of the processing chain (collection → processing → valorization) including high availability and load balancing.\n• Protocol Unification: Standardization using MQTT for internal communications and HTTP/WebSocket for external interfaces to abstract hardware heterogeneity.\n• Core API Development (Python/Flask): Development of a secure API using OAuth 2.0 enabling agnostic control of IoT devices regardless of underlying protocols.\n• Optimization Algorithms: Design of the energy-sharing engine with the objective of maximizing local self-consumption.\n• Security & Resilience: Implementation of distributed and secure architectures ensuring smart grid service continuity.",
+        "desc": "Design of a distributed, redundant, and secure infrastructure to optimize electricity consumption and production management for a group of connected homes.",
+        "details": "• Design of a distributed, redundant, and secure infrastructure to optimize electricity consumption and production management for a group of connected homes.\n\n• Protocol unification and standardization using MQTT (internal) and HTTP/WebSocket (external) to abstract hardware.\n\n• Development of a secure Python/Flask API with OAuth 2.0 to control IoT devices in an agnostic manner.\n\n• Deployment of Linux virtual machines on Proxmox to provide all services required by the solution.",
         "icon": "./img/ecom.png",
         "link": "project.html?id=ecom",
         "skills": [
@@ -540,8 +522,8 @@
         "id": "sae501",
         "title": "SAE-501: Design, Implementation and Presentation of a Technical Solution",
         "date": "Dec 2023",
-        "desc": "Deployment of a complete network infrastructure (WorldSkills-style project).",
-        "details": "The objective was to deploy a full system and network infrastructure, including real equipment and virtualized servers (Proxmox VE and ESXi).\n\n• Core network deployment based on three Cisco routers, including VRF configuration to separate local and internet traffic.\n• Configuration of VLAN segmentation using Dot1Q subinterfaces on edge routers.\n• Implementation of routing protocols: OSPF (private network) and BGP (public network with route reflector).\n• NAT configuration for external connectivity.\n• High availability setup using HSRP on Cisco devices and VRRP on Linux web servers.\n• Automation: Development of Ansible playbooks for automated configuration backup to FTP servers and Linux server updates.\n• Monitoring: Contribution to the deployment of a Zabbix monitoring solution.",
+        "desc": "Deployment of a network infrastructure (Cisco and Proxmox/ESXi).",
+        "details": "• Deployment of a network infrastructure (Cisco and Proxmox/ESXi).\n\n• Configuration of OSPF and BGP routing protocols with a Route Reflector architecture.\n\n• Deployment of high availability using HSRP on Cisco devices and VRRP on Linux servers.\n\n• Automation of infrastructure administration using dedicated Ansible playbooks for configuration backups and system updates.",
         "icon": "./img/sae501.jpg",
         "link": "project.html?id=sae501",
         "skills": [
@@ -591,8 +573,8 @@
         "id": "sae502",
         "title": "SAE-502: Managing an IT Project",
         "date": "Oct 2023 – Nov 2023",
-        "desc": "Deployment of a secure network infrastructure for a hospital environment.",
-        "details": "Hospitals are prime targets for cyberattacks, especially ransomware, which can disrupt IT systems and compromise access to critical medical data. This project aimed to design a secure infrastructure ensuring data protection, service continuity, and system resilience.\n\n• Design and deployment of a multi-site hospital network infrastructure.\n• Equipment: 4 Cisco 1900 series routers, 6 Catalyst 3750 PoE switches, Stormshield SN210W firewall.\n• High availability architecture using VRRP, HSRP, and load balancing via HAProxy.\n• Full routing deployment (core network and inter-VLAN routing) and spanning-tree configuration.\n• Network security implementation: VLAN segmentation, firewall policies, and RADIUS authentication.\n• Secure interconnection via IPsec tunnel between hospital sites.\n• IoT integration: Deployment of sensors and RFID access systems using ESP8266 (Arduino) and Raspberry Pi (Python).\n• Comprehensive documentation to ensure maintainability and operational resilience.",
+        "desc": "Implementation of a network architecture consisting of Cisco 1900 routers, Catalyst 3750 switches, and a Stormshield firewall.",
+        "details": "• Implementation of a network architecture consisting of Cisco 1900 routers, Catalyst 3750 switches, and a Stormshield firewall.\n\n• Deployment of high-availability mechanisms using HSRP, VRRP, and load balancing via HAProxy.\n\n• Configuration of the network core with inter-VLAN routing, Spanning Tree, and traffic segmentation to strengthen infrastructure resilience.\n\n• Securing communications through firewalling, centralized RADIUS authentication, and site interconnection using IPsec tunnels.",
         "icon": "./img/sae502.png",
         "link": "project.html?id=sae502",
         "skills": [
